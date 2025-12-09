@@ -1,0 +1,14 @@
+# requirements.txt📌 Installed Library Versions:
+-----------------------------------------
+Pandas Version: 2.3.3                # Used for data handling if needed
+ Matplotlib Version: 3.10.7            # Core library for array operations
+ Seaborn Version: 0.13.2                #plots graphs and displays images
+ numpy version :1.24.3                 # used for dataset visualization(class distribution)
+TensorFlow Version: 2.20.0              # reqiuired for efficientnet B0 deep learning model
+OpenCV Version: 4.12.0                            #used for face detection and image processing 
+Keras Version: 3.12.0
+EfficientNetB0 exists: Yes
+                                  
+
+
+
