@@ -1,1 +1,6 @@
-
+Python==v3.10.1
+Pandas==2.3.3
+Matplotlib==3.10.7
+Seaborn==0.13.2
+Scikit-learn==1.7.2
+Numpy==2.2.6
