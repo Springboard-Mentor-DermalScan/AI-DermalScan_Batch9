@@ -1,4 +1,4 @@
-keras==2.15.0
+keras=2.15.0
 matplotlib==3.10.7
 notebook==7.5.0
 numpy==1.26.4
