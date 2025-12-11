@@ -1,7 +1,7 @@
-tensorflow == 2.20.0
-keras == 3.12.0
-pillow == 12.0.0
-numpy == 2.2.6
-matplotlib == 3.10.7
-notebook == 2.15.0
-python == 3.10.11
+tensorflow==2.20.0
+keras==3.12.0
+pillow==12.0.0
+numpy==2.2.6
+matplotlib==3.10.7
+notebook==2.15.0
+python==3.10.11
