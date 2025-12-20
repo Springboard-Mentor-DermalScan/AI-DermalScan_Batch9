@@ -4,3 +4,4 @@ images/
 logs/
 models/
 history/
+.venv/
