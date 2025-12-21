@@ -1,0 +1,6 @@
+Python==3.10.1
+NumPy==2.2.6
+Matplotlib==3.10.7
+OpenCV==4.9.0.80
+TensorFlow==2.15.0
+Keras==2.15.0
