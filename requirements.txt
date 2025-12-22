@@ -1,0 +1,9 @@
+python==3.10
+tensorflow==2.15.0
+keras==2.15.0
+numpy==1.26.4
+opencv-python==4.9.0.80
+matplotlib==3.8.2
+scikit-learn==1.4.0
+pillow==10.2.0
+notebook==7.1.0
