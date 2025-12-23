@@ -1,12 +1,13 @@
 import cv2,os,numpy as np
 import tensorflow as tf
+import random
 from tensorflow.keras.applications.resnet50 import preprocess_input
 
 scriptspath = os.path.dirname(os.path.abspath(__file__))
 
 facecascade = cv2.CascadeClassifier(os.path.join(scriptspath,"haarcascade_frontalface_default.xml"))
 
-img = cv2.imread(r"C:\Users\adith\OneDrive\Pictures\Camera Roll\WIN_20251221_09_36_52_Pro.jpg")
+img = cv2.imread(r"C:\Users\adith\OneDrive\Pictures\Camera Roll\puffyeyes.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = facecascade.detectMultiScale(
@@ -45,19 +46,28 @@ predictedindex = prediction.argmax()
 confidence = prediction[0][predictedindex] * 100
 label = classnames[predictedindex]
 
-agemapping = {
-    "clear skin": "18-25",
-    "dark spots": "25-35",
-    "puffy eyes": "30-45",
-    "wrinkles": "40+"
-}
 
+def getage(prediction,classnames):
+    
+    agemap = {
+    "clear skin": (18, 30),
+    "dark spots": (30, 45),
+    "puffy eyes": (45, 60),
+    "wrinkles": (60, 100)
+    }
 
+    probs = prediction[0]
+    maximum = probs.argmax()
+    dominantclass = classnames[maximum]
+
+    low, high = agemap[dominantclass]
+
+    return random.randint(low, high)
 
 if(len(faces)>0):
     cv2.putText(
         img,
-        f"{label}: {confidence:.2f}% | Age: {agemapping[label]}",
+        f"{label}: {confidence:.2f}% | Age: {getage(prediction,classnames)}",
         (x, y - 10),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.8,
@@ -74,10 +84,10 @@ if(len(faces)>0):
 else:
     cv2.putText(
         img,
-        f"{label}: {confidence:.2f}% | Age: {agemapping[label]}",
+        f"{label}: {confidence:.2f}% | Age: {getage(prediction,classnames)}",
         (20, 40),
         cv2.FONT_HERSHEY_SIMPLEX,
-        0.8,
+        0.5,
         (0, 255, 0),
         2
     )
