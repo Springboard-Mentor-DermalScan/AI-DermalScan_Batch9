@@ -5,3 +5,5 @@ logs/
 models/
 history/
 .venv/
+scripts/facedetection.py
+scripts/haarcascade_frontalface_default.xml
