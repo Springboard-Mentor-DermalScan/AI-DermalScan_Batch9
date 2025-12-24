@@ -14,9 +14,9 @@ conf_threshold = 50.0
 
 output_folder = "outputs"
 
-correct_dir = os.path.join(output_folder, "correct_predictions_model1")
-wrong_dir = os.path.join(output_folder, "wrong_predictions_model1")
-uncertain_dir = os.path.join(output_folder, "uncertain_predictions_model1")
+correct_dir = os.path.join(output_folder, "correct_predictions")
+wrong_dir = os.path.join(output_folder, "wrong_predictions")
+uncertain_dir = os.path.join(output_folder, "uncertain_predictions")
 
 os.makedirs(correct_dir, exist_ok=True)
 os.makedirs(wrong_dir, exist_ok=True)
