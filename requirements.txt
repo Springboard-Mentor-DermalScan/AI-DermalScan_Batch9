@@ -5,3 +5,4 @@ numpy==2.2.6
 matplotlib==3.10.7
 notebook==2.15.0
 python==3.10.11
+opencv==4.12.0.88
