@@ -1,314 +1,314 @@
 Image,Face_ID,Predicted_Class,Age_Group,Confidence(%),Status
-clear_skin_001.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_001.jpg,1,Clear skin,-,47.43000030517578,CORRECT
 clear_skin_002.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_003.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_004.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_005.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_006.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_007.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_008.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_008.jpg,1,Dark spots,25-40,47.88999938964844,WRONG
 clear_skin_009.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_010.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_011.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_010.jpg,1,Clear skin,-,99.72000122070312,CORRECT
+clear_skin_011.jpg,1,Wrinkles,40+,41.439998626708984,WRONG
 clear_skin_012.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_013.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_014.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_015.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_016.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_017.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_016.jpg,1,Wrinkles,40+,93.73999786376953,WRONG
+clear_skin_017.jpg,1,Clear skin,-,99.72000122070312,CORRECT
 clear_skin_018.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_019.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_020.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_019.jpg,1,Clear skin,-,99.95999908447266,CORRECT
+clear_skin_020.jpg,1,Clear skin,-,86.56999969482422,CORRECT
 clear_skin_021.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_022.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+clear_skin_022.jpg,1,Clear skin,-,59.63999938964844,CORRECT
 clear_skin_023.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_024.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_024.jpg,1,Clear skin,-,99.69000244140625,CORRECT
 clear_skin_025.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_026.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_027.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_026.jpg,1,Dark spots,25-40,53.349998474121094,WRONG
+clear_skin_027.jpg,1,Wrinkles,40+,37.88999938964844,WRONG
 clear_skin_028.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_029.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_030.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_029.jpg,1,Clear skin,-,97.81999969482422,CORRECT
+clear_skin_030.jpg,1,Dark spots,25-40,57.65999984741211,WRONG
 clear_skin_031.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_032.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_032.jpg,1,Clear skin,-,72.12000274658203,CORRECT
 clear_skin_033.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_034.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_035.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_036.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_037.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_038.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_039.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_034.jpg,1,Wrinkles,40+,49.22999954223633,WRONG
+clear_skin_035.jpg,1,Dark spots,25-40,93.33000183105469,WRONG
+clear_skin_036.jpg,1,Clear skin,-,100.0,CORRECT
+clear_skin_037.jpg,1,Clear skin,-,99.98999786376953,CORRECT
+clear_skin_038.jpg,1,Dark spots,25-40,91.19000244140625,WRONG
+clear_skin_039.jpg,1,Puffy eyes,20-35,57.040000915527344,WRONG
 clear_skin_040.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_041.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_042.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_043.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_044.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_045.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_046.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_047.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_047.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_048.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_041.jpg,1,Clear skin,-,95.80999755859375,CORRECT
+clear_skin_042.jpg,1,Clear skin,-,99.56999969482422,CORRECT
+clear_skin_043.jpg,1,Clear skin,-,99.98999786376953,CORRECT
+clear_skin_044.jpg,1,Clear skin,-,99.51000213623047,CORRECT
+clear_skin_045.jpg,1,Dark spots,25-40,34.4900016784668,WRONG
+clear_skin_046.jpg,1,Clear skin,-,99.93000030517578,CORRECT
+clear_skin_047.jpg,1,Puffy eyes,20-35,82.47000122070312,WRONG
+clear_skin_047.jpg,2,Dark spots,25-40,37.599998474121094,WRONG
+clear_skin_048.jpg,1,Wrinkles,40+,52.470001220703125,WRONG
 clear_skin_049.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_050.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_051.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_052.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_050.jpg,1,Puffy eyes,20-35,68.54000091552734,WRONG
+clear_skin_051.jpg,1,Dark spots,25-40,50.150001525878906,WRONG
+clear_skin_052.jpg,1,Dark spots,25-40,76.83000183105469,WRONG
 clear_skin_053.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_054.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+clear_skin_054.jpg,1,Clear skin,-,99.94000244140625,CORRECT
 clear_skin_055.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_056.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_056.jpg,1,Wrinkles,40+,71.48999786376953,WRONG
 clear_skin_057.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_058.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_059.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_058.jpg,1,Wrinkles,40+,51.27000045776367,WRONG
+clear_skin_059.jpg,1,Clear skin,-,93.94000244140625,CORRECT
 clear_skin_060.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_061.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_062.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_063.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
+clear_skin_061.jpg,1,Clear skin,-,71.54000091552734,CORRECT
+clear_skin_062.jpg,1,Clear skin,-,96.87000274658203,CORRECT
+clear_skin_063.jpg,1,Clear skin,-,99.97000122070312,CORRECT
 clear_skin_064.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_065.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_065.jpg,1,Dark spots,25-40,57.59000015258789,WRONG
 clear_skin_066.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_067.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_068.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_069.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_068.jpg,1,Clear skin,-,97.77999877929688,CORRECT
+clear_skin_069.jpg,1,Clear skin,-,92.5,CORRECT
 clear_skin_070.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_071.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_072.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_073.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_072.jpg,1,Clear skin,-,97.44000244140625,CORRECT
+clear_skin_073.jpg,1,Wrinkles,40+,83.75,WRONG
 clear_skin_074.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_075.jpg,1,Dark spots,25-40,28.770000457763672,WRONG
+clear_skin_075.jpg,1,Clear skin,-,95.66999816894531,CORRECT
 clear_skin_076.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_077.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_077.jpg,1,Clear skin,-,99.95999908447266,CORRECT
 clear_skin_078.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_079.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_080.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_081.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_082.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_083.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_084.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_084.jpg,2,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_085.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_086.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+clear_skin_082.jpg,1,Dark spots,25-40,43.68000030517578,WRONG
+clear_skin_083.jpg,1,Wrinkles,40+,86.33999633789062,WRONG
+clear_skin_084.jpg,1,Clear skin,-,98.16999816894531,CORRECT
+clear_skin_084.jpg,2,Clear skin,-,53.5,CORRECT
+clear_skin_085.jpg,1,Clear skin,-,96.02999877929688,CORRECT
+clear_skin_086.jpg,1,Wrinkles,40+,89.86000061035156,WRONG
 clear_skin_087.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_088.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_089.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_089.jpg,1,Dark spots,25-40,78.61000061035156,WRONG
 clear_skin_090.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_091.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_092.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_093.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_094.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_094.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_095.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_096.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_097.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_091.jpg,1,Clear skin,-,98.12000274658203,CORRECT
+clear_skin_092.jpg,1,Clear skin,-,30.6200008392334,CORRECT
+clear_skin_093.jpg,1,Clear skin,-,82.4800033569336,CORRECT
+clear_skin_094.jpg,1,Wrinkles,40+,64.52999877929688,WRONG
+clear_skin_094.jpg,2,Clear skin,-,75.3499984741211,CORRECT
+clear_skin_095.jpg,1,Clear skin,-,96.9000015258789,CORRECT
+clear_skin_096.jpg,1,Dark spots,25-40,60.0,WRONG
+clear_skin_097.jpg,1,Puffy eyes,20-35,50.869998931884766,WRONG
 clear_skin_098.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_099.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_099.jpg,1,Wrinkles,40+,59.959999084472656,WRONG
 clear_skin_100.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_101.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_101.jpg,1,Clear skin,-,99.83999633789062,CORRECT
 clear_skin_102.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_103.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_104.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_105.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_104.jpg,1,Clear skin,-,99.81999969482422,CORRECT
+clear_skin_105.jpg,1,Clear skin,-,97.51000213623047,CORRECT
 clear_skin_106.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_107.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_108.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_109.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_110.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_111.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_112.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_113.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_114.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_115.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_116.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_116.jpg,2,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_117.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_108.jpg,1,Clear skin,-,99.76000213623047,CORRECT
+clear_skin_109.jpg,1,Clear skin,-,99.5199966430664,CORRECT
+clear_skin_110.jpg,1,Clear skin,-,99.4000015258789,CORRECT
+clear_skin_111.jpg,1,Clear skin,-,80.79000091552734,CORRECT
+clear_skin_112.jpg,1,Clear skin,-,99.3499984741211,CORRECT
+clear_skin_113.jpg,1,Clear skin,-,53.54999923706055,CORRECT
+clear_skin_114.jpg,1,Clear skin,-,98.94000244140625,CORRECT
+clear_skin_115.jpg,1,Dark spots,25-40,68.0,WRONG
+clear_skin_116.jpg,1,Clear skin,-,90.97000122070312,CORRECT
+clear_skin_116.jpg,2,Clear skin,-,98.5199966430664,CORRECT
+clear_skin_117.jpg,1,Clear skin,-,99.9800033569336,CORRECT
 clear_skin_118.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_119.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_119.jpg,1,Clear skin,-,99.72000122070312,CORRECT
 clear_skin_120.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_121.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_121.jpg,1,Clear skin,-,72.08000183105469,CORRECT
 clear_skin_122.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_123.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_123.jpg,1,Clear skin,-,98.69999694824219,CORRECT
 clear_skin_124.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_125.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_125.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_125.jpg,1,Clear skin,-,89.4000015258789,CORRECT
+clear_skin_125.jpg,2,Clear skin,-,97.97000122070312,CORRECT
 clear_skin_126.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_127.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_128.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_129.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_129.jpg,1,Clear skin,-,96.16000366210938,CORRECT
 clear_skin_130.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_131.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_132.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_133.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_134.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_135.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_136.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_137.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_138.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_139.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_131.jpg,1,Dark spots,25-40,56.279998779296875,WRONG
+clear_skin_132.jpg,1,Clear skin,-,98.83999633789062,CORRECT
+clear_skin_133.jpg,1,Wrinkles,40+,74.95999908447266,WRONG
+clear_skin_134.jpg,1,Wrinkles,40+,59.61000061035156,WRONG
+clear_skin_135.jpg,1,Wrinkles,40+,75.93000030517578,WRONG
+clear_skin_136.jpg,1,Clear skin,-,91.36000061035156,CORRECT
+clear_skin_137.jpg,1,Clear skin,-,80.31999969482422,CORRECT
+clear_skin_138.jpg,1,Clear skin,-,99.86000061035156,CORRECT
+clear_skin_139.jpg,1,Clear skin,-,54.5099983215332,CORRECT
 clear_skin_140.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_141.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_142.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_143.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_141.jpg,1,Dark spots,25-40,96.63999938964844,WRONG
+clear_skin_142.jpg,1,Clear skin,-,67.51000213623047,CORRECT
+clear_skin_143.jpg,1,Clear skin,-,55.150001525878906,CORRECT
 clear_skin_144.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_145.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_146.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_147.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_146.jpg,1,Clear skin,-,99.0999984741211,CORRECT
+clear_skin_147.jpg,1,Dark spots,25-40,84.76000213623047,WRONG
 clear_skin_148.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_149.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_149.jpg,1,Wrinkles,40+,88.66999816894531,WRONG
 clear_skin_150.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_151.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_152.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_153.jpg,1,Dark spots,25-40,28.790000915527344,WRONG
-clear_skin_154.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_155.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_156.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_157.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_158.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_159.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_160.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_160.jpg,2,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_161.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_152.jpg,1,Dark spots,25-40,60.95000076293945,WRONG
+clear_skin_153.jpg,1,Dark spots,25-40,79.27999877929688,WRONG
+clear_skin_154.jpg,1,Clear skin,-,99.54000091552734,CORRECT
+clear_skin_155.jpg,1,Clear skin,-,85.37000274658203,CORRECT
+clear_skin_156.jpg,1,Clear skin,-,83.30999755859375,CORRECT
+clear_skin_157.jpg,1,Dark spots,25-40,53.380001068115234,WRONG
+clear_skin_158.jpg,1,Wrinkles,40+,92.12999725341797,WRONG
+clear_skin_159.jpg,1,Clear skin,-,49.7400016784668,CORRECT
+clear_skin_160.jpg,1,Puffy eyes,20-35,99.05999755859375,WRONG
+clear_skin_160.jpg,2,Puffy eyes,20-35,56.22999954223633,WRONG
+clear_skin_161.jpg,1,Dark spots,25-40,66.87999725341797,WRONG
 clear_skin_162.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_163.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_164.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_165.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_166.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_163.jpg,1,Puffy eyes,20-35,65.68000030517578,WRONG
+clear_skin_164.jpg,1,Dark spots,25-40,52.0,WRONG
+clear_skin_165.jpg,1,Clear skin,-,69.48999786376953,CORRECT
+clear_skin_166.jpg,1,Clear skin,-,99.22000122070312,CORRECT
 clear_skin_167.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_168.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_169.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+clear_skin_168.jpg,1,Wrinkles,40+,74.73999786376953,WRONG
+clear_skin_169.jpg,1,Clear skin,-,95.76000213623047,CORRECT
 clear_skin_170.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_171.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_172.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_173.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_172.jpg,1,Wrinkles,40+,67.01000213623047,WRONG
+clear_skin_173.jpg,1,Wrinkles,40+,45.4900016784668,WRONG
 clear_skin_174.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_175.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_176.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_177.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_178.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_176.jpg,1,Wrinkles,40+,99.88999938964844,WRONG
+clear_skin_177.jpg,1,Clear skin,-,72.18000030517578,CORRECT
+clear_skin_178.jpg,1,Dark spots,25-40,72.16000366210938,WRONG
 clear_skin_179.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_180.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+clear_skin_180.jpg,1,Clear skin,-,96.93000030517578,CORRECT
 clear_skin_181.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_182.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_182.jpg,2,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_183.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_184.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_185.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_182.jpg,1,Wrinkles,40+,92.47000122070312,WRONG
+clear_skin_182.jpg,2,Clear skin,-,74.30999755859375,CORRECT
+clear_skin_183.jpg,1,Wrinkles,40+,54.66999816894531,WRONG
+clear_skin_184.jpg,1,Puffy eyes,20-35,82.6500015258789,WRONG
+clear_skin_185.jpg,1,Clear skin,-,95.81999969482422,CORRECT
 clear_skin_186.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_187.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_187.jpg,2,Dark spots,25-40,28.8700008392334,WRONG
-clear_skin_188.jpg,1,Dark spots,25-40,28.860000610351562,WRONG
-clear_skin_189.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_190.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_191.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_192.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_187.jpg,1,Dark spots,25-40,59.810001373291016,WRONG
+clear_skin_187.jpg,2,Dark spots,25-40,57.290000915527344,WRONG
+clear_skin_188.jpg,1,Clear skin,-,98.86000061035156,CORRECT
+clear_skin_189.jpg,1,Puffy eyes,20-35,79.86000061035156,WRONG
+clear_skin_190.jpg,1,Clear skin,-,66.25,CORRECT
+clear_skin_191.jpg,1,Clear skin,-,99.55999755859375,CORRECT
+clear_skin_192.jpg,1,Clear skin,-,99.91000366210938,CORRECT
 clear_skin_193.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_194.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_195.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_196.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_197.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_197.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_194.jpg,1,Wrinkles,40+,46.70000076293945,WRONG
+clear_skin_195.jpg,1,Clear skin,-,68.51000213623047,CORRECT
+clear_skin_196.jpg,1,Clear skin,-,84.33999633789062,CORRECT
+clear_skin_197.jpg,1,Clear skin,-,98.80999755859375,CORRECT
+clear_skin_197.jpg,2,Dark spots,25-40,87.19999694824219,WRONG
 clear_skin_198.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_199.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_200.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_201.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_199.jpg,1,Clear skin,-,74.56999969482422,CORRECT
+clear_skin_200.jpg,1,Clear skin,-,99.87999725341797,CORRECT
+clear_skin_201.jpg,1,Clear skin,-,99.9800033569336,CORRECT
 clear_skin_202.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_203.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+clear_skin_203.jpg,1,Clear skin,-,85.37000274658203,CORRECT
 clear_skin_204.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_205.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_206.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_206.jpg,1,Clear skin,-,98.38999938964844,CORRECT
 clear_skin_207.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_208.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_209.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_210.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_209.jpg,1,Wrinkles,40+,52.790000915527344,WRONG
+clear_skin_210.jpg,1,Clear skin,-,98.7699966430664,CORRECT
 clear_skin_211.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_212.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_213.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_214.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_215.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_216.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_215.jpg,1,Wrinkles,40+,92.76000213623047,WRONG
+clear_skin_216.jpg,1,Puffy eyes,20-35,48.060001373291016,WRONG
 clear_skin_217.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_218.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_219.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_220.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_221.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_222.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_223.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_224.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_225.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_226.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_227.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_219.jpg,1,Clear skin,-,99.91000366210938,CORRECT
+clear_skin_220.jpg,1,Puffy eyes,20-35,93.7699966430664,WRONG
+clear_skin_221.jpg,1,Dark spots,25-40,49.0099983215332,WRONG
+clear_skin_222.jpg,1,Clear skin,-,98.58999633789062,CORRECT
+clear_skin_223.jpg,1,Clear skin,-,99.81999969482422,CORRECT
+clear_skin_224.jpg,1,Wrinkles,40+,95.63999938964844,WRONG
+clear_skin_225.jpg,1,Clear skin,-,99.97000122070312,CORRECT
+clear_skin_226.jpg,1,Clear skin,-,99.75,CORRECT
+clear_skin_227.jpg,1,Wrinkles,40+,84.58000183105469,WRONG
 clear_skin_228.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_229.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_230.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_231.jpg,1,Dark spots,25-40,28.860000610351562,WRONG
-clear_skin_232.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+clear_skin_230.jpg,1,Dark spots,25-40,45.310001373291016,WRONG
+clear_skin_231.jpg,1,Puffy eyes,20-35,86.12000274658203,WRONG
+clear_skin_232.jpg,1,Clear skin,-,88.91999816894531,CORRECT
 clear_skin_233.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_234.jpg,1,Dark spots,25-40,28.860000610351562,WRONG
+clear_skin_234.jpg,1,Wrinkles,40+,69.12000274658203,WRONG
 clear_skin_235.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_236.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_237.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_238.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_239.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_240.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_237.jpg,1,Dark spots,25-40,71.52999877929688,WRONG
+clear_skin_238.jpg,1,Clear skin,-,70.69999694824219,CORRECT
+clear_skin_239.jpg,1,Wrinkles,40+,98.19999694824219,WRONG
+clear_skin_240.jpg,1,Clear skin,-,99.98999786376953,CORRECT
 clear_skin_241.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_242.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_242.jpg,1,Clear skin,-,99.94999694824219,CORRECT
 clear_skin_243.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_244.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_245.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_246.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_247.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_244.jpg,1,Clear skin,-,81.22000122070312,CORRECT
+clear_skin_245.jpg,1,Clear skin,-,99.86000061035156,CORRECT
+clear_skin_246.jpg,1,Clear skin,-,99.19000244140625,CORRECT
+clear_skin_247.jpg,1,Clear skin,-,84.05999755859375,CORRECT
 clear_skin_248.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_249.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_249.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_250.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+clear_skin_249.jpg,1,Wrinkles,40+,56.779998779296875,WRONG
+clear_skin_249.jpg,2,Wrinkles,40+,51.099998474121094,WRONG
+clear_skin_250.jpg,1,Clear skin,-,96.93000030517578,CORRECT
 clear_skin_251.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_252.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_252.jpg,1,Dark spots,25-40,44.290000915527344,WRONG
 clear_skin_253.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_254.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_255.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_256.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_257.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_255.jpg,1,Puffy eyes,20-35,68.54000091552734,WRONG
+clear_skin_256.jpg,1,Clear skin,-,47.4900016784668,CORRECT
+clear_skin_257.jpg,1,Clear skin,-,71.69999694824219,CORRECT
 clear_skin_258.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_259.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_259.jpg,1,Clear skin,-,96.97000122070312,CORRECT
 clear_skin_260.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_261.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_262.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_263.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_261.jpg,1,Clear skin,-,54.060001373291016,CORRECT
+clear_skin_262.jpg,1,Clear skin,-,99.98999786376953,CORRECT
+clear_skin_263.jpg,1,Clear skin,-,58.29999923706055,CORRECT
 clear_skin_264.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_265.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-clear_skin_266.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_267.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_268.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+clear_skin_265.jpg,1,Puffy eyes,20-35,85.87000274658203,WRONG
+clear_skin_266.jpg,1,Clear skin,-,35.77000045776367,CORRECT
+clear_skin_267.jpg,1,Wrinkles,40+,39.939998626708984,WRONG
+clear_skin_268.jpg,1,Puffy eyes,20-35,95.22000122070312,WRONG
 clear_skin_269.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_270.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
+clear_skin_270.jpg,1,Clear skin,-,93.98999786376953,CORRECT
 clear_skin_271.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_272.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_272.jpg,1,Puffy eyes,20-35,90.20999908447266,WRONG
 clear_skin_273.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_274.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_275.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_276.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_277.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_278.jpg,1,Dark spots,25-40,28.860000610351562,WRONG
-clear_skin_279.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-clear_skin_280.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_281.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_282.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_283.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_274.jpg,1,Wrinkles,40+,62.90999984741211,WRONG
+clear_skin_275.jpg,1,Clear skin,-,99.91000366210938,CORRECT
+clear_skin_276.jpg,1,Puffy eyes,20-35,89.4000015258789,WRONG
+clear_skin_277.jpg,1,Clear skin,-,52.38999938964844,CORRECT
+clear_skin_278.jpg,1,Clear skin,-,98.86000061035156,CORRECT
+clear_skin_279.jpg,1,Clear skin,-,98.3499984741211,CORRECT
+clear_skin_280.jpg,1,Puffy eyes,20-35,52.369998931884766,WRONG
+clear_skin_281.jpg,1,Clear skin,-,97.0999984741211,CORRECT
+clear_skin_282.jpg,1,Clear skin,-,97.83999633789062,CORRECT
+clear_skin_283.jpg,1,Wrinkles,40+,73.12000274658203,WRONG
 clear_skin_284.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_285.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_286.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_287.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_288.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_289.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_290.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_286.jpg,1,Clear skin,-,99.83000183105469,CORRECT
+clear_skin_287.jpg,1,Puffy eyes,20-35,48.2400016784668,WRONG
+clear_skin_288.jpg,1,Clear skin,-,99.7699966430664,CORRECT
+clear_skin_289.jpg,1,Clear skin,-,99.86000061035156,CORRECT
+clear_skin_290.jpg,1,Dark spots,25-40,71.98999786376953,WRONG
 clear_skin_291.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_292.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_293.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-clear_skin_294.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-clear_skin_295.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+clear_skin_292.jpg,1,Dark spots,25-40,30.729999542236328,WRONG
+clear_skin_293.jpg,1,Clear skin,-,99.88999938964844,CORRECT
+clear_skin_294.jpg,1,Clear skin,-,96.31999969482422,CORRECT
+clear_skin_295.jpg,1,Dark spots,25-40,88.91999816894531,WRONG
 clear_skin_296.jpg,-,-,-,0.0,NO FACE DETECTED
 clear_skin_297.jpg,-,-,-,0.0,NO FACE DETECTED
-clear_skin_298.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-clear_skin_299.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-clear_skin_299.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+clear_skin_298.jpg,1,Clear skin,-,97.88999938964844,CORRECT
+clear_skin_299.jpg,1,Clear skin,-,96.51000213623047,CORRECT
+clear_skin_299.jpg,2,Dark spots,25-40,97.73999786376953,WRONG
 clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 0183c6d6-8b71-4a85-a2c3-fe3fcbca3668.jpg,-,-,-,0.0,NO FACE DETECTED
 02435230-cde0-4bb8-9f58-141b03658324.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -317,10 +317,10 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 0c4c7bad-0df3-4d0f-ad45-7d67de49c77b.jpg,-,-,-,0.0,NO FACE DETECTED
 0cc20ae0-c7a8-478b-a974-a5aebabffc15.jpg,-,-,-,0.0,NO FACE DETECTED
 0d12df28-6795-4693-95e6-baa3c5c7d14b.jpg,-,-,-,0.0,NO FACE DETECTED
-1.jpg,1,Dark spots,25-40,28.809999465942383,CORRECT
+1.jpg,1,Wrinkles,40+,34.08000183105469,WRONG
 10.jpg,-,-,-,0.0,NO FACE DETECTED
 100.jpg,-,-,-,0.0,NO FACE DETECTED
-101.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+101.jpg,1,Dark spots,25-40,67.66000366210938,CORRECT
 102.jpg,-,-,-,0.0,NO FACE DETECTED
 103.jpg,-,-,-,0.0,NO FACE DETECTED
 104.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -329,12 +329,12 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 107.jpg,-,-,-,0.0,NO FACE DETECTED
 108.jpg,-,-,-,0.0,NO FACE DETECTED
 109.jpg,-,-,-,0.0,NO FACE DETECTED
-11.jpg,1,Dark spots,25-40,28.84000015258789,CORRECT
+11.jpg,1,Dark spots,25-40,94.52999877929688,CORRECT
 110.jpg,-,-,-,0.0,NO FACE DETECTED
-119432bf-56fd-45ed-aba9-64ee745e90f3.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
+119432bf-56fd-45ed-aba9-64ee745e90f3.jpg,1,Puffy eyes,20-35,41.54999923706055,WRONG
 1199d6a1-fa9a-468c-9506-f0be9fa117e6.jpg,-,-,-,0.0,NO FACE DETECTED
 12.jpg,-,-,-,0.0,NO FACE DETECTED
-13.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
+13.jpg,1,Clear skin,-,79.36000061035156,WRONG
 1380edc8-cb4f-4a34-8d83-0159a2e15cb9.jpg,-,-,-,0.0,NO FACE DETECTED
 14.jpg,-,-,-,0.0,NO FACE DETECTED
 145c0c21-d758-4d57-a3dd-a15ed0c4e855.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -344,13 +344,13 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 17.jpg,-,-,-,0.0,NO FACE DETECTED
 176a2fc2-e888-458d-945d-89c7ce94abad.jpg,-,-,-,0.0,NO FACE DETECTED
 18.jpg,-,-,-,0.0,NO FACE DETECTED
-19.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+19.jpg,1,Dark spots,25-40,98.4800033569336,CORRECT
 19a85cc5-9226-4f8a-841c-1e05bd8340db.jpg,-,-,-,0.0,NO FACE DETECTED
 1a331685-ed23-4320-a382-5b08f46fdc56.jpg,-,-,-,0.0,NO FACE DETECTED
 1b0a0ae9-6b1c-4552-8948-9e5ef5e74a09.jpg,-,-,-,0.0,NO FACE DETECTED
 1c5e1b2b-2896-45a9-a1a0-cc05addc49db.jpg,-,-,-,0.0,NO FACE DETECTED
 1c6c36fb-8904-46fa-bbdf-c0338df75f60.jpg,-,-,-,0.0,NO FACE DETECTED
-1e812d5b-ee7a-4ec5-bd3e-04ca72cd805a.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
+1e812d5b-ee7a-4ec5-bd3e-04ca72cd805a.jpg,1,Dark spots,25-40,99.9000015258789,CORRECT
 1eac0354-9727-4098-9fe2-b8fe17318953.jpg,-,-,-,0.0,NO FACE DETECTED
 1fbdb999-2e96-44d0-807e-7e3644ed7044.jpg,-,-,-,0.0,NO FACE DETECTED
 2.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -363,14 +363,14 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 24.jpg,-,-,-,0.0,NO FACE DETECTED
 240b91cb-9d15-4918-a3d0-7570365e4de4.jpg,-,-,-,0.0,NO FACE DETECTED
 25.jpg,-,-,-,0.0,NO FACE DETECTED
-25fe82b3-32bf-4e56-9754-cf578c57aab1.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+25fe82b3-32bf-4e56-9754-cf578c57aab1.jpg,1,Dark spots,25-40,96.44000244140625,CORRECT
 26.jpg,-,-,-,0.0,NO FACE DETECTED
 27.jpg,-,-,-,0.0,NO FACE DETECTED
 275f41de-aca9-4591-aaee-1e523705c0c7.jpg,-,-,-,0.0,NO FACE DETECTED
-28.jpg,1,Dark spots,25-40,28.860000610351562,CORRECT
+28.jpg,1,Dark spots,25-40,98.58000183105469,CORRECT
 288620b2-2dfc-43c4-8be9-1aa1327c5475.jpg,-,-,-,0.0,NO FACE DETECTED
 28d57376-7104-46f9-9808-a677ad93d838.jpg,-,-,-,0.0,NO FACE DETECTED
-28ed8e03-dc85-43e4-872d-183a8ef13a47.jpg,1,Dark spots,25-40,28.799999237060547,CORRECT
+28ed8e03-dc85-43e4-872d-183a8ef13a47.jpg,1,Dark spots,25-40,87.56999969482422,CORRECT
 29.jpg,-,-,-,0.0,NO FACE DETECTED
 2906ef14-4042-451e-a639-58110a02c0aa.jpg,-,-,-,0.0,NO FACE DETECTED
 2b5b6032-b30d-4e88-a888-81aa8b7cd480.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -392,12 +392,12 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 33952331-5d44-459f-ab1a-296158f90411.jpg,-,-,-,0.0,NO FACE DETECTED
 34.jpg,-,-,-,0.0,NO FACE DETECTED
 34046f00-460d-4fb1-b350-075811f42cbb.jpg,-,-,-,0.0,NO FACE DETECTED
-344ed90a-2401-45b0-b48a-d023138260dd.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+344ed90a-2401-45b0-b48a-d023138260dd.jpg,1,Clear skin,-,81.41000366210938,WRONG
 35.jpg,-,-,-,0.0,NO FACE DETECTED
-35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
-35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,2,Dark spots,25-40,28.809999465942383,CORRECT
-35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,3,Dark spots,25-40,28.829999923706055,CORRECT
-35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,4,Dark spots,25-40,28.84000015258789,CORRECT
+35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,1,Wrinkles,40+,99.37000274658203,WRONG
+35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,2,Clear skin,-,50.5099983215332,WRONG
+35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,3,Wrinkles,40+,46.560001373291016,WRONG
+35cd8ef3-9d57-40bb-97fa-c45cd29de402.jpg,4,Wrinkles,40+,74.98999786376953,WRONG
 36.jpg,-,-,-,0.0,NO FACE DETECTED
 37.jpg,-,-,-,0.0,NO FACE DETECTED
 38.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -407,26 +407,26 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 3abac4b8-0219-4f6e-a2fb-732b5f7b91ed.jpg,-,-,-,0.0,NO FACE DETECTED
 3deebf0a-72f9-4fa9-8764-3ac44ada6fd7.jpg,-,-,-,0.0,NO FACE DETECTED
 3e94d530-1288-4672-8e5f-70741b570193.jpg,-,-,-,0.0,NO FACE DETECTED
-4.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+4.jpg,1,Dark spots,25-40,99.54000091552734,CORRECT
 40.jpg,-,-,-,0.0,NO FACE DETECTED
-40248490-a411-40ad-8e66-fcf69487b14d.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
-41.jpg,1,Dark spots,25-40,28.84000015258789,CORRECT
+40248490-a411-40ad-8e66-fcf69487b14d.jpg,1,Dark spots,25-40,98.4800033569336,CORRECT
+41.jpg,1,Dark spots,25-40,93.86000061035156,CORRECT
 42.jpg,-,-,-,0.0,NO FACE DETECTED
 43.jpg,-,-,-,0.0,NO FACE DETECTED
 43366b23-c23b-46d8-a5b4-d920090812bc.jpg,-,-,-,0.0,NO FACE DETECTED
 433679f8-b278-4787-9f44-b5ad8dde11da.jpg,-,-,-,0.0,NO FACE DETECTED
 43a83abc-c8b2-40d0-a838-c77cc10ee76b.jpg,-,-,-,0.0,NO FACE DETECTED
-44.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
-45.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+44.jpg,1,Puffy eyes,20-35,76.2300033569336,WRONG
+45.jpg,1,Dark spots,25-40,99.98999786376953,CORRECT
 45284b25-20b4-4fc4-a51b-647b3845f21b.jpg,-,-,-,0.0,NO FACE DETECTED
 46.jpg,-,-,-,0.0,NO FACE DETECTED
-47.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
+47.jpg,1,Dark spots,25-40,90.08000183105469,CORRECT
 47cc95ed-7705-456d-8e49-9a364c64ba96.jpg,-,-,-,0.0,NO FACE DETECTED
 48.jpg,-,-,-,0.0,NO FACE DETECTED
 482e3a4c-4edd-4127-8f60-68b7a7a05e28.jpg,-,-,-,0.0,NO FACE DETECTED
 49.jpg,-,-,-,0.0,NO FACE DETECTED
 498e89f1-425d-4e0c-9d45-3b220d62861f.jpg,-,-,-,0.0,NO FACE DETECTED
-4aa701fc-4412-4dd7-9faa-e03929c425be.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+4aa701fc-4412-4dd7-9faa-e03929c425be.jpg,1,Dark spots,25-40,67.66000366210938,CORRECT
 4aa87886-36bf-445b-a3ab-322154f758a3.jpg,-,-,-,0.0,NO FACE DETECTED
 4ce9b714-aa22-477f-b97b-b43ba91ec765.jpg,-,-,-,0.0,NO FACE DETECTED
 4fe4d594-0473-4419-8edf-9d85802134b1.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -442,7 +442,7 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 555cfe73-d04b-4048-9f4a-8ff52d9d3f4b.jpg,-,-,-,0.0,NO FACE DETECTED
 55daa5e2-fa42-4cec-bb7f-da75a5b54809.jpg,-,-,-,0.0,NO FACE DETECTED
 56.jpg,-,-,-,0.0,NO FACE DETECTED
-57.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
+57.jpg,1,Wrinkles,40+,93.29000091552734,WRONG
 572e21f5-c1e3-40a5-b90a-ef122a2c898f.jpg,-,-,-,0.0,NO FACE DETECTED
 58.jpg,-,-,-,0.0,NO FACE DETECTED
 5848657d-7411-4b5a-919d-925d5f03a33d.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -453,7 +453,7 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 5f292e0e-5fcb-4ddb-a380-c4834263bc4f.jpg,-,-,-,0.0,NO FACE DETECTED
 6 (2).jpg,-,-,-,0.0,NO FACE DETECTED
 6.jpg,-,-,-,0.0,NO FACE DETECTED
-60.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
+60.jpg,1,Wrinkles,40+,69.55999755859375,WRONG
 60293a66-e96e-41fc-b34b-77d2822d59d4.jpg,-,-,-,0.0,NO FACE DETECTED
 61.jpg,-,-,-,0.0,NO FACE DETECTED
 6110c83a-166b-4594-8ce1-5694a76292a9.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -461,7 +461,7 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 62.jpg,-,-,-,0.0,NO FACE DETECTED
 62298495-7a8d-4aa7-924d-4a4224366072.jpg,-,-,-,0.0,NO FACE DETECTED
 622cbcc3-3347-44d5-b885-8d7b498c922b.jpg,-,-,-,0.0,NO FACE DETECTED
-64.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
+64.jpg,1,Wrinkles,40+,92.36000061035156,WRONG
 64fce697-bf9c-4442-970a-70439c90f9bc.jpg,-,-,-,0.0,NO FACE DETECTED
 64fe2db7-da0d-4afb-b2bf-e28a658c8849.jpg,-,-,-,0.0,NO FACE DETECTED
 65.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -474,8 +474,8 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 69731f1a-ff7b-45ae-880b-a0aaac6efda0.jpg,-,-,-,0.0,NO FACE DETECTED
 6aef60e0-7b80-49ab-b6dc-aef2df465f76.jpg,-,-,-,0.0,NO FACE DETECTED
 6b6b0428-e39e-4781-8cb3-4977861d6608.jpg,-,-,-,0.0,NO FACE DETECTED
-6bdd3c06-ef12-4245-96fc-6b2258426c4d.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
-6d19f100-58ec-49cc-aa84-200efb30dbd0.jpg,1,Dark spots,25-40,28.84000015258789,CORRECT
+6bdd3c06-ef12-4245-96fc-6b2258426c4d.jpg,1,Dark spots,25-40,99.0,CORRECT
+6d19f100-58ec-49cc-aa84-200efb30dbd0.jpg,1,Dark spots,25-40,95.33000183105469,CORRECT
 6f50c70b-39d7-4c28-a4fc-6f982ad4b5d7.jpg,-,-,-,0.0,NO FACE DETECTED
 7.jpg,-,-,-,0.0,NO FACE DETECTED
 70.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -490,7 +490,7 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 76.jpg,-,-,-,0.0,NO FACE DETECTED
 77.jpg,-,-,-,0.0,NO FACE DETECTED
 77150e42-e906-44e4-95a7-6fa0bbd87a65.jpg,-,-,-,0.0,NO FACE DETECTED
-77251e7e-eaf9-493b-b4cd-a261ca6b1a14.jpg,1,Dark spots,25-40,28.809999465942383,CORRECT
+77251e7e-eaf9-493b-b4cd-a261ca6b1a14.jpg,1,Dark spots,25-40,74.38999938964844,CORRECT
 78.jpg,-,-,-,0.0,NO FACE DETECTED
 79.jpg,-,-,-,0.0,NO FACE DETECTED
 799b41f6-36cf-401e-8937-bc2e710054b5.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -501,10 +501,10 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 7d332dcd-6ae9-4947-8437-f5c512b3bc34.jpg,-,-,-,0.0,NO FACE DETECTED
 7f18933e-9889-4115-8c87-d5cf3b787f99.jpg,-,-,-,0.0,NO FACE DETECTED
 8.jpg,-,-,-,0.0,NO FACE DETECTED
-80.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
+80.jpg,1,Wrinkles,40+,93.29000091552734,WRONG
 81.jpg,-,-,-,0.0,NO FACE DETECTED
 8156d885-5dd2-4cd4-9a2a-c52d5982fd53.jpg,-,-,-,0.0,NO FACE DETECTED
-82.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+82.jpg,1,Wrinkles,40+,96.69999694824219,WRONG
 83.jpg,-,-,-,0.0,NO FACE DETECTED
 8386c412-a76b-477a-a5d5-776396d5c145.jpg,-,-,-,0.0,NO FACE DETECTED
 84.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -517,28 +517,28 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 87.jpg,-,-,-,0.0,NO FACE DETECTED
 8758c7fb-97b7-4a27-81a2-4283d5a7badf.jpg,-,-,-,0.0,NO FACE DETECTED
 87a52750-9e09-40b1-bf53-5330e653b7a2.jpg,-,-,-,0.0,NO FACE DETECTED
-88.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+88.jpg,1,Dark spots,25-40,69.48999786376953,CORRECT
 89.jpg,-,-,-,0.0,NO FACE DETECTED
 8bc7ed41-6811-462e-ab70-da82d3a5fbda.jpg,-,-,-,0.0,NO FACE DETECTED
 8c7a2e36-c577-4c7b-a7d7-e9a709f6c76d.jpg,-,-,-,0.0,NO FACE DETECTED
 8d0f3bca-f2d1-4328-b005-ecbcdb1a8035.jpg,-,-,-,0.0,NO FACE DETECTED
-8d81d218-70fd-423e-9e8a-a734de960456.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
+8d81d218-70fd-423e-9e8a-a734de960456.jpg,1,Dark spots,25-40,98.20999908447266,CORRECT
 8e418a01-44ff-455a-b44f-b6eac4042e9a.jpg,-,-,-,0.0,NO FACE DETECTED
 9.jpg,-,-,-,0.0,NO FACE DETECTED
 90.jpg,-,-,-,0.0,NO FACE DETECTED
-90000433-07eb-4170-b8bc-07e267030ced.jpg,1,Dark spots,25-40,28.84000015258789,CORRECT
-91.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+90000433-07eb-4170-b8bc-07e267030ced.jpg,1,Dark spots,25-40,95.66000366210938,CORRECT
+91.jpg,1,Dark spots,25-40,98.4800033569336,CORRECT
 92.jpg,-,-,-,0.0,NO FACE DETECTED
 923126c5-16a0-48ed-969e-0b43af0f3c1e.jpg,-,-,-,0.0,NO FACE DETECTED
 92d51c3d-40f5-42c4-9721-2af45d3691e0.jpg,-,-,-,0.0,NO FACE DETECTED
 93.jpg,-,-,-,0.0,NO FACE DETECTED
-94.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
-95.jpg,1,Dark spots,25-40,28.84000015258789,CORRECT
+94.jpg,1,Dark spots,25-40,96.80000305175781,CORRECT
+95.jpg,1,Dark spots,25-40,93.86000061035156,CORRECT
 96.jpg,-,-,-,0.0,NO FACE DETECTED
 96d4f22b-3c75-4972-ab92-7fd6d12f9f75.jpg,-,-,-,0.0,NO FACE DETECTED
 96e290e0-ebaa-487f-8b0b-5014c6b5c2a9.jpg,-,-,-,0.0,NO FACE DETECTED
 97.jpg,-,-,-,0.0,NO FACE DETECTED
-971c8949-b535-4361-b480-15efb539e1d6.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
+971c8949-b535-4361-b480-15efb539e1d6.jpg,1,Puffy eyes,20-35,74.83000183105469,WRONG
 97e3e72c-8460-4110-80bb-caf372c7c05e.jpg,-,-,-,0.0,NO FACE DETECTED
 97eeed53-d813-4f64-863e-229b88975281.jpg,-,-,-,0.0,NO FACE DETECTED
 98.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -549,7 +549,7 @@ clear_skin_300.jpg,-,-,-,0.0,NO FACE DETECTED
 9b4d1032-c4d7-4b30-89ba-523cf69d36ff.jpg,-,-,-,0.0,NO FACE DETECTED
 9bc0d52c-4c9e-4d61-8cd9-d020e86a22c4.jpg,-,-,-,0.0,NO FACE DETECTED
 9bfe69da-441e-45f2-be9d-1c75badaa96b.jpg,-,-,-,0.0,NO FACE DETECTED
-9d1feedd-3b9b-4e3c-a2f8-d8f28be00a10.jpg,1,Dark spots,25-40,28.860000610351562,CORRECT
+9d1feedd-3b9b-4e3c-a2f8-d8f28be00a10.jpg,1,Dark spots,25-40,98.01000213623047,CORRECT
 9d786d72-fcfd-426d-b40b-5af6decf4362.jpg,-,-,-,0.0,NO FACE DETECTED
 9f2c3594-5a2b-4502-9872-54b0fa60adf5.jpg,-,-,-,0.0,NO FACE DETECTED
 a127972f-4a39-4ac5-86cf-4f8cf78c584c.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -559,20 +559,20 @@ a4ae6746-e35e-44b3-a000-6d21a0b8c26e.jpg,-,-,-,0.0,NO FACE DETECTED
 a50f65f5-2bc8-48da-95ef-0c4ba7ee1747.jpg,-,-,-,0.0,NO FACE DETECTED
 a64232a8-9f63-4c30-9bde-faff7e1d8624.jpg,-,-,-,0.0,NO FACE DETECTED
 a7d19b86-5eb2-4cd0-8f64-a11bfccf69db.jpg,-,-,-,0.0,NO FACE DETECTED
-a8944a5a-1f61-41cd-b370-e9afaf11a0ea.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
+a8944a5a-1f61-41cd-b370-e9afaf11a0ea.jpg,1,Dark spots,25-40,99.16000366210938,CORRECT
 a9a346a2-5870-43d7-b11a-9b89352d011f.jpg,-,-,-,0.0,NO FACE DETECTED
 ad327f2e-e622-491a-beca-ac8082908306.jpg,-,-,-,0.0,NO FACE DETECTED
 ada12fc8-a1ca-4cbf-952d-38fb6c1ac4a5.jpg,-,-,-,0.0,NO FACE DETECTED
 aea4383c-8a9d-442c-9636-2e5d415458f2.jpg,-,-,-,0.0,NO FACE DETECTED
 aed80655-8950-44c7-9f98-8f603eb5366a.jpg,-,-,-,0.0,NO FACE DETECTED
-af511d5a-491e-4e16-8d16-197455613fdf.jpg,1,Dark spots,25-40,28.829999923706055,CORRECT
+af511d5a-491e-4e16-8d16-197455613fdf.jpg,1,Dark spots,25-40,43.970001220703125,CORRECT
 b0dd8006-1128-4a8a-b09f-b625e5f970d6.jpg,-,-,-,0.0,NO FACE DETECTED
 b2dc0e85-cc56-4f58-a82e-7a65a4d5fb12.jpg,-,-,-,0.0,NO FACE DETECTED
 b43985cb-8464-49ba-ac88-72c1875b821d.jpg,-,-,-,0.0,NO FACE DETECTED
 b4bd6be0-ff5e-4668-b29a-3a002f84e940.jpg,-,-,-,0.0,NO FACE DETECTED
 b7352747-70da-47a1-8187-921ccbe20a25.jpg,-,-,-,0.0,NO FACE DETECTED
 b73e1741-6bc7-46d9-ae23-252f89fa4aac.jpg,-,-,-,0.0,NO FACE DETECTED
-b836149e-b247-44b4-85f0-0e986dc4d9e9.jpg,1,Dark spots,25-40,28.809999465942383,CORRECT
+b836149e-b247-44b4-85f0-0e986dc4d9e9.jpg,1,Dark spots,25-40,99.9000015258789,CORRECT
 b95a81a8-5497-4996-a7f0-4283fba79042.jpg,-,-,-,0.0,NO FACE DETECTED
 bb3ccdc4-afc1-4253-bc82-d598110f720e.jpg,-,-,-,0.0,NO FACE DETECTED
 bbdc7178-c848-4761-a630-e6b8cc3799d3.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -603,8 +603,8 @@ e4a70949-16e3-4156-8c91-f74f39e7f581.jpg,-,-,-,0.0,NO FACE DETECTED
 e62a2b95-54bc-44fa-97a8-345368c8c842.jpg,-,-,-,0.0,NO FACE DETECTED
 e92f5c8d-5224-43a4-9481-5ff37c6ff1a9.jpg,-,-,-,0.0,NO FACE DETECTED
 ea45b08a-f7e8-4fd0-89ee-88f643a52289.jpg,-,-,-,0.0,NO FACE DETECTED
-ec54b3c3-73ef-43de-83f5-5e4cd69e79e8.jpg,1,Dark spots,25-40,28.81999969482422,CORRECT
-edee38c6-6337-4d84-92d7-56c25cbc1ad3.jpg,1,Dark spots,25-40,28.84000015258789,CORRECT
+ec54b3c3-73ef-43de-83f5-5e4cd69e79e8.jpg,1,Wrinkles,40+,77.62000274658203,WRONG
+edee38c6-6337-4d84-92d7-56c25cbc1ad3.jpg,1,Dark spots,25-40,75.94000244140625,CORRECT
 eeb13c90-b47b-4b87-a838-e771da1703f4.jpg,-,-,-,0.0,NO FACE DETECTED
 efd4b0bd-4be5-4dfb-b118-71de0cde6b7c.jpg,-,-,-,0.0,NO FACE DETECTED
 f217bee4-a473-4ae8-9247-b8b1b7204a42.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -613,7 +613,7 @@ f8930779-f8a1-485e-8534-0cd881cfa142.jpg,-,-,-,0.0,NO FACE DETECTED
 f8ee8c3c-0962-42c2-a631-9fbde66ddea7.jpg,-,-,-,0.0,NO FACE DETECTED
 fad4426a-1fec-402e-b524-1f30b5df7f8a.jpg,-,-,-,0.0,NO FACE DETECTED
 ff18447a-5aed-46c6-bb31-d2ec58b52e03.jpg,-,-,-,0.0,NO FACE DETECTED
-ff7e81f3-a740-4d2e-9f37-908cecc840b6.jpg,1,Dark spots,25-40,28.850000381469727,CORRECT
+ff7e81f3-a740-4d2e-9f37-908cecc840b6.jpg,1,Clear skin,-,59.13999938964844,WRONG
 ffdee95b-0c76-493f-8077-a59987a7282d.jpg,-,-,-,0.0,NO FACE DETECTED
 ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 1.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -672,7 +672,7 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 147.jpg,-,-,-,0.0,NO FACE DETECTED
 148.jpg,-,-,-,0.0,NO FACE DETECTED
 149.jpg,-,-,-,0.0,NO FACE DETECTED
-15.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+15.jpg,1,Puffy eyes,20-35,98.0199966430664,CORRECT
 150.jpg,-,-,-,0.0,NO FACE DETECTED
 151.jpg,-,-,-,0.0,NO FACE DETECTED
 152.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -693,7 +693,7 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 18.jpg,-,-,-,0.0,NO FACE DETECTED
 19.jpg,-,-,-,0.0,NO FACE DETECTED
 2.jpg,-,-,-,0.0,NO FACE DETECTED
-20.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+20.jpg,1,Puffy eyes,20-35,41.38999938964844,CORRECT
 21.jpg,-,-,-,0.0,NO FACE DETECTED
 22.jpg,-,-,-,0.0,NO FACE DETECTED
 23.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -707,24 +707,24 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 30.jpg,-,-,-,0.0,NO FACE DETECTED
 31.jpg,-,-,-,0.0,NO FACE DETECTED
 32.jpg,-,-,-,0.0,NO FACE DETECTED
-33.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+33.jpg,1,Wrinkles,40+,63.31999969482422,WRONG
 34.jpg,-,-,-,0.0,NO FACE DETECTED
 35.jpg,-,-,-,0.0,NO FACE DETECTED
 36.jpg,-,-,-,0.0,NO FACE DETECTED
-37.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-38.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+37.jpg,1,Puffy eyes,20-35,86.31999969482422,CORRECT
+38.jpg,1,Puffy eyes,20-35,58.18000030517578,CORRECT
 39.jpg,-,-,-,0.0,NO FACE DETECTED
-4.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+4.jpg,1,Puffy eyes,20-35,42.27000045776367,CORRECT
 40.jpg,-,-,-,0.0,NO FACE DETECTED
 41.jpg,-,-,-,0.0,NO FACE DETECTED
-42.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+42.jpg,1,Wrinkles,40+,71.4800033569336,WRONG
 43.jpg,-,-,-,0.0,NO FACE DETECTED
 44.jpg,-,-,-,0.0,NO FACE DETECTED
 45.jpg,-,-,-,0.0,NO FACE DETECTED
 46.jpg,-,-,-,0.0,NO FACE DETECTED
 47.jpg,-,-,-,0.0,NO FACE DETECTED
 48.jpg,-,-,-,0.0,NO FACE DETECTED
-49.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+49.jpg,1,Puffy eyes,20-35,97.77999877929688,CORRECT
 5.jpg,-,-,-,0.0,NO FACE DETECTED
 50.jpg,-,-,-,0.0,NO FACE DETECTED
 51.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -733,13 +733,13 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 54.jpg,-,-,-,0.0,NO FACE DETECTED
 55.jpg,-,-,-,0.0,NO FACE DETECTED
 56.jpg,-,-,-,0.0,NO FACE DETECTED
-57.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-58.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+57.jpg,1,Puffy eyes,20-35,79.3499984741211,CORRECT
+58.jpg,1,Puffy eyes,20-35,77.93000030517578,CORRECT
 59.jpg,-,-,-,0.0,NO FACE DETECTED
 6.jpg,-,-,-,0.0,NO FACE DETECTED
-60.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+60.jpg,1,Dark spots,25-40,56.369998931884766,WRONG
 62.jpg,-,-,-,0.0,NO FACE DETECTED
-63.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+63.jpg,1,Wrinkles,40+,54.119998931884766,WRONG
 64.jpg,-,-,-,0.0,NO FACE DETECTED
 65.jpg,-,-,-,0.0,NO FACE DETECTED
 66.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -748,7 +748,7 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 69.jpg,-,-,-,0.0,NO FACE DETECTED
 7.jpg,-,-,-,0.0,NO FACE DETECTED
 70.jpg,-,-,-,0.0,NO FACE DETECTED
-71.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+71.jpg,1,Puffy eyes,20-35,98.0199966430664,CORRECT
 72.jpg,-,-,-,0.0,NO FACE DETECTED
 73.jpg,-,-,-,0.0,NO FACE DETECTED
 74.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -759,18 +759,18 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 79.jpg,-,-,-,0.0,NO FACE DETECTED
 8.jpg,-,-,-,0.0,NO FACE DETECTED
 80.jpg,-,-,-,0.0,NO FACE DETECTED
-81.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+81.jpg,1,Puffy eyes,20-35,74.29000091552734,CORRECT
 82.jpg,-,-,-,0.0,NO FACE DETECTED
 83.jpg,-,-,-,0.0,NO FACE DETECTED
-84.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+84.jpg,1,Wrinkles,40+,65.01000213623047,WRONG
 85.jpg,-,-,-,0.0,NO FACE DETECTED
-86.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+86.jpg,1,Dark spots,25-40,76.97000122070312,WRONG
 87.jpg,-,-,-,0.0,NO FACE DETECTED
 88.jpg,-,-,-,0.0,NO FACE DETECTED
-89.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+89.jpg,1,Wrinkles,40+,72.51000213623047,WRONG
 9.jpg,-,-,-,0.0,NO FACE DETECTED
 90.jpg,-,-,-,0.0,NO FACE DETECTED
-91.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+91.jpg,1,Wrinkles,40+,53.95000076293945,WRONG
 92.jpg,-,-,-,0.0,NO FACE DETECTED
 93.jpg,-,-,-,0.0,NO FACE DETECTED
 94.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -780,30 +780,30 @@ ffe25aec-0c58-46a4-a0b1-520f6dbec007.jpg,-,-,-,0.0,NO FACE DETECTED
 98.jpg,-,-,-,0.0,NO FACE DETECTED
 99.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_1.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_101.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_101.jpg,1,Wrinkles,40+,51.849998474121094,WRONG
 Image_103.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_106.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_108.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_109.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+Image_109.jpg,1,Wrinkles,40+,57.25,WRONG
 Image_110.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_113.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_118.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_119.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_119.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+Image_119.jpg,1,Dark spots,25-40,91.9800033569336,WRONG
+Image_119.jpg,2,Wrinkles,40+,90.54000091552734,WRONG
 Image_123.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_124.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_124.jpg,2,Dark spots,25-40,28.84000015258789,WRONG
-Image_131.png,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_124.jpg,1,Wrinkles,40+,84.31999969482422,WRONG
+Image_124.jpg,2,Puffy eyes,20-35,89.91000366210938,CORRECT
+Image_131.png,1,Puffy eyes,20-35,99.41000366210938,CORRECT
 Image_132.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_134.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_136.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_138.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_14.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_14.jpg,1,Dark spots,25-40,99.97000122070312,WRONG
 Image_140.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_145.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_152.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_157.png,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_158.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_157.png,1,Wrinkles,40+,97.56999969482422,WRONG
+Image_158.jpg,1,Dark spots,25-40,99.97000122070312,WRONG
 Image_16.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_160.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_161.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -819,7 +819,7 @@ Image_18.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_185.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_186.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_190.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_192.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_192.jpg,1,Dark spots,25-40,99.97000122070312,WRONG
 Image_193.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_198.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_2.png,-,-,-,0.0,NO FACE DETECTED
@@ -827,18 +827,18 @@ Image_20.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_200.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_201.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_203.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_204.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+Image_204.jpg,1,Wrinkles,40+,95.70999908447266,WRONG
 Image_205.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_206.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_209.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_209.jpg,2,Dark spots,25-40,28.850000381469727,WRONG
-Image_209.jpg,3,Dark spots,25-40,28.829999923706055,WRONG
-Image_209.jpg,4,Dark spots,25-40,28.829999923706055,WRONG
-Image_210.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_209.jpg,1,Clear skin,-,95.56999969482422,WRONG
+Image_209.jpg,2,Clear skin,-,58.4900016784668,WRONG
+Image_209.jpg,3,Clear skin,-,98.62999725341797,WRONG
+Image_209.jpg,4,Wrinkles,40+,64.5999984741211,WRONG
+Image_210.jpg,1,Wrinkles,40+,83.0999984741211,WRONG
 Image_211.png,-,-,-,0.0,NO FACE DETECTED
 Image_212.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_213.jpg,1,Dark spots,25-40,28.790000915527344,WRONG
-Image_214.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+Image_213.jpg,1,Puffy eyes,20-35,42.20000076293945,CORRECT
+Image_214.jpg,1,Wrinkles,40+,78.54000091552734,WRONG
 Image_215.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_216.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_217.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -846,134 +846,134 @@ Image_218.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_220.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_222.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_223.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_225.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_227.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_228.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+Image_225.jpg,1,Puffy eyes,20-35,82.37999725341797,CORRECT
+Image_227.jpg,1,Puffy eyes,20-35,53.4900016784668,CORRECT
+Image_228.jpg,1,Wrinkles,40+,66.8499984741211,WRONG
 Image_229.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_230.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_232.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_249.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_25.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_253.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_259.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_259.jpg,1,Dark spots,25-40,50.849998474121094,WRONG
 Image_261.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_265.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_268.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_27.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+Image_265.jpg,1,Dark spots,25-40,99.76000213623047,WRONG
+Image_268.jpg,1,Dark spots,25-40,58.029998779296875,WRONG
+Image_27.jpg,1,Dark spots,25-40,93.6500015258789,WRONG
 Image_270.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_271.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+Image_271.jpg,1,Dark spots,25-40,84.72000122070312,WRONG
 Image_272.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_273.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_276.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_279.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_281.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+Image_281.jpg,1,Clear skin,-,79.16000366210938,WRONG
 Image_284.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_285.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_286.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_288.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_288.jpg,2,Dark spots,25-40,28.799999237060547,WRONG
+Image_288.jpg,1,Wrinkles,40+,97.70999908447266,WRONG
+Image_288.jpg,2,Wrinkles,40+,53.91999816894531,WRONG
 Image_289.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_29.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_291.png,-,-,-,0.0,NO FACE DETECTED
 Image_292 - Copy.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_292.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_294.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_295.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_295.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
-Image_298.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+Image_295.jpg,1,Wrinkles,40+,90.54000091552734,WRONG
+Image_295.jpg,2,Dark spots,25-40,91.9800033569336,WRONG
+Image_298.jpg,1,Puffy eyes,20-35,69.87999725341797,CORRECT
 Image_299.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_3.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_30.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_300.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-Image_300.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+Image_300.jpg,1,Wrinkles,40+,84.31999969482422,WRONG
+Image_300.jpg,2,Puffy eyes,20-35,89.91000366210938,CORRECT
 Image_31.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_32.png,-,-,-,0.0,NO FACE DETECTED
-Image_34.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_34.jpg,2,Dark spots,25-40,28.850000381469727,WRONG
-Image_34.jpg,3,Dark spots,25-40,28.829999923706055,WRONG
-Image_34.jpg,4,Dark spots,25-40,28.829999923706055,WRONG
+Image_34.jpg,1,Clear skin,-,95.72000122070312,WRONG
+Image_34.jpg,2,Clear skin,-,54.720001220703125,WRONG
+Image_34.jpg,3,Clear skin,-,98.88999938964844,WRONG
+Image_34.jpg,4,Wrinkles,40+,45.59000015258789,WRONG
 Image_37.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_38.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+Image_38.jpg,1,Wrinkles,40+,78.54000091552734,WRONG
 Image_4.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_40.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_41.jpg,1,Dark spots,25-40,28.790000915527344,WRONG
+Image_41.jpg,1,Puffy eyes,20-35,42.20000076293945,CORRECT
 Image_42.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_43.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_47.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+Image_47.jpg,1,Wrinkles,40+,87.83000183105469,WRONG
 Image_48.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_5.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_53.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+Image_53.jpg,1,Wrinkles,40+,66.8499984741211,WRONG
 Image_54.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_55.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_6.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_60.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_61.png,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_61.png,1,Wrinkles,40+,48.83000183105469,WRONG
 Image_62.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_65.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_66.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_66.jpg,1,Wrinkles,40+,35.4900016784668,WRONG
 Image_68.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_69.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_7.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_70.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_71.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_73.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_74.jpg,1,Dark spots,25-40,28.860000610351562,WRONG
+Image_74.jpg,1,Wrinkles,40+,92.06999969482422,WRONG
 Image_77.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_79.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_8.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_81.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+Image_81.jpg,1,Wrinkles,40+,74.98999786376953,WRONG
 Image_82.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_84.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_89.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_89.jpg,1,Dark spots,25-40,99.76000213623047,WRONG
 Img_32.png,-,-,-,0.0,NO FACE DETECTED
 Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
-1.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-10.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+1.jpg,1,Wrinkles,40+,79.5999984741211,CORRECT
+10.jpg,1,Wrinkles,40+,99.9000015258789,CORRECT
 100.jpg,-,-,-,0.0,NO FACE DETECTED
 101.jpg,-,-,-,0.0,NO FACE DETECTED
-102.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-102.jpg,2,Dark spots,25-40,28.799999237060547,WRONG
+102.jpg,1,Wrinkles,40+,96.23999786376953,CORRECT
+102.jpg,2,Wrinkles,40+,94.98999786376953,CORRECT
 103.jpg,-,-,-,0.0,NO FACE DETECTED
 104.jpg,-,-,-,0.0,NO FACE DETECTED
 105.jpg,-,-,-,0.0,NO FACE DETECTED
 106.jpg,-,-,-,0.0,NO FACE DETECTED
 107.jpg,-,-,-,0.0,NO FACE DETECTED
 108.jpg,-,-,-,0.0,NO FACE DETECTED
-109.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-11.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+109.jpg,1,Wrinkles,40+,74.81999969482422,CORRECT
+11.jpg,1,Dark spots,25-40,51.529998779296875,WRONG
 110.jpg,-,-,-,0.0,NO FACE DETECTED
-111.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-112.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+111.jpg,1,Wrinkles,40+,97.79000091552734,CORRECT
+112.jpg,1,Wrinkles,40+,99.62999725341797,CORRECT
 113.jpg,-,-,-,0.0,NO FACE DETECTED
-114.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+114.jpg,1,Wrinkles,40+,99.98999786376953,CORRECT
 115.jpg,-,-,-,0.0,NO FACE DETECTED
 117.jpg,-,-,-,0.0,NO FACE DETECTED
-118.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+118.jpg,1,Wrinkles,40+,99.12999725341797,CORRECT
 119.jpg,-,-,-,0.0,NO FACE DETECTED
 12.jpg,-,-,-,0.0,NO FACE DETECTED
 120.jpg,-,-,-,0.0,NO FACE DETECTED
 121.jpg,-,-,-,0.0,NO FACE DETECTED
 122.jpg,-,-,-,0.0,NO FACE DETECTED
 123.jpg,-,-,-,0.0,NO FACE DETECTED
-124.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-125.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-125.jpg,2,Dark spots,25-40,28.850000381469727,WRONG
-126.jpg,1,Dark spots,25-40,28.860000610351562,WRONG
-127.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+124.jpg,1,Wrinkles,40+,99.9800033569336,CORRECT
+125.jpg,1,Puffy eyes,20-35,88.73999786376953,WRONG
+125.jpg,2,Wrinkles,40+,67.33000183105469,CORRECT
+126.jpg,1,Dark spots,25-40,85.19000244140625,WRONG
+127.jpg,1,Wrinkles,40+,99.97000122070312,CORRECT
 128.jpg,-,-,-,0.0,NO FACE DETECTED
 129.jpg,-,-,-,0.0,NO FACE DETECTED
-13.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-13.jpg,2,Dark spots,25-40,28.809999465942383,WRONG
+13.jpg,1,Wrinkles,40+,99.91000366210938,CORRECT
+13.jpg,2,Wrinkles,40+,96.54000091552734,CORRECT
 130.jpg,-,-,-,0.0,NO FACE DETECTED
 131.jpg,-,-,-,0.0,NO FACE DETECTED
 132.jpg,-,-,-,0.0,NO FACE DETECTED
-133.jpg,1,Dark spots,25-40,28.790000915527344,WRONG
+133.jpg,1,Wrinkles,40+,75.41999816894531,CORRECT
 134.jpg,-,-,-,0.0,NO FACE DETECTED
 135.jpg,-,-,-,0.0,NO FACE DETECTED
 136.jpg,-,-,-,0.0,NO FACE DETECTED
-137.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-138.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-138.jpg,2,Dark spots,25-40,28.809999465942383,WRONG
+137.jpg,1,Wrinkles,40+,96.80999755859375,CORRECT
+138.jpg,1,Wrinkles,40+,79.41000366210938,CORRECT
+138.jpg,2,Wrinkles,40+,82.5199966430664,CORRECT
 139.jpg,-,-,-,0.0,NO FACE DETECTED
 14.jpg,-,-,-,0.0,NO FACE DETECTED
 140.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -982,9 +982,9 @@ Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
 143.jpg,-,-,-,0.0,NO FACE DETECTED
 144.jpg,-,-,-,0.0,NO FACE DETECTED
 145.jpg,-,-,-,0.0,NO FACE DETECTED
-146.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+146.jpg,1,Puffy eyes,20-35,58.189998626708984,WRONG
 147.jpg,-,-,-,0.0,NO FACE DETECTED
-148.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+148.jpg,1,Wrinkles,40+,49.060001373291016,CORRECT
 149.jpg,-,-,-,0.0,NO FACE DETECTED
 15.jpg,-,-,-,0.0,NO FACE DETECTED
 150.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -1001,52 +1001,52 @@ Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
 160.jpg,-,-,-,0.0,NO FACE DETECTED
 161.jpg,-,-,-,0.0,NO FACE DETECTED
 162.jpg,-,-,-,0.0,NO FACE DETECTED
-163.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+163.jpg,1,Wrinkles,40+,96.91000366210938,CORRECT
 164.jpg,-,-,-,0.0,NO FACE DETECTED
 165.jpg,-,-,-,0.0,NO FACE DETECTED
-166.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+166.jpg,1,Puffy eyes,20-35,77.58000183105469,WRONG
 167.jpg,-,-,-,0.0,NO FACE DETECTED
-168.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
+168.jpg,1,Wrinkles,40+,98.77999877929688,CORRECT
 169.jpg,-,-,-,0.0,NO FACE DETECTED
-17.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+17.jpg,1,Wrinkles,40+,60.150001525878906,CORRECT
 170.jpg,-,-,-,0.0,NO FACE DETECTED
 171.jpg,-,-,-,0.0,NO FACE DETECTED
-172.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-173.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+172.jpg,1,Wrinkles,40+,97.19000244140625,CORRECT
+173.jpg,1,Wrinkles,40+,99.9000015258789,CORRECT
 174.jpg,-,-,-,0.0,NO FACE DETECTED
 175.jpg,-,-,-,0.0,NO FACE DETECTED
-176.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+176.jpg,1,Wrinkles,40+,96.44999694824219,CORRECT
 177.jpg,-,-,-,0.0,NO FACE DETECTED
-178.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-179.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+178.jpg,1,Wrinkles,40+,99.9000015258789,CORRECT
+179.jpg,1,Wrinkles,40+,99.56999969482422,CORRECT
 18.jpg,-,-,-,0.0,NO FACE DETECTED
 180.jpg,-,-,-,0.0,NO FACE DETECTED
 181.jpg,-,-,-,0.0,NO FACE DETECTED
-182.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+182.jpg,1,Wrinkles,40+,42.349998474121094,CORRECT
 183.jpg,-,-,-,0.0,NO FACE DETECTED
-184.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+184.jpg,1,Wrinkles,40+,91.94000244140625,CORRECT
 185.jpg,-,-,-,0.0,NO FACE DETECTED
 186.jpg,-,-,-,0.0,NO FACE DETECTED
-187.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-188.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-189.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+187.jpg,1,Wrinkles,40+,99.94000244140625,CORRECT
+188.jpg,1,Wrinkles,40+,81.83999633789062,CORRECT
+189.jpg,1,Wrinkles,40+,99.9000015258789,CORRECT
 19.jpg,-,-,-,0.0,NO FACE DETECTED
 190.jpg,-,-,-,0.0,NO FACE DETECTED
-191.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+191.jpg,1,Wrinkles,40+,99.95999908447266,CORRECT
 192.jpg,-,-,-,0.0,NO FACE DETECTED
 193.jpg,-,-,-,0.0,NO FACE DETECTED
 194.jpg,-,-,-,0.0,NO FACE DETECTED
 195.jpg,-,-,-,0.0,NO FACE DETECTED
-196.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+196.jpg,1,Wrinkles,40+,67.62000274658203,CORRECT
 197.jpg,-,-,-,0.0,NO FACE DETECTED
 198.jpg,-,-,-,0.0,NO FACE DETECTED
-199.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-2.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+199.jpg,1,Wrinkles,40+,87.87999725341797,CORRECT
+2.jpg,1,Puffy eyes,20-35,77.58000183105469,WRONG
 20.jpg,-,-,-,0.0,NO FACE DETECTED
 200.jpg,-,-,-,0.0,NO FACE DETECTED
-201.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-202.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-203.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+201.jpg,1,Wrinkles,40+,86.68000030517578,CORRECT
+202.jpg,1,Wrinkles,40+,99.16000366210938,CORRECT
+203.jpg,1,Wrinkles,40+,86.77999877929688,CORRECT
 204.jpg,-,-,-,0.0,NO FACE DETECTED
 205.jpg,-,-,-,0.0,NO FACE DETECTED
 206.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -1056,35 +1056,35 @@ Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
 21.jpg,-,-,-,0.0,NO FACE DETECTED
 210.jpg,-,-,-,0.0,NO FACE DETECTED
 211.jpg,-,-,-,0.0,NO FACE DETECTED
-212.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+212.jpg,1,Wrinkles,40+,82.4800033569336,CORRECT
 213.jpg,-,-,-,0.0,NO FACE DETECTED
 214.jpg,-,-,-,0.0,NO FACE DETECTED
-215.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-216.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-217.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-218.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-218.jpg,2,Dark spots,25-40,28.84000015258789,WRONG
+215.jpg,1,Dark spots,25-40,47.31999969482422,WRONG
+216.jpg,1,Wrinkles,40+,99.98999786376953,CORRECT
+217.jpg,1,Wrinkles,40+,99.94000244140625,CORRECT
+218.jpg,1,Wrinkles,40+,54.599998474121094,CORRECT
+218.jpg,2,Wrinkles,40+,93.41999816894531,CORRECT
 219.jpg,-,-,-,0.0,NO FACE DETECTED
 22.jpg,-,-,-,0.0,NO FACE DETECTED
 220.jpg,-,-,-,0.0,NO FACE DETECTED
-221.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+221.jpg,1,Wrinkles,40+,100.0,CORRECT
 222.jpg,-,-,-,0.0,NO FACE DETECTED
 223.jpg,-,-,-,0.0,NO FACE DETECTED
-224.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-224.jpg,2,Dark spots,25-40,28.850000381469727,WRONG
-225.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-226.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+224.jpg,1,Wrinkles,40+,78.8499984741211,CORRECT
+224.jpg,2,Wrinkles,40+,95.37000274658203,CORRECT
+225.jpg,1,Wrinkles,40+,87.5999984741211,CORRECT
+226.jpg,1,Wrinkles,40+,99.5999984741211,CORRECT
 227.jpg,-,-,-,0.0,NO FACE DETECTED
-228.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-229.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+228.jpg,1,Wrinkles,40+,99.95999908447266,CORRECT
+229.jpg,1,Wrinkles,40+,100.0,CORRECT
 23.jpg,-,-,-,0.0,NO FACE DETECTED
-230.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+230.jpg,1,Wrinkles,40+,82.01000213623047,CORRECT
 231.jpg,-,-,-,0.0,NO FACE DETECTED
 232.jpg,-,-,-,0.0,NO FACE DETECTED
-233.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-234.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+233.jpg,1,Wrinkles,40+,99.66000366210938,CORRECT
+234.jpg,1,Wrinkles,40+,94.83000183105469,CORRECT
 235.jpg,-,-,-,0.0,NO FACE DETECTED
-236.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+236.jpg,1,Wrinkles,40+,86.13999938964844,CORRECT
 237.jpg,-,-,-,0.0,NO FACE DETECTED
 238.jpg,-,-,-,0.0,NO FACE DETECTED
 239.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -1092,56 +1092,56 @@ Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
 240.jpg,-,-,-,0.0,NO FACE DETECTED
 241.jpg,-,-,-,0.0,NO FACE DETECTED
 242.jpg,-,-,-,0.0,NO FACE DETECTED
-243.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+243.jpg,1,Wrinkles,40+,95.0999984741211,CORRECT
 244.jpg,-,-,-,0.0,NO FACE DETECTED
-245.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-246.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-247.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-248.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+245.jpg,1,Wrinkles,40+,99.94999694824219,CORRECT
+246.jpg,1,Wrinkles,40+,100.0,CORRECT
+247.jpg,1,Wrinkles,40+,85.83999633789062,CORRECT
+248.jpg,1,Wrinkles,40+,97.62999725341797,CORRECT
 249.jpg,-,-,-,0.0,NO FACE DETECTED
-25.jpg,1,Dark spots,25-40,28.799999237060547,WRONG
-25.jpg,2,Dark spots,25-40,28.770000457763672,WRONG
+25.jpg,1,Wrinkles,40+,61.630001068115234,CORRECT
+25.jpg,2,Wrinkles,40+,99.69000244140625,CORRECT
 250.jpg,-,-,-,0.0,NO FACE DETECTED
 251.jpg,-,-,-,0.0,NO FACE DETECTED
-252.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-252.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
-253.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+252.jpg,1,Wrinkles,40+,75.6500015258789,CORRECT
+252.jpg,2,Wrinkles,40+,91.66000366210938,CORRECT
+253.jpg,1,Wrinkles,40+,99.80000305175781,CORRECT
 254.jpg,-,-,-,0.0,NO FACE DETECTED
-255.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-256.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+255.jpg,1,Wrinkles,40+,97.70999908447266,CORRECT
+256.jpg,1,Wrinkles,40+,98.61000061035156,CORRECT
 26.jpg,-,-,-,0.0,NO FACE DETECTED
 27.jpg,-,-,-,0.0,NO FACE DETECTED
 28.jpg,-,-,-,0.0,NO FACE DETECTED
-29.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+29.jpg,1,Wrinkles,40+,99.88999938964844,CORRECT
 3.jpg,-,-,-,0.0,NO FACE DETECTED
-30.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+30.jpg,1,Wrinkles,40+,100.0,CORRECT
 31.jpg,-,-,-,0.0,NO FACE DETECTED
-32.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+32.jpg,1,Wrinkles,40+,86.4800033569336,CORRECT
 33.jpg,-,-,-,0.0,NO FACE DETECTED
-34.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+34.jpg,1,Wrinkles,40+,81.22000122070312,CORRECT
 35.jpg,-,-,-,0.0,NO FACE DETECTED
 36.jpg,-,-,-,0.0,NO FACE DETECTED
 37.jpg,-,-,-,0.0,NO FACE DETECTED
-38.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+38.jpg,1,Wrinkles,40+,99.98999786376953,CORRECT
 39.jpg,-,-,-,0.0,NO FACE DETECTED
 4.jpg,-,-,-,0.0,NO FACE DETECTED
-40.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+40.jpg,1,Wrinkles,40+,100.0,CORRECT
 41.jpg,-,-,-,0.0,NO FACE DETECTED
 42.jpg,-,-,-,0.0,NO FACE DETECTED
-43.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+43.jpg,1,Wrinkles,40+,99.95999908447266,CORRECT
 44.jpg,-,-,-,0.0,NO FACE DETECTED
 45.jpg,-,-,-,0.0,NO FACE DETECTED
 46.jpg,-,-,-,0.0,NO FACE DETECTED
 47.jpg,-,-,-,0.0,NO FACE DETECTED
 48.jpg,-,-,-,0.0,NO FACE DETECTED
-49.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-5.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-5.jpg,2,Dark spots,25-40,28.860000610351562,WRONG
-50.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+49.jpg,1,Wrinkles,40+,99.80000305175781,CORRECT
+5.jpg,1,Puffy eyes,20-35,78.0199966430664,WRONG
+5.jpg,2,Puffy eyes,20-35,82.58999633789062,WRONG
+50.jpg,1,Wrinkles,40+,99.69000244140625,CORRECT
 51.jpg,-,-,-,0.0,NO FACE DETECTED
-52.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+52.jpg,1,Wrinkles,40+,82.05999755859375,CORRECT
 53.jpg,-,-,-,0.0,NO FACE DETECTED
-54.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+54.jpg,1,Wrinkles,40+,99.9800033569336,CORRECT
 55.jpg,-,-,-,0.0,NO FACE DETECTED
 56.jpg,-,-,-,0.0,NO FACE DETECTED
 57.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -1149,19 +1149,19 @@ Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
 59.jpg,-,-,-,0.0,NO FACE DETECTED
 6.jpg,-,-,-,0.0,NO FACE DETECTED
 60.jpg,-,-,-,0.0,NO FACE DETECTED
-61.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-62.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+61.jpg,1,Wrinkles,40+,99.98999786376953,CORRECT
+62.jpg,1,Wrinkles,40+,99.95999908447266,CORRECT
 63.jpg,-,-,-,0.0,NO FACE DETECTED
 64.jpg,-,-,-,0.0,NO FACE DETECTED
-65.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-65.jpg,2,Dark spots,25-40,28.81999969482422,WRONG
+65.jpg,1,Puffy eyes,20-35,51.150001525878906,WRONG
+65.jpg,2,Wrinkles,40+,65.16999816894531,CORRECT
 66.jpg,-,-,-,0.0,NO FACE DETECTED
-67.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-67.jpg,2,Dark spots,25-40,28.770000457763672,WRONG
+67.jpg,1,Puffy eyes,20-35,86.41999816894531,WRONG
+67.jpg,2,Wrinkles,40+,61.630001068115234,CORRECT
 68.jpg,-,-,-,0.0,NO FACE DETECTED
 69.jpg,-,-,-,0.0,NO FACE DETECTED
 7.jpg,-,-,-,0.0,NO FACE DETECTED
-70.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+70.jpg,1,Wrinkles,40+,96.91000366210938,CORRECT
 71.jpg,-,-,-,0.0,NO FACE DETECTED
 72.jpg,-,-,-,0.0,NO FACE DETECTED
 73.jpg,-,-,-,0.0,NO FACE DETECTED
@@ -1174,82 +1174,82 @@ Img_82.jpg,-,-,-,0.0,NO FACE DETECTED
 8.jpg,-,-,-,0.0,NO FACE DETECTED
 80.jpg,-,-,-,0.0,NO FACE DETECTED
 81.jpg,-,-,-,0.0,NO FACE DETECTED
-82.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
+82.jpg,1,Dark spots,25-40,82.95999908447266,WRONG
 83.jpg,-,-,-,0.0,NO FACE DETECTED
 84.jpg,-,-,-,0.0,NO FACE DETECTED
 85.jpg,-,-,-,0.0,NO FACE DETECTED
-86.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
+86.jpg,1,Wrinkles,40+,100.0,CORRECT
 87.jpg,-,-,-,0.0,NO FACE DETECTED
 88.jpg,-,-,-,0.0,NO FACE DETECTED
 89.jpg,-,-,-,0.0,NO FACE DETECTED
 9.jpg,-,-,-,0.0,NO FACE DETECTED
 90.jpg,-,-,-,0.0,NO FACE DETECTED
-91.jpg,1,Dark spots,25-40,28.790000915527344,WRONG
-92.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
+91.jpg,1,Wrinkles,40+,75.41999816894531,CORRECT
+92.jpg,1,Wrinkles,40+,99.19999694824219,CORRECT
 93.jpg,-,-,-,0.0,NO FACE DETECTED
-94.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
-95.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-95.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+94.jpg,1,Wrinkles,40+,99.51000213623047,CORRECT
+95.jpg,1,Wrinkles,40+,93.19999694824219,CORRECT
+95.jpg,2,Puffy eyes,20-35,47.939998626708984,WRONG
 96.jpg,-,-,-,0.0,NO FACE DETECTED
-97.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+97.jpg,1,Wrinkles,40+,98.22000122070312,CORRECT
 98.jpg,-,-,-,0.0,NO FACE DETECTED
 99.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_1.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_10.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_104.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_105.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_105.jpg,1,Wrinkles,40+,88.55000305175781,CORRECT
 Image_109.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_110.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_110.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+Image_110.jpg,1,Wrinkles,40+,87.83000183105469,CORRECT
+Image_110.jpg,2,Wrinkles,40+,99.94999694824219,CORRECT
 Image_12.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_125.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_128.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_128.jpg,2,Dark spots,25-40,28.84000015258789,WRONG
-Image_128.jpg,3,Dark spots,25-40,28.829999923706055,WRONG
-Image_128.jpg,4,Dark spots,25-40,28.84000015258789,WRONG
-Image_128.jpg,5,Dark spots,25-40,28.850000381469727,WRONG
+Image_128.jpg,1,Wrinkles,40+,46.529998779296875,CORRECT
+Image_128.jpg,2,Dark spots,25-40,84.75,WRONG
+Image_128.jpg,3,Wrinkles,40+,88.56999969482422,CORRECT
+Image_128.jpg,4,Wrinkles,40+,41.790000915527344,CORRECT
+Image_128.jpg,5,Wrinkles,40+,67.5,CORRECT
 Image_13.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_14.png,1,Dark spots,25-40,28.84000015258789,WRONG
+Image_14.png,1,Wrinkles,40+,96.9800033569336,CORRECT
 Image_147.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_148.png,-,-,-,0.0,NO FACE DETECTED
-Image_149.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_149.jpg,2,Dark spots,25-40,28.809999465942383,WRONG
-Image_150.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-Image_150.jpg,2,Dark spots,25-40,28.799999237060547,WRONG
-Image_150.jpg,3,Dark spots,25-40,28.829999923706055,WRONG
-Image_150.jpg,4,Dark spots,25-40,28.81999969482422,WRONG
-Image_153.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
+Image_149.jpg,1,Wrinkles,40+,84.8499984741211,CORRECT
+Image_149.jpg,2,Wrinkles,40+,60.27000045776367,CORRECT
+Image_150.jpg,1,Wrinkles,40+,99.13999938964844,CORRECT
+Image_150.jpg,2,Dark spots,25-40,75.91999816894531,WRONG
+Image_150.jpg,3,Dark spots,25-40,63.41999816894531,WRONG
+Image_150.jpg,4,Dark spots,25-40,78.95999908447266,WRONG
+Image_153.jpg,1,Puffy eyes,20-35,77.25,WRONG
 Image_159.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_160.png,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_163.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_166.jpg,1,Dark spots,25-40,28.850000381469727,WRONG
+Image_160.png,1,Wrinkles,40+,96.9800033569336,CORRECT
+Image_163.jpg,1,Wrinkles,40+,54.52000045776367,CORRECT
+Image_166.jpg,1,Wrinkles,40+,95.27999877929688,CORRECT
 Image_168.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_169.jpg,1,Dark spots,25-40,28.809999465942383,WRONG
-Image_169.jpg,2,Dark spots,25-40,28.809999465942383,WRONG
+Image_169.jpg,1,Wrinkles,40+,74.25,CORRECT
+Image_169.jpg,2,Wrinkles,40+,75.76000213623047,CORRECT
 Image_170.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_172.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_174.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_177.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-Image_179.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_181.png,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_181.png,2,Dark spots,25-40,28.829999923706055,WRONG
-Image_219.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_221.jpg,1,Dark spots,25-40,28.84000015258789,WRONG
-Image_232.png,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_257.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_257.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+Image_172.jpg,1,Wrinkles,40+,100.0,CORRECT
+Image_174.jpg,1,Dark spots,25-40,95.05000305175781,WRONG
+Image_177.jpg,1,Wrinkles,40+,99.80999755859375,CORRECT
+Image_179.jpg,1,Wrinkles,40+,100.0,CORRECT
+Image_181.png,1,Wrinkles,40+,53.369998931884766,CORRECT
+Image_181.png,2,Wrinkles,40+,77.91000366210938,CORRECT
+Image_219.jpg,1,Wrinkles,40+,99.91000366210938,CORRECT
+Image_221.jpg,1,Wrinkles,40+,77.4800033569336,CORRECT
+Image_232.png,1,Puffy eyes,20-35,52.540000915527344,WRONG
+Image_257.jpg,1,Wrinkles,40+,47.66999816894531,CORRECT
+Image_257.jpg,2,Puffy eyes,20-35,89.91999816894531,WRONG
 Image_261.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_266.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_268.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_269.jpg,-,-,-,0.0,NO FACE DETECTED
 Image_278.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_290.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_290.jpg,2,Dark spots,25-40,28.829999923706055,WRONG
+Image_290.jpg,1,Wrinkles,40+,87.83000183105469,CORRECT
+Image_290.jpg,2,Wrinkles,40+,99.94999694824219,CORRECT
 Image_56.png,-,-,-,0.0,NO FACE DETECTED
 Image_58.jpg,-,-,-,0.0,NO FACE DETECTED
-Image_61.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_73.jpg,1,Dark spots,25-40,28.81999969482422,WRONG
-Image_78.jpg,1,Dark spots,25-40,28.829999923706055,WRONG
-Image_78.jpg,2,Dark spots,25-40,28.799999237060547,WRONG
+Image_61.jpg,1,Wrinkles,40+,91.70999908447266,CORRECT
+Image_73.jpg,1,Wrinkles,40+,87.75,CORRECT
+Image_78.jpg,1,Puffy eyes,20-35,80.44000244140625,WRONG
+Image_78.jpg,2,Puffy eyes,20-35,42.150001525878906,WRONG
 Imag_12.jpg,-,-,-,0.0,NO FACE DETECTED
 Img_12.jpg,-,-,-,0.0,NO FACE DETECTED
