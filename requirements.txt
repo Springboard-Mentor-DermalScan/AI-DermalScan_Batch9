@@ -1,9 +1,10 @@
 ipykernel==7.1.0
-tensorflow==2.15.0
-keras==2.15.0
+tensorflow==2.20.0
+keras==3.12.0
 numpy==1.26.4
 opencv-python==4.9.0.80
-matplotlib==3.8.4
+matplotlib==3.10.8
 pillow==12.0.0
 scikit-learn==1.4.2
 pandas==2.2.3
+streamlit==1.52.2
