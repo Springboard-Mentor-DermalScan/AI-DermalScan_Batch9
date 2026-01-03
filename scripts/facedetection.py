@@ -5,9 +5,9 @@ import random
 def getage(prediction,classnames):
     agemap = {
         "clear skin": (18, 30),
-        "dark spots": (30, 45),
-        "puffy eyes": (45, 60),
-        "wrinkles": (60, 100)
+        "dark spots": (30, 40),
+        "puffy eyes": (35, 50),
+        "wrinkles": (50, 100)
     }
 
     probs = prediction[0]

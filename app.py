@@ -11,6 +11,13 @@ import time
 
 st.title("Facial Skin Age Detection")
 
+st.markdown("""
+Upload a facial image to detect:
+- Skin condition
+- Estimated age group
+- Confidence score
+""")
+
 @st.cache_resource
 def load_model():
     return tf.keras.models.load_model(os.path.join("models", "resnet_best_model.h5"))
@@ -73,5 +80,9 @@ if uploaded:
             (0,255,0),
             2
         )
+        st.subheader("Prediction Result")
         preview.image(img, use_container_width=True)
+        st.success(f"Skin Type: {results['label']}")
+        st.info(f"Confidence: {results['confidence']:.2f}%")
+        st.write(f"Estimated Age:  {results['age']}")
         st.success(f"Processing time: {processing_time:.3f} seconds")
