@@ -48,7 +48,7 @@ def preprocess_face(face):
 #app routes
 @app.route("/")
 def index():
-	# 🔥 Start fresh on new page load
+
 	session["predictions"] = []
 	return render_template("index.html")
 
@@ -93,11 +93,7 @@ def predict():
 	idx = int(np.argmax(preds))
 	label = class_labels[idx]
 	confidence = float(preds[idx] * 100)
-	is_confident = confidence >= 50.0
-	confidence_status = "CORRECT" if is_confident else "WRONG"
-	confidence_note = (
-	"Prediction confidence is low. Please upload a clearer image." if not is_confident else "Prediction confidence is sufficient."
-)
+
 
 
 	min_age, max_age = age_ranges[label]
@@ -152,7 +148,6 @@ def predict():
 	"class_prob": round(confidence, 2),
 	"age_estimation": predicted_age,
 	"detector_conf": round(confidence, 2),
-	"status": confidence_status   # ✅ NEW
   })
 
 
@@ -162,8 +157,6 @@ def predict():
 	"label": label,
 	"confidence": round(confidence, 2),
 	"age": predicted_age,
-	"status": confidence_status,        # ✅ NEW
-	"note": confidence_note,             # ✅ NEW
 	"annotated_image": f"/static/outputs/{filename}",
 	"download_url": f"/download_image/{filename}",
 	"table": session["predictions"]
