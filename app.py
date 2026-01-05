@@ -58,31 +58,45 @@ if uploaded:
         if len(faces) == 0:
             st.warning("No face detected in the image. Please upload a clear, frontal face image.")
             st.stop()   
+        print(faces)
         
-        x, y, w, h = faces[0]
-        faceimg = img[y:y+h, x:x+w]
+        
+        results_list = []
+        start_time = time.time()
 
-        faceimg = cv2.resize(faceimg,(224,224))
-        faceimg = preprocess_input(faceimg)
-        faceimg = np.expand_dims(faceimg,axis=0)
+        for i, (x, y, w, h) in enumerate(faces):
+            faceimg = img[y:y+h, x:x+w]
 
-        results = predict(faceimg,model,faces)
-        end_time = time.time()
-        processing_time = end_time - start_time
+            faceimg = cv2.resize(faceimg, (224, 224))
+            faceimg = preprocess_input(faceimg)
+            faceimg = np.expand_dims(faceimg, axis=0)
 
-        cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), 2)
-        cv2.putText(
-            img,
-            f"{results['label']} ({results['confidence']:.2f}%) Age:{results['age']}",
-            (x, y-10),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.8,
-            (0,255,0),
-            2
-        )
+            results = predict(faceimg, model, faces)
+            results_list.append(results)
+
+            cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+
+            cv2.putText(
+                img,
+                f"{results['label']} ({results['confidence']:.2f}%) Age:{results['age']}",
+                (x, y - 10),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.7,
+                (0, 255, 0),
+                2
+            )
+            end_time = time.time()
+            processing_time = end_time - start_time
+
+
+
         st.subheader("Prediction Result")
         preview.image(img, use_container_width=True)
-        st.success(f"Skin Type: {results['label']}")
-        st.info(f"Confidence: {results['confidence']:.2f}%")
-        st.write(f"Estimated Age:  {results['age']}")
-        st.success(f"Processing time: {processing_time:.3f} seconds")
+
+        st.info(f"Detected {len(results_list)} face(s)")
+
+        for idx, res in enumerate(results_list, start=1):
+            st.markdown(f"### Face {idx}")
+            st.success(f"Skin Type: {res['label']}")
+            st.info(f"Confidence: {res['confidence']:.2f}%")
+            st.write(f"Estimated Age: {res['age']}")
