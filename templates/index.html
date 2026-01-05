@@ -71,8 +71,6 @@
 					<th>class_prob</th>
 					<th>age_estimation</th>
 					<th>detector_conf</th>
-					<th>status</th>
-
 				</tr>
 			</thead>
 			<tbody></tbody>
@@ -130,17 +128,12 @@ uploadInput.addEventListener("change", () => {
 				data.annotated_image + "?t=" + Date.now();
 
 			
-			let statusColor = data.status === "CORRECT" ? "green" : "red";
+			
 			resultText.innerHTML = `The predicted skin condition is
 			<b>${data.label}</b> with a confidence score of
 			<b>${data.confidence}%</b>.
 			The age is estimated to be <b>${data.age}</b>.
 			<br><br>
-			<span style="color:${statusColor}; font-weight:600;">
-			Status: ${data.status}
-			</span>
-			<br>
-			<small>${data.note}</small>
 			`;
 
 			
@@ -157,8 +150,7 @@ uploadInput.addEventListener("change", () => {
 					<td>${r.class_prob}</td>
 					<td>${r.age_estimation}</td>
 					<td>${r.detector_conf}</td>
-					<td style="color:${r.status === 'CORRECT' ? 'green' : 'red'}">
-	                ${r.status}</td>
+
 
 				`;
 				tbody.appendChild(tr);
