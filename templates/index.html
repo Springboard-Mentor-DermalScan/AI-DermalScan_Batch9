@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DermalScan – AI Skin Analysis</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<div class="header">
+	<h1>Welcome to AI Skin Analysis</h1>
+	<h2>DermalScan</h2>
+</div>
+
+<!-- ================= UPLOAD SECTION ================= -->
+<div class="upload-section">
+	<label class="upload-btn">
+		<input type="file" id="imageUpload" accept="image/*" hidden>
+		☁ Upload Image or Drag & Drop
+	</label>
+</div>
+
+
+<div class="app-container">
+
+	<div class="image-section">
+
+		<!-- Uploaded Image -->
+		<div class="image-card">
+			<div class="image-box">
+				<img id="uploadedImage" />
+			</div>
+			<span class="image-label">Uploaded Image</span>
+		</div>
+
+		<!-- Annotated Image -->
+		<div class="image-card">
+			<div class="image-box">
+				<div class="loader" id="loader" style="display:none;"></div>
+				<img id="annotatedImage" />
+			</div>
+			<button class="download-btn" id="downloadImgBtn">
+				⬇ Download Annotated Image
+			</button>
+		</div>
+
+	</div>
+
+	
+	<div class="result-box">
+		<p>Upload an image to see prediction.</p>
+	</div>
+
+	<div class="predictions-section">
+		<div class="predictions-header">
+			<h3>Predictions</h3>
+			<button class="download-btn" id="downloadCsvBtn">
+				⬇ Download Predictions CSV
+			</button>
+		</div>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Filename</th>
+					<th>box_x1</th>
+					<th>box_y1</th>
+					<th>box_x2</th>
+					<th>box_y2</th>
+					<th>class</th>
+					<th>class_prob</th>
+					<th>age_estimation</th>
+					<th>detector_conf</th>
+					<th>status</th>
+
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+
+</div>
+
+
+<script>
+const uploadInput = document.getElementById("imageUpload");
+const uploadedImage = document.getElementById("uploadedImage");
+const annotatedImage = document.getElementById("annotatedImage");
+const loader = document.getElementById("loader");
+const resultText = document.querySelector(".result-box p");
+const tbody = document.querySelector("tbody");
+const downloadImgBtn = document.getElementById("downloadImgBtn");
+const downloadCsvBtn = document.getElementById("downloadCsvBtn");
+
+uploadInput.addEventListener("change", () => {
+
+	const file = uploadInput.files[0];
+	if (!file) return;
+
+
+	const previewURL = URL.createObjectURL(file);
+	uploadedImage.src = previewURL;
+
+	
+	const fd = new FormData();
+	fd.append("image", file);
+
+	
+	annotatedImage.src = "";
+	loader.style.display = "block";
+	resultText.innerHTML = "Analyzing image, please wait...";
+
+	
+	fetch("/predict", {
+		method: "POST",
+		body: fd
+	})
+	.then(res => {
+		if (!res.ok) throw new Error("Prediction failed");
+		return res.json();
+	})
+	.then(data => {
+
+		setTimeout(() => {
+
+			loader.style.display = "none";
+
+			
+			annotatedImage.src =
+				data.annotated_image + "?t=" + Date.now();
+
+			
+			let statusColor = data.status === "CORRECT" ? "green" : "red";
+			resultText.innerHTML = `The predicted skin condition is
+			<b>${data.label}</b> with a confidence score of
+			<b>${data.confidence}%</b>.
+			The age is estimated to be <b>${data.age}</b>.
+			<br><br>
+			<span style="color:${statusColor}; font-weight:600;">
+			Status: ${data.status}
+			</span>
+			<br>
+			<small>${data.note}</small>
+			`;
+
+			
+			tbody.innerHTML = "";
+			data.table.forEach(r => {
+				const tr = document.createElement("tr");
+				tr.innerHTML = `
+					<td>${r.filename}</td>
+					<td>${r.box_x1}</td>
+					<td>${r.box_y1}</td>
+					<td>${r.box_x2}</td>
+					<td>${r.box_y2}</td>
+					<td>${r.class}</td>
+					<td>${r.class_prob}</td>
+					<td>${r.age_estimation}</td>
+					<td>${r.detector_conf}</td>
+					<td style="color:${r.status === 'CORRECT' ? 'green' : 'red'}">
+	                ${r.status}</td>
+
+				`;
+				tbody.appendChild(tr);
+			});
+
+		
+			downloadImgBtn.onclick = () => {
+				window.location.href = data.download_url;
+			};
+
+		
+			downloadCsvBtn.onclick = () => {
+				window.location.href = "/download_csv";
+			};
+
+		}, 5000);
+
+	})
+	.catch(err => {
+		console.error(err);
+		loader.style.display = "none";
+		alert("Image upload failed. Check console.");
+	});
+});
+</script>
+
+
+</body>
+</html>
