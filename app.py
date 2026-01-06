@@ -8,6 +8,27 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 import os
 import time
 
+st.set_page_config(
+    page_title="Facial Age Detection",
+    layout="wide"
+)
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(
+        135deg,
+        #08203e,
+        #557c93
+);
+
+    }
+    """,
+    unsafe_allow_html=True
+)
+
+
 
 st.title("Facial Skin Age Detection")
 
@@ -37,7 +58,7 @@ if uploaded:
     img = Image.open(uploaded).convert("RGB")
     img = np.array(img)
     preview = st.empty()
-    preview.image(img, caption="Uploaded image", use_container_width=True)
+    preview.image(img, caption="Uploaded image", width=900)
 
     start_time = time.time()
 
@@ -85,13 +106,10 @@ if uploaded:
                 (0, 255, 0),
                 2
             )
-            end_time = time.time()
-            processing_time = end_time - start_time
-
-
+        
 
         st.subheader("Prediction Result")
-        preview.image(img, use_container_width=True)
+        preview.image(img, width=900)
 
         st.info(f"Detected {len(results_list)} face(s)")
 
@@ -100,3 +118,7 @@ if uploaded:
             st.success(f"Skin Type: {res['label']}")
             st.info(f"Confidence: {res['confidence']:.2f}%")
             st.write(f"Estimated Age: {res['age']}")
+        end_time = time.time()
+        processing_time = end_time - start_time
+        st.info(f"Processing time: {processing_time:.2f} seconds")
+    
