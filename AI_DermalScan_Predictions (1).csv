@@ -1,0 +1,9 @@
+File Name,Disease,Prediction Confidence (%),Age Bucket,Predicted Age,Status
+clear_skin_095.jpg,Clear skin,47.52,19-25,24,Normal
+7.jpg,Wrinkles,46.31,36-50,47,Risk
+32.jpg,Puffy eyes,36.87,36-50,36,Moderate
+13.jpg,Clear skin,27.08,19-25,23,Normal
+6b6b0428-e39e-4781-8cb3-4977861d6608.jpg,Dark spots,46.02,26-35,32,Moderate
+WhatsApp Image 2026-01-06 at 11.59.19 PM.jpeg,Puffy eyes,45.66,36-50,37,Moderate
+10.jpg,Wrinkles,44.18,36-50,47,Risk
+clear_skin_002.jpg,Clear skin,47.53,19-25,24,Normal
