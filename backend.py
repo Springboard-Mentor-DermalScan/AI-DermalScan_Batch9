@@ -18,21 +18,20 @@ CORS(app)
 def index():
     return open("index.html").read()
 
-# -------- LOAD FACE CASCADE (SAFE) -------
+
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 if face_cascade.empty():
-    print("⚠ Face cascade not loaded properly")
+    print(" Face cascade not loaded properly")
     face_cascade = None
 else:
-    print("✅ Face cascade loaded successfully")
+    print("Face cascade loaded successfully")
 
-# -------- LOAD MODEL (SAFE FALLBACK) -----
 MODEL = None
 if os.path.exists(MODEL_PATH):
     try:
         from tensorflow.keras.models import load_model
         MODEL = load_model(MODEL_PATH)
-        print("✅ Model loaded successfully")
+        print(" Model loaded successfully")
     except Exception as e:
         print("⚠ Model load failed, using simulation:", e)
 
@@ -64,7 +63,7 @@ def problem_box(face, label):
 @app.route("/analyze", methods=["POST"])
 def analyze():
     try:
-        print("🔍 Starting analysis...")
+        print(" Starting analysis...")
         if "image" not in request.files:
             return jsonify({"error": "No image uploaded"}), 400
 
@@ -100,20 +99,24 @@ def analyze():
                 else:
                     crop = cv2.resize(img, (224, 224)) / 255.0
                 pred = MODEL.predict(np.expand_dims(crop, 0))[0]
-                print(f"📊 Prediction: {pred}")
+                print(f"Prediction: {pred}")
                 idx = int(np.argmax(pred))
                 confidence = float(pred[idx] * 100)
             else:
                 idx = randint(0, 3)
                 confidence = round(uniform(85, 99), 2)
-                print("🎲 Using simulation")
+                print(" Using simulation")
 
             label = CLASS_NAMES[idx]
             age = estimate_age(label)
 
             px, py, pw, ph = problem_box((fx, fy, fw, fh), label)
 
-            cv2.rectangle(img, (px, py), (px+pw, py+ph), (0,255,0), 3)
+            # Add text above the bounding box
+            text = f"{label}, Age: {age}, Conf: {confidence:.1f}%"
+            cv2.putText(img, text, (px, py - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (128,0,128), 2)
+
+            cv2.rectangle(img, (px, py), (px+pw, py+ph), (128,0,128), 3)
 
             detections.append({
                 "label": label,
@@ -135,7 +138,7 @@ def analyze():
         _, buffer = cv2.imencode(".jpg", img)
         img_b64 = base64.b64encode(buffer).decode()
 
-        print("✅ Analysis completed successfully")
+        print("Analysis completed successfully")
         return jsonify({
             "detections": detections,
             "breakdown": breakdown,
@@ -143,7 +146,7 @@ def analyze():
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
     except Exception as e:
-        print(f"❌ Error in analysis: {e}")
+        print(f" Error in analysis: {e}")
         return jsonify({"error": f"Analysis failed: {str(e)}"}), 500
 
 # ----------------------------------------
