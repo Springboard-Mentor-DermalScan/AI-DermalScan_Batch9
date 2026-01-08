@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIDermalScan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1><b>AI Dermal Scan</b></h1>
+<p class="subtitle">AI-Powered Facial Skin Aging Analysis</p>
+
+<div class="container">
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Analyze Image</button>
+    </form>
+
+{% if current %}
+<div class="result">
+
+    <h2>Results</h2>
+
+    <div class="image-row">
+        <div>
+            <h3>Original Image</h3>
+            <img src="{{ original_image }}">
+        </div>
+
+        <div>
+            <h3>Annotated Image</h3>
+            <img src="{{ annotated_image }}">
+        </div>
+    </div>
+
+    <h3>Prediction</h3>
+    <table>
+        <tr>
+            {% for key in current %}
+            <th>{{ key }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for value in current.values() %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+    </table>
+    <h4 style="margin-top:20px;">Prediction Confidence</h4>
+
+    <div class="confidence-bar">
+        <div class="confidence-fill"
+            style="width: {{ current.class_prob * 100 }}%;"></div>
+    </div>
+
+    <p class="confidence-text">
+        {{ (current.class_prob * 100) | round(1) }}%
+    </p>
+
+    <div class="download-buttons">
+        <a href="/download_csv" class="btn">⬇ Download CSV</a>
+        <a href="{{ annotated_image }}" download class="btn">⬇ Download Annotated Image</a>
+    </div>
+
+</div>
+{% endif %}
+
+
+{% if previous %}
+<div class="result">
+    <h3>Previous Predictions</h3>
+    <table>
+        <tr>
+            {% for key in previous[0].keys() %}
+            <th>{{ key }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in previous %}
+        <tr>
+            {% for value in row.values() %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+</div>
+<footer> 
+    <p style="text-align: center;">&copy; 2026 AIDermalScan</p>
+</footer>
+</body>
+
+
+</html>
