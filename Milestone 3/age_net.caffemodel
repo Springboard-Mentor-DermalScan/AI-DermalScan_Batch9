@@ -1,0 +1,9 @@
+[IMPORTANT]
+This is a placeholder file to bypass GitHub web upload limits.
+
+The real 'age_net.caffemodel' is 44MB and could not be hosted here directly via the web interface.
+
+PLEASE DOWNLOAD THE REAL MODEL FILE FROM:
+https://github.com/spmallick/learnopencv/raw/master/AgeGender/age_net.caffemodel
+
+After downloading, delete this placeholder file and paste the real file in this directory with the name 'age_net.caffemodel'.
