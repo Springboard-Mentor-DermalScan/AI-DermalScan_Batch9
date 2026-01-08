@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI DermaScan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef2ff,#fdf2f8);
+    color:#111827;
+}
+
+/* ---------- Header ---------- */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+header h2{
+    color:#2563eb;
+    font-weight:700;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111827;
+    font-weight:500;
+    margin-left:25px;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* ---------- Hero ---------- */
+.hero{
+    text-align:center;
+    margin-top:80px;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:800;
+}
+
+.hero span{
+    color:#2563eb;
+}
+
+.hero p{
+    max-width:700px;
+    margin:16px auto 0;
+    font-size:16px;
+    color:#6b7280;
+}
+
+/* ---------- Upload Card ---------- */
+.upload-card{
+    width:360px;
+    background:white;
+    margin:50px auto;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.upload-card h3{
+    margin-bottom:10px;
+}
+
+.upload-card p{
+    font-size:14px;
+    color:#6b7280;
+    margin-bottom:18px;
+}
+
+.upload-card input{
+    margin-top:8px;
+}
+
+.upload-card button{
+    margin-top:24px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#6d28d9,#2563eb);
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.upload-card button:hover{
+    opacity:.9;
+}
+
+/* ---------- Spinner ---------- */
+.spinner{
+    display:none;
+    margin:20px auto 0;
+    width:40px;
+    height:40px;
+    border:4px solid #e5e7eb;
+    border-top:4px solid #2563eb;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+/* ---------- Results ---------- */
+.results{
+    max-width:800px;
+    margin:60px auto;
+    padding:0 16px;
+    opacity:0;
+    animation:fadeIn 1s forwards;
+}
+
+@keyframes fadeIn{
+    to{opacity:1;}
+}
+
+.results h3{
+    margin-bottom:20px;
+}
+
+/* Result Image */
+.results img{
+    max-width:85%;
+    display:block;
+    margin:0 auto 20px;
+    border-radius:12px;
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+th{
+    background:#f3f4f6;
+    font-size:14px;
+}
+
+th,td{
+    padding:8px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+    font-size:14px;
+}
+
+.bar{
+    width:100%;
+    height:8px;
+    background:#e5e7eb;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:#16a34a;
+}
+
+/* Downloads */
+.downloads{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.downloads a{
+    padding:8px 14px;
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    border-radius:16px;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>AI DermaScan</h2>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Detect Facial <span>Skin Aging</span> Using AI</h1>
+    <p>
+        Upload a facial image and get instant AI-powered skin condition prediction
+        with confidence score and age estimation.
+    </p>
+</section>
+
+<section class="upload-card">
+    <h3>Upload Image</h3>
+    <p>Upload a clear frontal face image (JPG / PNG)</p>
+
+    <form method="POST" enctype="multipart/form-data" onsubmit="showSpinner()">
+        <input type="file" name="image" required>
+        <button type="submit">Analyze Image</button>
+    </form>
+
+    <div class="spinner" id="spinner"></div>
+</section>
+
+{% if image %}
+<section class="results">
+    <h3>Results</h3>
+
+    <img src="{{ image }}">
+
+    <table>
+        <tr>
+            <th>Face</th>
+            <th>Class</th>
+            <th>Confidence</th>
+            <th>Age</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>
+                {{ row[2] }}
+                <div class="bar">
+                    <div class="fill" style="width:{{ row[2].replace('%','') }}%"></div>
+                </div>
+            </td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div class="downloads">
+        <a href="/download_image">Download Image</a>
+        <a href="/download_csv">Download Table</a>
+    </div>
+</section>
+{% endif %}
+
+<script>
+function showSpinner(){
+    document.getElementById("spinner").style.display="block";
+}
+</script>
+
+</body>
+</html>
