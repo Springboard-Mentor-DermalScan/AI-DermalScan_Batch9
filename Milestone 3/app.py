@@ -8,7 +8,7 @@ import io
 import plotly.graph_objects as go 
 
 # CONFIGURATION & NEON UI 
-st.set_page_config(page_title="AI DermalScan Pro", layout="wide")
+st.set_page_config(page_title="AI DermalScan", layout="wide")
 
 st.markdown("""
 <style>
@@ -168,8 +168,7 @@ def create_neon_pie_chart(stats_dict):
     return fig
 
 # UI LAYOUT 
-st.title("🧬 AI DermalScan Pro")
-st.write("Group Photo Compatible: Detects multiple people in one shot.")
+st.title("🧬 AI DermalScan")
 
 uploaded_files = st.file_uploader("Upload Images", type=['jpg', 'png', 'jpeg'], accept_multiple_files=True)
 
@@ -231,4 +230,5 @@ if uploaded_files:
             st.dataframe(report_df, use_container_width=True)
             
             csv = report_df.to_csv(index=False).encode('utf-8')
+
             st.download_button("📥 Download Batch CSV", csv, "dermalscan_results.csv", "text/csv")
