@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>DermalScan – AI Skin Analysis</title>
 	<link rel="stylesheet" href="/static/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -12,11 +13,10 @@
 	<h2>DermalScan</h2>
 </div>
 
-<!-- ================= UPLOAD SECTION ================= -->
 <div class="upload-section">
 	<label class="upload-btn">
 		<input type="file" id="imageUpload" accept="image/*" hidden>
-		☁ Upload Image or Drag & Drop
+		<i class='fas fa-image' style="font-size:15px; margin-right:4px;"></i>Upload Image For Analysis
 	</label>
 </div>
 
@@ -40,7 +40,7 @@
 				<img id="annotatedImage" />
 			</div>
 			<button class="download-btn" id="downloadImgBtn">
-				⬇ Download Annotated Image
+				<i class='fas fa-save' style="font-size:15px; margin-right:4px;"></i>Download Annotated Image
 			</button>
 		</div>
 
@@ -55,26 +55,30 @@
 		<div class="predictions-header">
 			<h3>Predictions</h3>
 			<button class="download-btn" id="downloadCsvBtn">
-				⬇ Download Predictions CSV
+				<i class="fas fa-download" style="font-size:15px; margin-right:4px;"></i>Download Predictions CSV
 			</button>
 		</div>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Filename</th>
-					<th>box_x1</th>
-					<th>box_y1</th>
-					<th>box_x2</th>
-					<th>box_y2</th>
-					<th>class</th>
-					<th>class_prob</th>
-					<th>age_estimation</th>
-					<th>detector_conf</th>
-				</tr>
-			</thead>
-			<tbody></tbody>
-		</table>
+        
+		<!--Predictions Table-->
+		<div class="table-container">
+			<table>
+				<thead>
+					<tr>
+						<th>face_id</th>
+						<th>Filename</th>
+						<th>box_x1</th>
+						<th>box_y1</th>
+						<th>box_x2</th>
+						<th>box_y2</th>
+						<th>class</th>
+						<th>class_prob</th>
+						<th>age_estimation</th>
+						<th>detector_conf</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
 	</div>
 
 </div>
@@ -119,28 +123,25 @@ uploadInput.addEventListener("change", () => {
 	})
 	.then(data => {
 
-		setTimeout(() => {
-
 			loader.style.display = "none";
 
-			
 			annotatedImage.src =
 				data.annotated_image + "?t=" + Date.now();
 
-			
-			
-			resultText.innerHTML = `The predicted skin condition is
-			<b>${data.label}</b> with a confidence score of
-			<b>${data.confidence}%</b>.
-			The age is estimated to be <b>${data.age}</b>.
-			<br><br>
-			`;
+			if (!data.multi_face && data.table.length === 1) {
+				const r = data.table[0];
+				resultText.innerHTML = `The predicted skin condition is <b>${r.class}</b>
+				with a confidence score of <b>${r.class_prob}%</b>. 
+				The age is estimated to be <b>${r.age_estimation}</b>.`;
+			} else {
+				resultText.innerHTML = `${data.result_text}`;
 
-			
+			}
 			tbody.innerHTML = "";
 			data.table.forEach(r => {
 				const tr = document.createElement("tr");
 				tr.innerHTML = `
+					<td>${r.face_id}</td>
 					<td>${r.filename}</td>
 					<td>${r.box_x1}</td>
 					<td>${r.box_y1}</td>
@@ -150,24 +151,17 @@ uploadInput.addEventListener("change", () => {
 					<td>${r.class_prob}</td>
 					<td>${r.age_estimation}</td>
 					<td>${r.detector_conf}</td>
-
-
 				`;
 				tbody.appendChild(tr);
 			});
 
-		
 			downloadImgBtn.onclick = () => {
 				window.location.href = data.download_url;
 			};
 
-		
 			downloadCsvBtn.onclick = () => {
 				window.location.href = "/download_csv";
 			};
-
-		}, 5000);
-
 	})
 	.catch(err => {
 		console.error(err);
