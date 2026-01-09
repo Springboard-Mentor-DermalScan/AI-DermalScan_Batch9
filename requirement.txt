@@ -6,3 +6,6 @@ pandas==2.2.3
 scikit-learn==1.6.1
 tqdm==4.65.0
 h5py== 3.10.0
+streamlit==1.32.2
+opencv-python==4.8.1.78
+pillow==12.1.0
