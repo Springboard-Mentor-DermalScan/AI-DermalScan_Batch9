@@ -3,7 +3,7 @@ Deep Learning–Powered Skin Condition Analysis & Age Estimations
 
 
 
-⭐ Project Overview
+## ⭐ Project Overview
 
 DermalScan is an AI-driven facial skin analysis system that detects skin conditions such as:
 
@@ -59,8 +59,8 @@ brijesh/data
 
 
 
-🧠 Core Features
-🔍 1. Skin Condition Classification
+## 🧠 Core Features
+1. Skin Condition Classification
 
 MobileNetV2 CNN model
 
@@ -73,21 +73,24 @@ Outputs confidence score (%)
 
 
 
-📦 2. Age Estimation
+## 📦 2. Age Estimation
 
 Class-based artificial age buckets:
 
 Class	Age Range
+
 Clear Skin	22–28
+
 Dark Spot	30–38
+
 Puffy Eyes	35–45
+
 Wrinkles	70–85
 
 
 
 
-85
-🎯 3. Bounding Box Annotation
+## 🎯 3. Bounding Box Annotation
 
 Fixed box covering central face region
 
@@ -95,7 +98,11 @@ Prediction text: Class (Confidence%) | Age: ##
 
 Saved as static/outputs/result.jpg
 
-📊 4. CSV Export
+
+
+
+
+## 📊 4. CSV Export
 
 Saved as result.csv with:
 
@@ -109,7 +116,12 @@ confidence
 
 age bucket
 
-🌐 5. Full Web Interface (Flask)
+
+
+
+
+
+## 🌐 5. Full Web Interface (Flask)
 
 Upload facial image
 
@@ -122,7 +134,7 @@ Download button for image & CSV
 
 
 
-🚀 Installation
+## 🚀 Installation
 
 1. Clone Repository
 
@@ -132,6 +144,170 @@ cd Brijesh-Rath
 3. Install Dependencies
 
 pip install -r requirements.txt
+
+
+
+
+## ▶️ Run the Application
+
+python app.py
+
+
+Then open in browser:
+
+http://127.0.0.1:5000/
+
+
+
+
+
+
+
+## 🏗️ Project Workflow (Backend + UI Flow)
+
+I open the web UI
+
+I upload an image
+
+Flask receives & saves image → static/uploads/
+
+Backend loads model
+
+Image is read via OpenCV
+
+Preprocessing → resize → normalize
+
+Model predicts class probabilities
+
+Backend assigns age bucket
+
+Backend draws bounding box + prediction text
+
+Backend saves annotated image → static/outputs/
+
+Backend generates CSV log
+
+UI displays original + predicted image
+
+UI displays results table
+
+I download annotated image & CSV
+
+
+
+
+
+## 📊 Model Performance Summary
+
+Model Used: MobileNetV2 (Transfer Learning)
+
+Input Size: 224x224
+
+Optimizer: Adam
+
+Loss: Categorical Crossentropy
+
+Accuracy Achieved: >90% on validation dataset
+
+
+
+
+
+
+## 🧪 Technologies Used
+
+Category	Tools
+
+Programming Language	Python
+
+DL Framework	TensorFlow / Keras
+
+Computer Vision	OpenCV
+
+Web Framework	Flask
+
+Frontend	HTML, CSS
+
+Data Logging	Pandas (CSV Export)
+
+
+
+
+
+## 🛠 Requirements (for running the project)
+
+python==3.13
+
+tensorflow==2.15.0
+
+keras==2.15.0
+
+numpy==1.26.4
+
+opencv-python==4.9.0.80
+
+matplotlib==3.8.2
+
+scikit-learn==1.4.0
+
+pillow==10.2.0
+
+notebook==7.1.0
+
+
+
+
+
+## 🎨 User Interface Preview
+
+✔ Dual image frame (original + annotated)
+
+✔ Results table (class, confidence, age, box coords)
+
+✔ Stylish gradient theme
+
+✔ Neon cyan borders
+
+✔ Fully responsive
+
+
+
+
+
+## 🔮 Future Scope
+
+Integrate real facial landmark detection (dlib or mediapipe)
+
+Add multi-class multi-region detection (cheeks, forehead, eye bags)
+
+Deploy model as REST API on cloud (Render / AWS / Azure)
+
+Replace MobilenetV2 with EfficientNetB0 or ViT for higher accuracy
+
+Add real-time camera streaming mode
+
+Add multi-skin-type dataset for dermatology-grade predictions
+
+Build a mobile app using Flutter or React Native
+
+
+
+
+
+## 🏁 Final Conclusion
+
+DermalScan successfully meets its goal of delivering a fast, lightweight, and accurate AI-based skin and age detection system. The project smoothly integrates deep learning, computer vision, and web development, providing:
+
+Reliable predictions
+
+Clean and modern UI
+
+Easy export & logging
+
+Fully documented workflow
+
+The system is flexible enough to be extended into a full dermatology assistant, skincare analysis app, or age estimation tool.
+
 
 
 
