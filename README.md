@@ -36,14 +36,23 @@ This project is structured according to an 8-week milestone plan, covering datas
 brijesh/data
 
 │── app.py                     # Flask backend
+
 │── inference.py               # Model loading + preprocessing + prediction
+
 │── templates/
+
 │     └── index.html           # UI Template
+
 │── static/
+
 │     ├── uploads/             # User-uploaded images
+
 │     └── outputs/             # Annotated results + CSV logs
+
 │── skin_classifier_mobilenetv2.h5  # Trained model
+
 │── requirements.txt
+
 │── README.md
 
 
