@@ -31,7 +31,7 @@ This project is structured according to an 8-week milestone plan, covering datas
 
 
 
-
+## Schema
 
 brijesh/data
 
@@ -216,7 +216,7 @@ Accuracy Achieved: >90% on validation dataset
 
 ## 🧪 Technologies Used
 
-Category	Tools
+## Category	Tools
 
 Programming Language	Python
 
