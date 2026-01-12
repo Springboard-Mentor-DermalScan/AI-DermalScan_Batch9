@@ -1,6 +1,3 @@
-## ✨ DermalScan – AI Facial Skin & Age Detection
-Deep Learning–Powered Skin Condition Analysis & Age Estimations
-
 <p align="center">
   <img src="https://img.shields.io/badge/DL-Classification%20|%20CNN-blue" />
   <img src="https://img.shields.io/badge/Python-3.10+-yellow" />
@@ -8,6 +5,10 @@ Deep Learning–Powered Skin Condition Analysis & Age Estimations
   <img src="https://img.shields.io/badge/Status-Completed-success" />
 </p>
 
+
+
+## ✨ DermalScan – AI Facial Skin & Age Detection
+Deep Learning–Powered Skin Condition Analysis & Age Estimations
 
 
 
