@@ -69,7 +69,8 @@ brijesh/data
 
 
 ## 🧠 Core Features
-1. Skin Condition Classification
+
+Skin Condition Classification
 
 MobileNetV2 CNN model
 
