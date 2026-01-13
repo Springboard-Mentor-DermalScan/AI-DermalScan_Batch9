@@ -28,36 +28,36 @@ This project integrates CNN-based deep learning models, face detection, and a re
 
 🧠 Skin Conditions Detected
 
-Clear Skin
+  --> Clear Skin
 
-Dark Spots
+  --> Dark Spots
 
-Puffy Eyes
+  --> Puffy Eyes
 
-Wrinkles
+  --> Wrinkles
 
 🏗️ System Architecture (High Level)
 
-User uploads an image through the web interface
+  --> User uploads an image through the web interface
 
-Backend detects faces using OpenCV DNN face detector
+  --> Backend detects faces using OpenCV DNN face detector
 
-Each detected face is cropped and preprocessed
+  --> Each detected face is cropped and preprocessed
 
-Trained CNN model (EfficientNetB0) predicts skin condition
+  --> Trained CNN model (EfficientNetB0) predicts skin condition
 
-Confidence score and age are generated
+  --> Confidence score and age are generated
 
-Results are visualized and made downloadable
+  --> Results are visualized and made downloadable
 
 🧪 Model Details
 
 The skin condition classifier was trained using a public facial skin dataset with four classes.
 
 📊 Model Performance Comparison
-Model	Training Accuracy	Validation Accuracy
-EfficientNetB0	90.36%	95.63%
-MobileNetV2	94.69%	87.92%
+Model	              Training Accuracy	        Validation Accuracy
+EfficientNetB0	         90.36%	                   95.63%
+MobileNetV2	             94.69%	                   87.92%
 
 ✔ Final model used: EfficientNetB0
 ✔ Selected for better generalization and validation performance
@@ -66,45 +66,46 @@ MobileNetV2	94.69%	87.92%
 Instead, a Jupyter Notebook demonstrating the full training process is included.
 
 🧰 Tools & Technologies
-Languages
+  Languages
 
-Python
+  --> Python
 
-Libraries & Frameworks
+  Libraries & Frameworks
 
-TensorFlow / Keras
+  --> TensorFlow / Keras
 
-OpenCV
+  --> OpenCV
 
-NumPy
+  --> NumPy
 
-Pandas
+  --> Pandas
 
-Matplotlib
+  --> Matplotlib
 
-Pillow
+  --> Pillow
 
-SciPy
+  --> SciPy
 
-OS
+  --> OS
 
-Web Technologies
+  Web Technologies
 
-Flask
+  --> Flask
 
-HTML
+  --> HTML
 
-CSS
+  --> CSS
 
-Platforms
+  Platforms
 
-Jupyter Notebook
+  --> Jupyter Notebook
 
-VS Code
+  --> VS Code
 
-GitHub
+  --> GitHub
 
 📁 Project Structure
+
 DermalScan/
 │
 ├── app.py                    # Flask backend
@@ -127,103 +128,101 @@ Follow these steps carefully 👇
 
 1️⃣ Download the Project
 
-Option A: Download ZIP
+  Option A: Download ZIP
 
-Go to the GitHub repository
+  --> Go to the GitHub repository
 
-Click Code → Download ZIP
+  --> Click Code → Download ZIP
 
-Extract the ZIP file
+  --> Extract the ZIP file
 
-Option B: Clone Repository
+  Option B: Clone Repository
 
-git clone <repository-url>
-cd DermalScan
+  --> git clone <repository-url>  #copy and paste the repo link in the <repository-url> place
+  --> cd DermalScan
 
 2️⃣ Create Virtual Environment (Recommended)
-python -m venv venv
+  python -m venv venv
 
+  Activate it:
 
-Activate it:
+  Windows
 
-Windows
+  --> venv\Scripts\activate
 
-venv\Scripts\activate
+  Mac/Linux
 
-
-Mac/Linux
-
-source venv/bin/activate
+  --> source venv/bin/activate
 
 3️⃣ Install Dependencies
-pip install -r requirements.txt
+
+  pip install -r requirements.txt
 
 4️⃣ Ensure Required Files
 
-Make sure the following files are present:
+  Make sure the following files are present:
 
-deploy.prototxt
+  --> deploy.prototxt
 
-res10_300x300_ssd_iter_140000.caffemodel
+  --> res10_300x300_ssd_iter_140000.caffemodel
 
-Trained model file (place inside project root)
+  Trained model file (place inside project root)
 
-⚠️ The trained model (best_dermalscan_model.h5) should be added manually if not included.
+⚠️ The trained model (model.h5) should be added manually if not included.
 
 5️⃣ Run the Application
-python app.py
+
+  python app.py
 
 6️⃣ Open in Browser
 
-Visit:
+  Visit:
+  http://127.0.0.1:5000
 
-http://127.0.0.1:5000
-
-
-Upload an image and view the results 🎉
+  Upload an image and view the results 🎉
 
 📸 Output Description
 
-Annotated image with:
+  Annotated image with:
 
-Face ID (Face 1, Face 2, …)
+  --> Face ID (Face 1, Face 2, …)
 
-Skin condition
+  --> Skin condition
 
-Confidence percentage
+  --> Confidence percentage
 
-Age estimate
+  --> Age estimate
 
-Detailed analysis table:
+  Detailed analysis table:
 
-Bounding box coordinates (x1, y1, x2, y2)
+  --> Bounding box coordinates (x1, y1, x2, y2)
 
-Download options:
+  Download options:
 
-Annotated image
+  --> Annotated image
 
-CSV prediction report
+  --> CSV prediction report
 
 📊 Final Outcome
 
-DermalScan successfully demonstrates an end-to-end AI system for facial skin aging detection with:
+  DermalScan successfully demonstrates an end-to-end AI system for facial skin aging detection with:
 
-High accuracy
+  --> High accuracy
 
-Fast inference
+  --> Fast inference
 
-Clean UI
+  --> Clean UI
 
-Exportable results
+  --> Exportable results
 
-The system is demo-ready, scalable, and suitable for academic and real-world applications.
+  The system is demo-ready, scalable, and suitable for academic and real-world applications.
 
 📌 Future Enhancements
 
-Real age regression model
+  --> Real age regression model
 
-Skin segmentation for finer analysis
+  --> Skin segmentation for finer analysis
 
-Mobile-friendly deployment
+  --> Mobile-friendly deployment
 
-Cloud hosting (AWS / Azure)
+  --> Cloud hosting (AWS / Azure)
