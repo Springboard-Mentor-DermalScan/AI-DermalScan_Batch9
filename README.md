@@ -1,6 +1,6 @@
 🧠 DermalScan: AI Facial Skin Aging Detection App
 
-DermalScan is an AI-powered web application that detects facial skin aging conditions from images. The system automatically identifies faces, predicts skin conditions such as clear skin, dark spots, puffy eyes, and wrinkles, estimates an approximate age, and visualizes results with confidence scores using deep learning and computer vision techniques.
+  DermalScan is an AI-powered web application that detects facial skin aging conditions from images. The system automatically identifies faces, predicts skin conditions such as clear skin, dark spots, puffy eyes, and wrinkles, estimates an approximate age, and visualizes results with confidence scores using deep learning and computer vision techniques.
 
 This project integrates CNN-based deep learning models, face detection, and a responsive web interface to deliver fast and accurate predictions suitable for real-world usage.
 
