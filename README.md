@@ -54,7 +54,6 @@ It combines **face detection**, **transfer learning–based image classification
 
 
 ---
-
 ## Requirements
 
 It is recommended to use a virtual environment.
@@ -134,3 +133,4 @@ Results can be reproduced by running the training notebook.
 ## License
 
 This project is distributed under the terms specified in the LICENSE file.
+
