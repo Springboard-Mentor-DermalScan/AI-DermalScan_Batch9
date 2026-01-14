@@ -51,7 +51,7 @@ It combines **face detection**, **transfer learning–based image classification
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-
+```
 
 ---
 ## Requirements
