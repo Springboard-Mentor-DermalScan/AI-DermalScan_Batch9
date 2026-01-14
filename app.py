@@ -1,12 +1,15 @@
 import streamlit as st
 import numpy as np
 import cv2
+import pandas as pd
 import tensorflow as tf 
 from PIL import Image
 from scripts.facedetection import predict
 from tensorflow.keras.applications.resnet50 import preprocess_input
 import os
 import time
+from datetime import datetime
+
 
 st.set_page_config(
     page_title="Facial Age Detection",
@@ -19,14 +22,16 @@ st.markdown(
     .stApp {
         background: linear-gradient(
         135deg,
-        #08203e,
-        #557c93
+        #000000,
+        #010101
 );
 
     }
     """,
     unsafe_allow_html=True
 )
+
+
 
 
 
@@ -51,16 +56,28 @@ except Exception:
     pass
 
 uploaded = st.file_uploader("Upload image",["jpg","png","jpeg"])
+filename = uploaded.name if uploaded else None
 
+if "results_df" not in st.session_state:
+    st.session_state.results_df = pd.DataFrame(
+        columns=[
+            "File Name", "X", "Y", "Width", "Height",
+            "Class Name", "Age", "Confidence (%)","Timestamp"
+        ]
+    )
 
 
 if uploaded:
+    upload_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
     img = Image.open(uploaded).convert("RGB")
     img = np.array(img)
     preview = st.empty()
     preview.image(img, caption="Uploaded image", width=900)
 
     start_time = time.time()
+    progress = st.progress(0)
 
     
 
@@ -81,7 +98,8 @@ if uploaded:
             st.stop()   
         print(faces)
         
-        
+        progress.progress(30)
+
         results_list = []
         start_time = time.time()
 
@@ -95,6 +113,26 @@ if uploaded:
             results = predict(faceimg, model, faces)
             results_list.append(results)
 
+            st.session_state.results_df = pd.concat(
+            [
+            st.session_state.results_df,
+            pd.DataFrame([{
+                "File Name": filename,
+                "X": x,
+                "Y": y,
+                "Width": w,
+                "Height": h,
+                "Class Name": results["label"],
+                "Age": results["age"],
+                "Confidence (%)": round(results["confidence"], 2),
+                "Timestamp": upload_time
+                    }])
+                ],
+                ignore_index=True
+            )
+
+            progress.progress(70)
+
             cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
             cv2.putText(
@@ -106,19 +144,62 @@ if uploaded:
                 (0, 255, 0),
                 2
             )
+        progress.progress(100)
+        annotated_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+        success, buffer = cv2.imencode(".png", annotated_img)
+
+        if success:
+            annotated_bytes = buffer.tobytes()
         
+        st.subheader("Export Results")
 
-        st.subheader("Prediction Result")
-        preview.image(img, width=900)
+        col_a, col_b = st.columns(2)
 
-        st.info(f"Detected {len(results_list)} face(s)")
+        with col_a:
+            st.download_button(
+                "⬇ Download Annotated Image",
+                annotated_bytes,
+                file_name=f"annotated_{filename}",
+                mime="image/png"
+            )
 
-        for idx, res in enumerate(results_list, start=1):
-            st.markdown(f"### Face {idx}")
-            st.success(f"Skin Type: {res['label']}")
-            st.info(f"Confidence: {res['confidence']:.2f}%")
-            st.write(f"Estimated Age: {res['age']}")
+        with col_b:
+            csv = st.session_state.results_df.to_csv(index=False).encode("utf-8")
+            st.download_button(
+                "⬇ Download CSV Log",
+                csv,
+                "face_detection_results.csv",
+                "text/csv"
+            )
+
+
+        
         end_time = time.time()
         processing_time = end_time - start_time
-        st.info(f"Processing time: {processing_time:.2f} seconds")
-    
+        col1, col2 = st.columns([2, 1])
+
+        with col1:
+            preview = st.empty()
+            preview.image(img, caption="Annotated Image", use_container_width=True)
+
+        with col2:
+            st.metric("Faces Detected", len(faces))
+            st.metric("Processing Time (s)", f"{processing_time:.2f}")
+
+
+        for idx, res in enumerate(results_list, start=1):
+            with st.expander(f"Face {idx} Details"):
+                st.write(f"**Skin Type:** {res['label']}")
+                st.write(f"**Estimated Age:** {res['age']}")
+                st.write(f"**Confidence:** {res['confidence']:.2f}%")
+
+        
+
+    st.subheader("Detection Logs")
+
+    st.dataframe(
+        st.session_state.results_df,
+        use_container_width=True,
+        height=300
+    )
