@@ -83,7 +83,7 @@ Outputs confidence score (%)
 
 
 
-## 📦 2. Age Estimation
+## 📦 Age Estimation
 
 Class-based artificial age buckets:
 
@@ -100,7 +100,7 @@ Wrinkles	70–85
 
 
 
-## 🎯 3. Bounding Box Annotation
+## 🎯 Bounding Box Annotation
 
 Fixed box covering central face region
 
@@ -112,7 +112,7 @@ Saved as static/outputs/result.jpg
 
 
 
-## 📊 4. CSV Export
+## 📊 CSV Export
 
 Saved as result.csv with:
 
@@ -131,7 +131,7 @@ age bucket
 
 
 
-## 🌐 5. Full Web Interface (Flask)
+## 🌐 Full Web Interface (Flask)
 
 Upload facial image
 
