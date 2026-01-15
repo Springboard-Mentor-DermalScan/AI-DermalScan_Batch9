@@ -64,9 +64,11 @@ conda activate dermal_ai
 
 
 2️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 If installing manually:
+
 pip install streamlit tensorflow opencv-python numpy pandas pillow matplotlib
 
 ▶️ Run the Application
@@ -116,6 +118,7 @@ http://localhost:8501
 ⚠️ Disclaimer
 
 This application is developed for educational and research purposes only.
+
 It is not a medical diagnostic tool and should not be used for clinical decisions.
 
 🚀 Future Enhancements
