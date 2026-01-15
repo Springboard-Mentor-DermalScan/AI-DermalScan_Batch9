@@ -323,7 +323,7 @@ The system is flexible enough to be extended into a full dermatology assistant, 
 
 
 ## 🙌 **Acknowledgments**
-This project is created for academic learning, portfolio building, and practical understanding of machine learning in healthcare.
+This project is created for academic learning and practical understanding of deep learning in healthcare.
 
 ---
 
