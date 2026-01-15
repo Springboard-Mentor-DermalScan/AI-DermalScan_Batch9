@@ -57,7 +57,9 @@ The system provides visual annotations, confidence scores, and estimated age thr
 ⚙️ Installation & Setup
 
 1️⃣ Create and Activate Environment
+
 conda create -n dermal_ai python=3.10 -y
+
 conda activate dermal_ai
 
 
