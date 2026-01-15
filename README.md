@@ -290,7 +290,7 @@ Integrate real facial landmark detection (dlib or mediapipe)
 
 Add multi-class multi-region detection (cheeks, forehead, eye bags)
 
-Deploy model as REST API on cloud (Render / AWS / Azure)
+Deploy model as REST API on cloud (GCP / AWS / Azure)
 
 Replace MobilenetV2 with EfficientNetB0 or ViT for higher accuracy
 
