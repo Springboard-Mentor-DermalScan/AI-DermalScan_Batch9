@@ -40,8 +40,9 @@ DermalScan - AI Skin Analysis is an advanced web-based application for automated
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/ai-dermalscan.git
-   cd ai-dermalscan
+   git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+   cd AI-DermalScan_Batch9
+   git checkout Kanishka  # Switch to the branch 'Kanishka'
    ```
 
 2. **Create a virtual environment (recommended):**
