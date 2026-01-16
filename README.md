@@ -18,17 +18,6 @@ DermalScan - AI Skin Analysis is an advanced web-based application for automated
 - **Data Export**: Download predictions as CSV files and annotated images for further analysis.
 - **Session Management**: Maintains user sessions for multiple analyses without data loss.
 
-## Screenshots
-
-### Initial UI Design
-![Initial UI Design](Initial_UIdesign.png)
-
-### User Interface 1
-![UI 1](UI_1.png)
-
-### User Interface 2
-![UI 2](UI_2.png)
-
 ## Installation
 
 ### Prerequisites
