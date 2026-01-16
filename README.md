@@ -147,15 +147,14 @@ Download button for image & CSV
 ## 🚀 Installation
 
 1. Clone Repository
-
+'''
 git clone https://github.com/your-username/Brijesh-Rath.git
 cd Brijesh-Rath
 
 3. Install Dependencies
 
 pip install -r requirements.txt
-
-
+'''
 
 
 ## ▶️ Run the Application
