@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, send_file
 import cv2
 import os
 from backend import process_image, save_to_csv
+from csv_report import csv_to_pdf
 
 app = Flask(__name__)
 
@@ -31,7 +32,7 @@ def index():
 
             if row is not None:
                 cv2.imwrite(annotated_path, annotated)
-                save_to_csv(row)
+                
 
                 history.insert(0, row)
                 history = history[:5]
@@ -48,11 +49,10 @@ def index():
         annotated_image=annotated_image
     )
 
-
 @app.route("/download_csv")
 def download_csv():
-    return send_file("output/predictions.csv", as_attachment=True)
-
+    pdf_path = csv_to_pdf("output/predictions.csv")
+    return send_file(pdf_path, as_attachment=True)
 
 @app.route("/download_image")
 def download_image():
@@ -61,3 +61,4 @@ def download_image():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
