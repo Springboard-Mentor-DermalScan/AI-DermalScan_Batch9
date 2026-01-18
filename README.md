@@ -1,13 +1,15 @@
 # 🧬 AI DermalScan Pro: Intelligent Skin & Bio-Age Analysis
 
-![Status](https://img.shields.io/badge/Status-Milestone%203%20Complete-success)
 ![Branch](https://img.shields.io/badge/Branch-Kamsali--Niharika-purple)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Framework](https://img.shields.io/badge/Framework-Streamlit-ff4b4b)
 
-**AI DermalScan Pro** is an advanced computer vision prototype developed during the **Infosys Springboard Virtual Internship**. It leverages Deep Learning to provide real-time facial skin analysis and biological age estimation.
+## ⭐️ Project Overview
 
-Unlike standard age classifiers, this system implements a custom **"Smart Bio-Age Algorithm"** that adjusts age predictions based on detected skin health indicators (wrinkles, texture, and facial geometry), offering a more holistic analysis than simple image classification.
+DermalScan is an AI-based facial skin analysis application developed to detect common skin conditions and estimate age using deep learning techniques.  
+The application is implemented using Streamlit and supports image upload, prediction visualization, annotated outputs, and downloadable reports.
+
+The project is developed in multiple milestones covering data preparation, model training, UI integration, export functionality, and testing.
 
 ---
 
@@ -41,11 +43,11 @@ This project was built in three distinct phases:
 * **Performance:** Achieved **>90% training accuracy** and validated against unseen test data.
 * **Output:** The trained weights were exported as `mobilenet_skin.h5`.
 
-### **Milestone 3: System Integration (Current Status)**
+### **Milestone 3: System Integration**
 * **Frontend:** Developed a "Neon Cyberpunk" themed web UI using **Streamlit**.
 * **Backend:** Integrated the Skin Model with a Caffe-based Age Estimator.
 * **Logic Layer:** Implemented **Context Padding (+20%)** to fix head-cropping errors and **Heuristic Logic** to correct "Baby Face" misclassifications on adults.
-* **Visualization:** Added real-time **Seaborn** statistical charts and **Batch CSV Reporting**.
+* **Visualization:** Added real-time **plotly** statistical pie charts and **Batch CSV Reporting**.
 
 ---
 
@@ -62,18 +64,46 @@ This project was built in three distinct phases:
 
 ## 🛠️ Tech Stack
 
-* **Language:** Python 3.10
-* **UI Framework:** Streamlit
-* **Deep Learning:** TensorFlow (Keras), OpenCV (DNN Module)
-* **Data Visualization:** Seaborn, Matplotlib
-* **Image Processing:** NumPy, PIL
+This project is built on a robust stack optimized for rapid computer vision prototyping:
+
+| Component | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Language** | **Python 3.10** | Core logic and scripting. |
+| **Frontend** | **Streamlit** | Interactive web UI, file handling, and real-time updates. |
+| **Computer Vision** | **OpenCV (cv2)** | Image preprocessing, Haar Cascade detection, and drawing annotations. |
+| **Deep Learning** | **TensorFlow (Keras)** | Running the custom **MobileNetV2** Skin Classification model. |
+| **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
+| **Visualization** | **Seaborn & Matplotlib** | Generating dynamic statistical charts (Horizontal Bar Plots). |
+| **Data Handling** | **Pandas & NumPy** | Managing batch data and generating CSV reports. |
 
 ---
 
 ## ⚙️ Installation & Usage Guide
 
 ### **Step 1: Clone the Repository**
-*Note: This project is hosted on a specific branch.*
-```bash
 git clone -b Kamsali-Niharika [https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git](https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git)
 cd AI-DermalScan_Batch9
+
+Step 2: Install Dependencies
+pip install -r requirements.txt
+
+Step 3: Setup Models
+mobilenet_skin.h5 (Trained Skin Model)
+
+age_deploy.prototxt (Age Architecture)
+
+age_net.caffemodel (Downloaded manually)
+
+Step 4: Launch App
+streamlit run app.py
+
+📂 File Structure
+AI-DermalScan_Batch9/
+├──Milestone3
+├── app.py                  # MAIN APPLICATION (Streamlit UI & Logic)
+├── mobilenet_skin.h5       # Milestone 2: Trained Model Weights
+├── age_deploy.prototxt     # Age Prediction Architecture
+├── age_net.caffemodel      # Age Prediction Weights (See Warning)
+├── requirements.txt        # Project Dependencies
+├── haarcascade...xml       # Face Detection (Auto-loaded via OpenCV)
+└── README.md               # Documentation
