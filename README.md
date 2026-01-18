@@ -188,4 +188,4 @@ AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)    <-- ROOT REPOSITORY
 ```
 ## 👨‍💻 Developer Info
 **Developer:** Kamsali Niharika.\
-**Program:** Infosys Springboard internship (Batch 9).
+**Program:** Infosys Springboard internship (Batch 8).
