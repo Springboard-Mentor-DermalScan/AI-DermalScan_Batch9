@@ -31,8 +31,6 @@ An **AI-powered web application** that analyzes facial images to detect **skin a
 
 ---
 
----
-
 ## 🛠️ Technologies Used
 
 - 📝 **HTML & CSS** – Frontend  
