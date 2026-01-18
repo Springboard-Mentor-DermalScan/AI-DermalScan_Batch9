@@ -31,6 +31,8 @@ An **AI-powered web application** that analyzes facial images to detect **skin a
 
 ---
 
+---
+
 ## 🛠️ Technologies Used
 
 - 📝 **HTML & CSS** – Frontend  
@@ -48,51 +50,68 @@ An **AI-powered web application** that analyzes facial images to detect **skin a
 ```bash
 git clone https://github.com/your-username/AIDermalScan.git
 cd AIDermalScan
-2️⃣ Create Virtual Environment (Optional)
-bash
-Copy code
+```
+### 2️⃣ Create Virtual Environment (Optional)
+```bash
 python -m venv venv
 venv\Scripts\activate
-3️⃣ Install Dependencies
-bash
-Copy code
+```
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-4️⃣ Run the Application
-bash
-Copy code
+```
+### 4️⃣ Run the Application
+```bash
 python app.py
-5️⃣ Open in Browser
-cpp
-Copy code
+```
+
+### 5️⃣ Open in Browser
+```bash
 http://127.0.0.1:5000/
-🧪 How It Works
-User uploads a facial image
+```
+---
 
-Face is detected using OpenCV’s DNN model
+## 🧪 How It Works
 
-Image is preprocessed and resized
+1. User uploads a facial image through the web interface  
+2. The system detects the face using OpenCV’s DNN-based face detector  
+3. The detected face is cropped and preprocessed  
+4. Image is resized to **224 × 224** and normalized  
+5. The **MobileNetV2 transfer learning model** predicts the skin aging category  
+6. The prediction result is displayed on the UI  
+7. Prediction details are saved in a CSV file for history tracking  
 
-MobileNetV2 model predicts skin aging category
+---
 
-Result is displayed and stored in CSV
+## 📈 Dataset & Model
 
-📈 Dataset & Model
-Dataset organized using folder-based structure
+- Dataset organized using a **folder-based structure**
+- Images resized to **224 × 224**
+- Data augmentation applied to improve generalization
+- Model trained using **Transfer Learning with MobileNetV2**
+- Trained model saved as `.h5` and loaded during inference
 
-Images resized to 224 × 224
+---
 
-Data augmentation applied
+## 🎯 Use Cases
 
-Model trained using transfer learning (MobileNetV2)
+- AI-based skincare and facial analysis systems  
+- Academic **mini / major projects**  
+- **Internship portfolio** and resume projects  
+- Computer Vision & Deep Learning practice projects  
 
-🎯 Use Cases
-AI-based skincare analysis
+---
 
-Academic mini / major projects
+## 🚀 Future Enhancements
 
-Internship portfolio projects
+- Add age group and skin condition classification  
+- Improve accuracy with larger and diverse datasets  
+- Add user authentication and dashboard  
+- Deploy using Docker or cloud platforms (AWS / Azure)  
+- Mobile-friendly UI improvements  
 
-Computer Vision learning projects
+---
 
-👩‍💻 Author
-Priya Ghosal
+## 👩‍💻 Author
+
+**Priya Ghosal**
