@@ -98,27 +98,16 @@ Step 4: Launch App
 streamlit run app.py
 
 AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)  <-- ROOT REPOSITORY
-
 │
-
 ├── AI-DermalScan Milestone 1 & 2.ipynb <--(Python Notebook consisting data preprocessing and model development)
-
 ├── AI DermalScan                  <-- (Documentation)
-
 ├── README.md                      <-- (The Documentation File)
-
 ├── requirements.txt               <-- (Requirements)
-
 ├── LICENSE                        <-- (Standard License file)
-
 │
-
 └── Milestone 3/                     <-- (MAIN PROJECT FOLDER)
-
     │
-    
     ├── app.py                       <-- (The Main Python App)
-    
     ├── mobilenet_skin.h5            <-- (Skin Model)
     ├── age_deploy.prototxt          <-- (Age Config)
     ├── age_net.caffemodel           <-- (Age Weights - Placeholder)
