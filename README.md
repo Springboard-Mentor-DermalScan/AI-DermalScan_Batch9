@@ -93,25 +93,6 @@ http://127.0.0.1:5000/
 
 ---
 
-## 🎯 Use Cases
-
-- AI-based skincare and facial analysis systems  
-- Academic **mini / major projects**  
-- **Internship portfolio** and resume projects  
-- Computer Vision & Deep Learning practice projects  
-
----
-
-## 🚀 Future Enhancements
-
-- Add age group and skin condition classification  
-- Improve accuracy with larger and diverse datasets  
-- Add user authentication and dashboard  
-- Deploy using Docker or cloud platforms (AWS / Azure)  
-- Mobile-friendly UI improvements  
-
----
-
 ## 👩‍💻 Author
 
 **Priya Ghosal**
