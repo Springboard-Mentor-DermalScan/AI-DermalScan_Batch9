@@ -16,7 +16,7 @@ The project is developed in multiple milestones covering data preparation, model
 
 ## ⚠️ CRITICAL SETUP: READ BEFORE RUNNING
 
-**Issue:** GitHub has a file size limit that prevents uploading the 44MB Age Prediction Model directly via the web interface.
+**Issue:** GitHub has a file size limit that prevents uploading the 44MB Age Prediction Model directly via the web interface.\
 **Solution:** The file `age_net.caffemodel` in this repository is a **dummy text file**. You must replace it for the app to work.
 
 ### **Quick Fix Instructions:**
@@ -35,23 +35,23 @@ This project was built in three distinct phases:
 
 ### **Milestone 1: Data Engineering**
 * **Objective:** Build a robust dataset for skin conditions.
-* **Process:** Curated and labeled images into 4 classes (`Acne/Clear`, `Dark Spots`, `Puffy Eyes`, `Wrinkles`).
+* **Process:** Curated and labeled images into 4 classes (`Clear`, `Dark Spots`, `Puffy Eyes`, `Wrinkles`).
 * **Preprocessing:** Standardized all inputs to `224x224` pixels and normalized pixel intensity.
 * **Augmentation:** Applied random rotations, zooms, and flips to prevent model overfitting.
 
-### **Milestone 2: Model Architecture & Training**
-* **Core Model:** Fine-tuned **MobileNetV2** (transfer learning) for skin classification.
-* **Performance:** Achieved **>90% training accuracy** and validated against unseen test data.
-* **Output:** The trained weights were exported as `mobilenet_skin.h5`.
+### **Milestone 2: Model Training (Skin)**
+* **Focus:** Developing the Skin Condition Classifier.
+* **Architecture:** **EfficientNet** (State-of-the-art CNN).
+* **Performance:** Achieved **high accuracy (>90%)** due to EfficientNet's superior feature extraction capabilities compared to older models.
+* **Artifact:** The trained weights were exported as `dermalscan_efficientnet_model.h5`.
 
-### **Milestone 3: System Integration**
-* **Frontend:** Developed a "Neon Cyberpunk" themed web UI using **Streamlit**.
-* **Backend:** Integrated the Skin Model with a Caffe-based Age Estimator.
+### **Milestone 3: System Integration (Age & UI)**
+* **Focus:** Integrating Age Prediction and Frontend.
+* **Backend:** Integrated the **Caffe AgeNet** model for demographic estimation.
 * **Logic Layer:** Implemented **Context Padding (+20%)** to fix head-cropping errors and **Heuristic Logic** to correct "Baby Face" misclassifications on adults.
 * **Visualization:** Added real-time **Plotly** statistical charts and **Batch CSV Reporting**.
 
 ---
-
 ## 🏗️ System Architecture
 
 ```mermaid
@@ -82,13 +82,78 @@ graph TD
     visual -->|Display| FinalImg[Annotated Image]
     visual -->|Charts| Charts[3D Interactive Charts]
     visual -->|Download| Report[Batch CSV Report]
+```
 ---
-###🚀 Key FeaturesMulti-Face Support: Automatically detects and analyzes multiple people in a single group photo.Smart Heuristics:Rule 1: If "Wrinkles" are detected with high confidence, the minimum age floor is raised.Rule 2: Context Padding ensures the model sees the forehead and chin, improving age accuracy by ~15%.Batch Processing: Upload 5+ images at once; the system generates a consolidated Excel/CSV Report.Privacy First: Images are processed in memory and are not permanently stored.🛠️ Tech StackThis project is built on a robust stack optimized for rapid computer vision prototyping:ComponentTechnologyPurposeLanguagePython 3.10Core logic and scripting.FrontendStreamlitInteractive web UI, file handling, and real-time updates.Computer VisionOpenCV (cv2)Image preprocessing, Haar Cascade detection, and drawing annotations.Deep LearningTensorFlow (Keras)Running the custom MobileNetV2 Skin Classification model.Inference EngineCaffe (DNN)Running the pre-trained AgeNet model for age estimation.VisualizationPlotlyGenerating interactive 3D charts and visualizations.Data HandlingPandas & NumPyManaging batch data and generating CSV reports.⚙️ Installation & Usage GuideStep 1: Clone the RepositoryBashgit clone -b Kamsali-Niharika [https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git](https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git)
+
+## 🚀 Key Features
+
+* **Multi-Face Support:** Automatically detects and analyzes multiple people in a single group photo.
+* **Smart Heuristics:**
+    * *Rule 1:* If "Wrinkles" are detected with high confidence, the minimum age floor is raised.
+    * *Rule 2:* **Context Padding** ensures the model sees the forehead and chin, improving age accuracy by ~15%.
+* **Batch Processing:** Upload 4 images at once; the system generates a consolidated **Excel/CSV Report**.
+* **Privacy First:** Images are processed in memory and are not permanently stored.
+
+---
+
+## 🛠️ Tech Stack
+
+This project is built on a robust stack optimized for rapid computer vision prototyping:
+
+| Component | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Language** | **Python 3.10** | Core logic and scripting. |
+| **Frontend** | **Streamlit** | Interactive web UI, file handling, and real-time updates. |
+| **Computer Vision** | **OpenCV (cv2)** | Image preprocessing, Haar Cascade detection, and drawing annotations. |
+| **Deep Learning** | **TensorFlow (Keras)** | Running the custom **MobileNetV2** Skin Classification model. |
+| **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
+| **Visualization** | **Plotly** | Generating interactive 3D charts and visualizations. |
+| **Data Handling** | **Pandas & NumPy** | Managing batch data and generating CSV reports. |
+
+---
+## 📃 Future Scope & Strategic Roadmap\
+### **1. Advanced Computer Vision & Face Geometry**
+* **MediaPipe Face Mesh Integration:** Upgrade from Haar Cascades to **Google MediaPipe** to extract 468 3D facial landmarks. This will enable precise measurement of face geometry (jawline sagging, cheekbone definition) to mathematically quantify biological aging.
+* **Semantic Segmentation (U-Net):** Move beyond simple classification to **Pixel-level Segmentation**. This will allow the system to visually highlight the exact location of acne scars, moles, or wrinkles with a heatmap overlay, similar to professional dermatology tools.
+
+### **2. Next-Gen Model Architectures**
+* **Age Regression (DeepFace / VGG-Face):** Switch from classification buckets to **Regression-based models** (like ResNet-50 trained on IMDB-WIKI) to predict a precise integer age.
+* **Vision Transformers (ViT):** Implement **Swin Transformers** to capture global context better than CNNs. This allows the model to understand how skin texture in one area (forehead) correlates with geometry in another (jaw) for holistically accurate analysis.
+
+### **3. Production Engineering & Scalability**
+* **Backend Decoupling (FastAPI):** Migrate the inference logic from Streamlit to a **FastAPI microservice**, allowing the AI model to be consumed by any frontend (Mobile, Web, or Desktop apps).
+* **Edge AI (TFLite / ONNX):** Convert the Keras models to **TensorFlow Lite (TFLite)** format. This enables the app to run offline directly on a user's smartphone, ensuring 100% data privacy with zero server costs.
+
+### **4. Generative AI Features**
+* **Aging Simulation (CycleGAN):** Implement Generative Adversarial Networks (GANs) to visualize **"Future Face"** scenarios (e.g., "Show me my face in 10 years if I don't treat these wrinkles"), adding a predictive layer to the user experience.
+---
+## ⚙️ Installation & Usage Guide\
+### **Step 1: Clone the Repository**
+```bash
+git clone -b Kamsali-Niharika [https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git](https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git)
 cd AI-DermalScan_Batch9
-Step 2: Install DependenciesBashpip install -r requirements.txt
-Step 3: Setup ModelsNavigate to the Milestone 3 folder:Bashcd "Milestone 3"
-Important: Ensure the age_net.caffemodel file in this folder is the real 44MB file (see Critical Setup section above).Step 4: Launch AppBashstreamlit run app.py
-📂 Project Directory StructurePlaintextAI-DermalScan_Batch9 (Branch: Kamsali-Niharika)    <-- ROOT REPOSITORY
+```
+Step 2: Install Dependencies
+```Bash
+
+pip install -r requirements.txt
+```
+Step 3: Setup Models
+Navigate to the Milestone 3 folder:
+
+```Bash
+
+cd "Milestone 3"
+Important: Ensure the age_net.caffemodel file in this folder is the real 44MB file (see Critical Setup section above).
+```
+Step 4: Launch App
+```Bash
+
+streamlit run app.py
+```
+📂 Project Directory Structure
+```
+AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)    <-- ROOT REPOSITORY
 │
 ├── AI-DermalScan Milestone 1 & 2.ipynb            <-- (Project Notebook: Data Prep & Training)
 ├── AI DermalScan.pdf                              <-- (Project Documentation)
@@ -120,4 +185,7 @@ Important: Ensure the age_net.caffemodel file in this folder is the real 44MB fi
         ├── shutterstock_10727980.jpg
         ├── istockphoto_1919265357.jpg
         └── 360_F_235640074.jpg
-👨‍💻 Developer InfoDeveloper: Kamsali Niharika Program: Infosys Springboard Virtual Internship (Batch 9)
+```
+## 👨‍💻 Developer Info
+**Developer:** Kamsali Niharika.\
+**Program:** Infosys Springboard internship (Batch 9).
