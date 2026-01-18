@@ -97,13 +97,39 @@ age_net.caffemodel (Downloaded manually)
 Step 4: Launch App
 streamlit run app.py
 
-📂 File Structure
-AI-DermalScan_Batch9/
-├──Milestone3
-├── app.py                  # MAIN APPLICATION (Streamlit UI & Logic)
-├── mobilenet_skin.h5       # Milestone 2: Trained Model Weights
-├── age_deploy.prototxt     # Age Prediction Architecture
-├── age_net.caffemodel      # Age Prediction Weights (See Warning)
-├── requirements.txt        # Project Dependencies
-├── haarcascade...xml       # Face Detection (Auto-loaded via OpenCV)
-└── README.md               # Documentation
+AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)  <-- ROOT REPOSITORY
+│
+├── AI-DermalScan Milestone 1 & 2.ipynb <--(Python Notebook consisting data preprocessing and model development)
+├── AI DermalScan                  <-- (Documentation)
+├── README.md                      <-- (The Documentation File)
+├── requirements.txt               <-- (Requirements)
+├── LICENSE                        <-- (Standard License file)
+│
+└── Milestone 3/                     <-- (MAIN PROJECT FOLDER)
+    │
+    ├── app.py                       <-- (The Main Python App)
+    ├── mobilenet_skin.h5            <-- (Skin Model)
+    ├── age_deploy.prototxt          <-- (Age Config)
+    ├── age_net.caffemodel           <-- (Age Weights - Placeholder)
+    ├── haarcascade_frontalface_default.xml
+    │
+    ├── .streamlit/                  <-- (CONFIG FOLDER)
+    │   └── config.toml              <-- (Theme settings)
+    │
+    ├── Predicted result/            <-- (OUTPUT FOLDER)
+    │   └── dermalscan_results.csv   <-- (Generated Reports)
+    │
+    ├── Sample Images/               <-- (UI Design and Output Images)
+    │   ├── Web UI.png
+    │   ├── newplot.png
+    │   └── detected_...jpg
+    │
+    └── Sample test Images/          <-- (TEST DATASET)
+        ├── shutterstock_10727980.jpg
+        ├── istockphoto...jpg
+        └── 360_F...jpg
+
+👨‍💻 Developer Info
+Developer: Kamsali Niharika
+
+Program: Infosys Springboard Virtual Internship (Batch 9)
