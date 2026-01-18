@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Framework](https://img.shields.io/badge/Framework-Streamlit-ff4b4b)
 ![Framework](https://img.shields.io/badge/Framework-Tensorflow-ff4b4b)
-![Library](https://img.shields.io/badge/Framework-OpenCV-ff4b4b)
+![Library](https://img.shields.io/badge/Library-OpenCV-ff4b4b)
 
 ## ⭐️ Project Overview
 
