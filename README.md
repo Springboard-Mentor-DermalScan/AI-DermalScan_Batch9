@@ -108,7 +108,7 @@ This project is built on a robust stack optimized for rapid computer vision prot
 | **Deep Learning** | **TensorFlow (Keras)** | Building the **dermal_efficientnet_model** and Running the custom **MobileNetV2** Skin Classification model. |
 | **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
 | **Visualization** | **Plotly** | Generating interactive 3D charts and visualizations. |
-| **Data Handling** | **Pandas & NumPy** | Managing batch data and generating CSV reports. |
+| **Data Handling** | **Pandas & NumPy** | Generating CSV reports. |
 
 ---
 ## 📃 Future Scope & Strategic Roadmap
