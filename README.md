@@ -31,8 +31,6 @@ An **AI-powered web application** that analyzes facial images to detect **skin a
 
 ---
 
----
-
 ## 🛠️ Technologies Used
 
 - 📝 **HTML & CSS** – Frontend  
@@ -50,24 +48,24 @@ An **AI-powered web application** that analyzes facial images to detect **skin a
 ```bash
 git clone https://github.com/your-username/AIDermalScan.git
 cd AIDermalScan
-
-### 2️⃣ Create Virtual Environment (Optional)
+2️⃣ Create Virtual Environment (Optional)
+bash
+Copy code
 python -m venv venv
 venv\Scripts\activate
-
-### 3️⃣ Install Dependencies
+3️⃣ Install Dependencies
+bash
+Copy code
 pip install -r requirements.txt
-
-### 4️⃣ Run the Application
+4️⃣ Run the Application
+bash
+Copy code
 python app.py
-
-### 5️⃣ Open in Browser
+5️⃣ Open in Browser
+cpp
+Copy code
 http://127.0.0.1:5000/
-
----
-
-## 🧪 How It Works
-
+🧪 How It Works
 User uploads a facial image
 
 Face is detected using OpenCV’s DNN model
@@ -78,10 +76,7 @@ MobileNetV2 model predicts skin aging category
 
 Result is displayed and stored in CSV
 
----
-
-##📈 Dataset & Model
-
+📈 Dataset & Model
 Dataset organized using folder-based structure
 
 Images resized to 224 × 224
@@ -89,10 +84,15 @@ Images resized to 224 × 224
 Data augmentation applied
 
 Model trained using transfer learning (MobileNetV2)
----
 
----
+🎯 Use Cases
+AI-based skincare analysis
 
-#👩‍💻 Author
+Academic mini / major projects
 
+Internship portfolio projects
+
+Computer Vision learning projects
+
+👩‍💻 Author
 Priya Ghosal
