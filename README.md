@@ -82,3 +82,42 @@ graph TD
     visual -->|Display| FinalImg[Annotated Image]
     visual -->|Charts| Charts[3D Interactive Charts]
     visual -->|Download| Report[Batch CSV Report]
+
+🚀 Key FeaturesMulti-Face Support: Automatically detects and analyzes multiple people in a single group photo.Smart Heuristics:Rule 1: If "Wrinkles" are detected with high confidence, the minimum age floor is raised.Rule 2: Context Padding ensures the model sees the forehead and chin, improving age accuracy by ~15%.Batch Processing: Upload 5+ images at once; the system generates a consolidated Excel/CSV Report.Privacy First: Images are processed in memory and are not permanently stored.🛠️ Tech StackThis project is built on a robust stack optimized for rapid computer vision prototyping:ComponentTechnologyPurposeLanguagePython 3.10Core logic and scripting.FrontendStreamlitInteractive web UI, file handling, and real-time updates.Computer VisionOpenCV (cv2)Image preprocessing, Haar Cascade detection, and drawing annotations.Deep LearningTensorFlow (Keras)Running the custom MobileNetV2 Skin Classification model.Inference EngineCaffe (DNN)Running the pre-trained AgeNet model for age estimation.VisualizationPlotlyGenerating interactive 3D charts and visualizations.Data HandlingPandas & NumPyManaging batch data and generating CSV reports.⚙️ Installation & Usage GuideStep 1: Clone the RepositoryBashgit clone -b Kamsali-Niharika [https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git](https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git)
+cd AI-DermalScan_Batch9
+Step 2: Install DependenciesBashpip install -r requirements.txt
+Step 3: Setup ModelsNavigate to the Milestone 3 folder:Bashcd "Milestone 3"
+Important: Ensure the age_net.caffemodel file in this folder is the real 44MB file (see Critical Setup section above).Step 4: Launch AppBashstreamlit run app.py
+📂 Project Directory StructurePlaintextAI-DermalScan_Batch9 (Branch: Kamsali-Niharika)    <-- ROOT REPOSITORY
+│
+├── AI-DermalScan Milestone 1 & 2.ipynb            <-- (Project Notebook: Data Prep & Training)
+├── AI DermalScan.pdf                              <-- (Project Documentation)
+├── LICENSE                                        <-- (Standard License File)
+├── README.md                                      <-- (Master Documentation Guide)
+├── requirements.txt                               <-- (Python Dependencies)
+│
+└── Milestone 3/                                   <-- (MAIN APPLICATION FOLDER)
+    │
+    ├── app.py                                     <-- (Main Application Script)
+    ├── haarcascade_frontalface_default.xml        <-- (Face Detection Model)
+    │
+    ├── mobilenet_skin.h5                          <-- (Skin Classification Model)
+    ├── age_deploy.prototxt                        <-- (Age Model Configuration)
+    ├── age_net.caffemodel                         <-- (Age Model Weights - Placeholder)
+    │
+    ├── .streamlit/                                <-- (UI Configuration)
+    │   └── config.toml                            <-- (Theme Settings)
+    │
+    ├── Predicted result/                          <-- (Generated Reports)
+    │   └── dermalscan_results.csv                 <-- (Batch Analysis Output)
+    │
+    ├── Sample Images/                             <-- (UI Assets & Output Examples)
+    │   ├── Web UI.png
+    │   ├── newplot.png
+    │   └── detected_output.jpg
+    │
+    └── Sample test Images/                        <-- (Testing Dataset)
+        ├── shutterstock_10727980.jpg
+        ├── istockphoto_1919265357.jpg
+        └── 360_F_235640074.jpg
+👨‍💻 Developer InfoDeveloper: Kamsali Niharika Program: Infosys Springboard Virtual Internship (Batch 9)
