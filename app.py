@@ -58,7 +58,7 @@ def download_csv():
 def download_image():
     return send_file("static/uploads", as_attachment=True)
 
-
 if __name__ == "__main__":
     app.run(debug=True)
+
 
