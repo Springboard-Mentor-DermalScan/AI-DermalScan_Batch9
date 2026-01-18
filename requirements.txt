@@ -3,4 +3,5 @@ numpy==2.2.0
 matplotlib==3.10.0
 pillow==11.0.0
 scikit-learn==1.5.2
+reportlab
 opencv-python==4.10.0.84
