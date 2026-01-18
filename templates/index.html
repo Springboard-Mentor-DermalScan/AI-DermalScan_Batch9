@@ -6,8 +6,9 @@
 </head>
 <body>
 
-<h1><b>AI Dermal Scan</b></h1>
-<p class="subtitle">AI-Powered Facial Skin Aging Analysis</p>
+<h1 class="hero-title">AI Dermal Scan</h1>
+<p class="hero-subtitle">AI-Powered Facial Skin Aging Analysis</p>
+
 
 <div class="container">
 
@@ -30,6 +31,17 @@
         <div>
             <h3>Annotated Image</h3>
             <img src="{{ annotated_image }}">
+
+            <div class="prediction-label">
+                {{ current.Predicted_Class }}
+                | {{ current.Confidence | round(2) }}
+                | Age: {{ current.Age }}
+            </div>
+
+            <div class="time-box">
+                Time Taken: {{ current.Time_Taken_secs }} sec
+            </div>
+
         </div>
     </div>
 
@@ -50,11 +62,12 @@
 
     <div class="confidence-bar">
         <div class="confidence-fill"
-            style="width: {{ current.class_prob * 100 }}%;"></div>
+            style="width: {{ current.Confidence }}%;">
+        </div>
     </div>
 
     <p class="confidence-text">
-        {{ (current.class_prob * 100) | round(1) }}%
+        {{ current.Confidence | round(1) }}%
     </p>
 
     <div class="download-buttons">
@@ -91,6 +104,4 @@
     <p style="text-align: center;">&copy; 2026 AIDermalScan</p>
 </footer>
 </body>
-
-
 </html>
