@@ -11,24 +11,69 @@ body {
     color: #e5e7eb;
 }
 
-/* ---------- Header ---------- */
-h1 {
-    margin-top: 30px;
+/* ---------- Hero Title---------- */
+.hero-title {
+    margin-top: 50px;
     text-align: center;
-    font-size: 2.4rem;
-    color: #38bdf8;
+    font-size: 3.8rem;              
+    font-weight: 900;               
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #22c55e,
+        #6366f1,
+        #38bdf8
+    );
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 15px rgba(56, 189, 248, 0.6),
+        0 0 40px rgba(99, 102, 241, 0.6);
+
+    animation: glowPulse 3s ease-in-out infinite alternate,
+               gradientMove 6s ease infinite;
 }
 
-h2 {
-    margin-top: 30px;
-    color: #38bdf8;
+
+/* ---------- Hero Subtitle ---------- */
+.hero-subtitle {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    color: #cbd5f5;
+    opacity: 0.9;
+    text-transform: uppercase;
 }
 
-.subtitle {
-    text-align: center;
-    color: #94a3b8;
-    margin-bottom: 30px;
+
+.hero-title {
+    animation: glowPulse 3s ease-in-out infinite alternate;
 }
+
+@keyframes glowPulse {
+    from {
+        text-shadow:
+            0 0 10px rgba(56, 189, 248, 0.3),
+            0 0 20px rgba(99, 102, 241, 0.2);
+    }
+    to {
+        text-shadow:
+            0 0 20px rgba(56, 189, 248, 0.6),
+            0 0 40px rgba(99, 102, 241, 0.5);
+    }
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
 
 /* ---------- Container ---------- */
 .container {
@@ -135,6 +180,33 @@ td {
 
 tr:hover {
     background: rgba(56, 189, 248, 0.08);
+}
+
+.time-box {
+    margin: 16px auto;  
+    padding: 14px;
+    width: 100%;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff99;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Prediction Label ---------- */
+.prediction-label {
+    display: inline-block;
+    margin: 12px auto 0;
+    background: rgba(0, 0, 0, 0.75);              
+    box-shadow: 0 0 12px rgba(0, 255, 153, 0.35);
+    border-radius: 8px;
+    padding: 6px 10px;                 
+    font-size: 16px;                   
+    font-family: monospace;
+    letter-spacing: 0.8px;
+    
 }
 
 /* ---------- Confidence Bar ---------- */
