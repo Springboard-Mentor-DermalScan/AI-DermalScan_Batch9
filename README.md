@@ -1,10 +1,10 @@
 # 🧬 AI DermalScan Pro: Intelligent Skin & Bio-Age Analysis
 
-![Branch](https://img.shields.io/badge/Branch-Kamsali--Niharika-purple)
+![Branch](https://img.shields.io/badge/Branch-Kamsali--Niharika-white)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Framework](https://img.shields.io/badge/Framework-Streamlit-ff4b4b)
-![Framework](https://img.shields.io/badge/Framework-Tensorflow-ff4b4b)
-![Library](https://img.shields.io/badge/Library-OpenCV-ff4b4b)
+![Model](https://img.shields.io/badge/Model-EfficientNetB0(CNN)-green)
+![Library](https://img.shields.io/badge/Library-OpenCV-purple)
 
 ## ⭐️ Project Overview
 
@@ -85,7 +85,7 @@ graph TD
 ```
 ---
 
-## 🚀 Key Features
+## 🔑 Key Features
 
 * **Multi-Face Support:** Automatically detects and analyzes multiple people in a single group photo.
 * **Smart Heuristics:**
@@ -105,13 +105,13 @@ This project is built on a robust stack optimized for rapid computer vision prot
 | **Language** | **Python 3.10** | Core logic and scripting. |
 | **Frontend** | **Streamlit** | Interactive web UI, file handling, and real-time updates. |
 | **Computer Vision** | **OpenCV (cv2)** | Image preprocessing, Haar Cascade detection, and drawing annotations. |
-| **Deep Learning** | **TensorFlow (Keras)** | Running the custom **MobileNetV2** Skin Classification model. |
+| **Deep Learning** | **TensorFlow (Keras)** | Building the **dermal_efficientnet_model** and Running the custom **MobileNetV2** Skin Classification model. |
 | **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
 | **Visualization** | **Plotly** | Generating interactive 3D charts and visualizations. |
 | **Data Handling** | **Pandas & NumPy** | Managing batch data and generating CSV reports. |
 
 ---
-## 📃 Future Scope & Strategic Roadmap\
+## 📃 Future Scope & Strategic Roadmap
 ### **1. Advanced Computer Vision & Face Geometry**
 * **MediaPipe Face Mesh Integration:** Upgrade from Haar Cascades to **Google MediaPipe** to extract 468 3D facial landmarks. This will enable precise measurement of face geometry (jawline sagging, cheekbone definition) to mathematically quantify biological aging.
 * **Semantic Segmentation (U-Net):** Move beyond simple classification to **Pixel-level Segmentation**. This will allow the system to visually highlight the exact location of acne scars, moles, or wrinkles with a heatmap overlay, similar to professional dermatology tools.
@@ -127,7 +127,7 @@ This project is built on a robust stack optimized for rapid computer vision prot
 ### **4. Generative AI Features**
 * **Aging Simulation (CycleGAN):** Implement Generative Adversarial Networks (GANs) to visualize **"Future Face"** scenarios (e.g., "Show me my face in 10 years if I don't treat these wrinkles"), adding a predictive layer to the user experience.
 ---
-## ⚙️ Installation & Usage Guide\
+## ⚙️ Installation & Usage Guide
 ### **Step 1: Clone the Repository**
 ```bash
 git clone -b Kamsali-Niharika [https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git](https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git)
