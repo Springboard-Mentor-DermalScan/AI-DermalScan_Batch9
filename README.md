@@ -85,9 +85,11 @@ git clone -b Kamsali-Niharika [https://github.com/Springboard-Mentor-DermalScan/
 cd AI-DermalScan_Batch9
 
 Step 2: Install Dependencies
+
 pip install -r requirements.txt
 
 Step 3: Setup Models
+
 mobilenet_skin.h5 (Trained Skin Model)
 
 age_deploy.prototxt (Age Architecture)
@@ -95,39 +97,43 @@ age_deploy.prototxt (Age Architecture)
 age_net.caffemodel (Downloaded manually)
 
 Step 4: Launch App
+
 streamlit run app.py
 
-AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)  <-- ROOT REPOSITORY
+📂 Project Directory Structure
+AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)    <-- ROOT REPOSITORY
 │
-├── AI-DermalScan Milestone 1 & 2.ipynb <--(Python Notebook consisting data preprocessing and model development)
-├── AI DermalScan                  <-- (Documentation)
-├── README.md                      <-- (The Documentation File)
-├── requirements.txt               <-- (Requirements)
-├── LICENSE                        <-- (Standard License file)
+├── AI-DermalScan Milestone 1 & 2.ipynb            <-- (Project Notebook: Data Prep & Training)
+├── AI DermalScan.pdf                              <-- (Project Documentation)
+├── LICENSE                                        <-- (Standard License File)
+├── README.md                                      <-- (Master Documentation Guide)
+├── requirements.txt                               <-- (Python Dependencies)
 │
-└── Milestone 3/                     <-- (MAIN PROJECT FOLDER)
+└── Milestone 3/                                   <-- (MAIN APPLICATION FOLDER)
     │
-    ├── app.py                       <-- (The Main Python App)
-    ├── mobilenet_skin.h5            <-- (Skin Model)
-    ├── age_deploy.prototxt          <-- (Age Config)
-    ├── age_net.caffemodel           <-- (Age Weights - Placeholder)
-    ├── haarcascade_frontalface_default.xml
+    ├── app.py                                     <-- (Main Application Script)
+    ├── haarcascade_frontalface_default.xml        <-- (Face Detection Model)
     │
-    ├── .streamlit/                  <-- (CONFIG FOLDER)
-    │   └── config.toml              <-- (Theme settings)
+    ├── models/                                    <-- (AI Models)
+    │   ├── mobilenet_skin.h5                      <-- (Skin Classification Model)
+    │   ├── age_deploy.prototxt                    <-- (Age Model Configuration)
+    │   └── age_net.caffemodel                     <-- (Age Model Weights - Placeholder)
     │
-    ├── Predicted result/            <-- (OUTPUT FOLDER)
-    │   └── dermalscan_results.csv   <-- (Generated Reports)
+    ├── .streamlit/                                <-- (UI Configuration)
+    │   └── config.toml                            <-- (Theme Settings)
     │
-    ├── Sample Images/               <-- (UI Design and Output Images)
+    ├── Predicted result/                          <-- (Generated Reports)
+    │   └── dermalscan_results.csv                 <-- (Batch Analysis Output)
+    │
+    ├── Sample Images/                             <-- (UI Assets & Output Examples)
     │   ├── Web UI.png
     │   ├── newplot.png
-    │   └── detected_...jpg
+    │   └── detected_output.jpg
     │
-    └── Sample test Images/          <-- (TEST DATASET)
+    └── Sample test Images/                        <-- (Testing Dataset)
         ├── shutterstock_10727980.jpg
-        ├── istockphoto...jpg
-        └── 360_F...jpg
+        ├── istockphoto_1919265357.jpg
+        └── 360_F_235640074.jpg
 
 👨‍💻 Developer Info
 
