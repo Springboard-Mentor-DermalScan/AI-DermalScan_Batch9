@@ -4,6 +4,8 @@ from tensorflow.keras.models import load_model
 import random
 import pandas as pd
 import os
+import time
+from datetime import datetime
 
 # PATHS
 MODEL_PATH = "models/AIDermalScan_MobileNetV2_Final.h5"
@@ -37,8 +39,9 @@ def save_to_csv(row):
     else:
         df.to_csv(CSV_PATH, index=False)
 
-
 def process_image(image, filename):
+    start_time = time.time()   # START TIMER
+
     h, w = image.shape[:2]
 
     # -------- FACE DETECTION --------
@@ -64,7 +67,6 @@ def process_image(image, filename):
     box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
     box_x1, box_y1, box_x2, box_y2 = box.astype(int)
 
-       
     box_x1 = max(0, box_x1)
     box_y1 = max(0, box_y1)
     box_x2 = min(w, box_x2)
@@ -77,12 +79,11 @@ def process_image(image, filename):
     face = np.expand_dims(face, axis=0)
 
     # -------- MODEL PREDICTION --------
-    preds = model.predict(face)[0]
+    preds = model.predict(face, verbose=0)[0]
     class_index = int(np.argmax(preds))
     class_prob = float(preds[class_index])
     predicted_class = CLASS_NAMES[class_index]
 
-    # -------- CONFIDENCE CHECK --------
     low_confidence = class_prob < CONF_THRESHOLD
 
     # -------- AGE ESTIMATION --------
@@ -90,7 +91,11 @@ def process_image(image, filename):
     age = random.randint(low, high)
     age_bucket = f"{low}-{high}"
 
-    # -------- BOUNDING BOX --------
+    # -------- TIME TAKEN --------
+    time_taken = round(time.time() - start_time, 2)
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # -------- ANNOTATION --------
     annotated = image.copy()
     label = f"{predicted_class} | {class_prob:.2f} | Age: {age}"
 
@@ -104,45 +109,28 @@ def process_image(image, filename):
         (0, 255, 0),
         2
     )
-    
-    font = cv2.FONT_HERSHEY_SIMPLEX
-    font_scale = 0.5
-    thickness = 2
-
-    (text_width, text_height), _ = cv2.getTextSize(
-        label, font, font_scale, thickness
-    )
-
-    text_x = box_x1
-    text_y = box_y1 - 10
-
-    
-    if text_x + text_width > annotated.shape[1]:
-        text_x = annotated.shape[1] - text_width - 5
 
     cv2.putText(
         annotated,
         label,
-        (text_x, text_y),
-        font,
-        font_scale,
+        (box_x1, box_y1 - 10),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.5,
         (0, 255, 0),
-        thickness
+        2
     )
 
 
-    # -------- TABLE ROW --------
+    # -------- CSV ROW --------
     row = {
         "Filename": filename,
-        "box_x1": box_x1,
-        "box_y1": box_y1,
-        "box_x2": box_x2,
-        "box_y2": box_y2,
-        "class": predicted_class,
-        "class_prob": round(class_prob, 3),
-        "age_bucket": age_bucket,
-        "age": age,
-        "detector_conf": round(detector_conf, 3)
+        "Predicted_Class": predicted_class,
+        "Confidence": round(class_prob* 100, 3),
+        "Age": age,
+        "Age_Bucket": age_bucket,
+        "Detector_Conf": round(detector_conf, 2),
+        "Time_Taken_secs": time_taken,
+        
     }
 
     save_to_csv(row)
