@@ -1,4 +1,4 @@
-# 🧬 AI DermalScan Pro: Intelligent Skin & Bio-Age Analysis
+# 🧬 DermalScan:AI_Facial Skin Aging Detection App 
 
 ![Branch](https://img.shields.io/badge/Branch-Kamsali--Niharika-white)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
