@@ -2,7 +2,7 @@
 
 ![Branch](https://img.shields.io/badge/Branch-Kamsali--Niharika-white)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Framework](https://img.shields.io/badge/Framework-Streamlit-ff4b4b)
+![Framework](https://img.shields.io/badge/Framework-Streamlit&Tensorflow(Keras)-ff4b4b)
 ![Model](https://img.shields.io/badge/Model-EfficientNetB0(CNN)-green)
 ![Library](https://img.shields.io/badge/Library-OpenCV-purple)
 
