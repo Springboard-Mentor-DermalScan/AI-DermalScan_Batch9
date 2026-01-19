@@ -80,7 +80,10 @@ graph TD
     SkinResult & AgeResult -->|Data Merge| visual[Visualization Engine<br/>Plotly & OpenCV]
     
     visual -->|Display| FinalImg[Annotated Image]
+    visual -->|Download| FinalImg[AnnotatedImage]
     visual -->|Charts| Charts[3D Interactive Charts]
+    visual -->|Download| Charts[3D Interactive Charts]
+    visual -->|Display| Report[Tabular Batch Report]
     visual -->|Download| Report[Batch CSV Report]
 ```
 ---
@@ -88,6 +91,7 @@ graph TD
 ## 🔑 Key Features
 
 * **Multi-Face Support:** Automatically detects and analyzes multiple people in a single group photo.
+* **Multi-Image Support:** With multi-image support, User can upload a maximum of 4 images at once and receive parallel predictions for each.
 * **Smart Heuristics:**
     * *Rule 1:* If "Wrinkles" are detected with high confidence, the minimum age floor is raised.
     * *Rule 2:* **Context Padding** ensures the model sees the forehead and chin, improving age accuracy by ~15%.
