@@ -1,4 +1,4 @@
-# 🧬 DermalScan:AI_Facial Skin Aging Detection App 
+# 🧬 DermalScan AI : Skin Condition and Bio-Age Analysis
 
 ![Branch](https://img.shields.io/badge/Branch-Kamsali--Niharika-white)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -127,6 +127,11 @@ This project is built on a robust stack optimized for rapid computer vision prot
 ### **4. Generative AI Features**
 * **Aging Simulation (CycleGAN):** Implement Generative Adversarial Networks (GANs) to visualize **"Future Face"** scenarios (e.g., "Show me my face in 10 years if I don't treat these wrinkles"), adding a predictive layer to the user experience.
 ---
+🧠 Model Strategy: Precision vs. Performance
+"This project implements a dual-architecture approach to demonstrate scalability. EfficientNet was developed first to establish a high-accuracy benchmark for detailed skin texture analysis.\
+Subsequently, MobileNetV2 was introduced to optimize the system for Edge AI, ensuring the low-latency and app runs smoothly even on low-power devices.\
+👉 Usage Note: The application is optimized to run with MobileNetV2 by default for speed. To test the high-precision EfficientNet model, simply update the model path in app.py to point to dermalscan_efficientnet_model.h5."
+---
 ## ⚙️ Installation & Usage Guide
 ### **Step 1: Clone the Repository**
 ```bash
@@ -153,13 +158,14 @@ streamlit run app.py
 ```
 📂 Project Directory Structure
 ```
-AI-DermalScan_Batch9 (Branch: Kamsali-Niharika)    <-- ROOT REPOSITORY
+AI-DermalScan_Batch9                               <-- ROOT REPOSITORY
 │
 ├── AI-DermalScan Milestone 1 & 2.ipynb            <-- (Project Notebook: Data Prep & Training)
 ├── AI DermalScan.pdf                              <-- (Project Documentation)
 ├── LICENSE                                        <-- (Standard License File)
 ├── README.md                                      <-- (Master Documentation Guide)
 ├── requirements.txt                               <-- (Python Dependencies)
+├── dermalscan_efficientnet_model.h5               <-- (Main EfficientNet model)
 │
 └── Milestone 3/                                   <-- (MAIN APPLICATION FOLDER)
     │
