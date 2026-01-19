@@ -122,3 +122,4 @@ AI-DermalScan/
 ├── requirements.txt
 └── README.md
 
+
