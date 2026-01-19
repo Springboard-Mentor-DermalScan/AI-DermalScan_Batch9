@@ -135,7 +135,7 @@ This project is built on a robust stack optimized for rapid computer vision prot
 "This project implements a dual-architecture approach to demonstrate scalability. EfficientNet was developed first to establish a high-accuracy benchmark for detailed skin texture analysis.\
 Subsequently, MobileNetV2 was introduced to optimize the system for Edge AI, ensuring the low-latency and app runs smoothly even on low-power devices.
 
-### 👉 Usage Note: The application is optimized to run with MobileNetV2 by default for speed. To test the high-precision EfficientNet model, simply update the model path in app.py to point to dermalscan_efficientnet_model.h5."
+## 👉 Usage Note: The application is optimized to run with MobileNetV2 by default for speed. To test the high-precision EfficientNet model, simply update the model path in app.py to point to dermalscan_efficientnet_model.h5."
 ---
 ## ⚙️ Installation & Usage Guide
 ### **Step 1: Clone the Repository**
