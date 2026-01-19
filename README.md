@@ -1,89 +1,113 @@
-# AI DermalScan
+# 🧴 DermalScan – AI-Powered Skin Analysis System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-3.0.0-lightgrey.svg)](https://flask.palletsprojects.com/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange.svg)](https://www.tensorflow.org/)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-black)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep_Learning-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-DermalScan - AI Skin Analysis is an advanced web-based application for automated skin analysis using deep learning. It leverages computer vision and machine learning to detect facial features, classify skin conditions, and estimate age from uploaded images. Built with Flask, TensorFlow, and OpenCV, it provides a user-friendly interface for real-time skin health assessments.
+<p align="center">
+  <b>DermalScan</b> is an AI-powered web application that analyzes facial images to detect skin conditions, estimate age, and visualize results using deep learning and computer vision techniques.
+</p>
 
-## Features
+---
 
-- **Face Detection**: Utilizes OpenCV's DNN-based face detector for accurate facial recognition in images.
-- **Skin Condition Classification**: Classifies skin into four categories: Clear Skin, Dark Spots, Puffy Eyes, and Wrinkles using a fine-tuned MobileNetV2 model.
-- **Age Estimation**: Provides age range estimates based on detected skin conditions and model confidence.
-- **Multi-Face Support**: Handles images with multiple faces, providing individual analysis for each detected face.
-- **Web Interface**: Intuitive HTML/CSS/JavaScript frontend for easy image uploads and result visualization.
-- **Annotated Results**: Generates annotated images with bounding boxes and labels for visual feedback.
-- **Data Export**: Download predictions as CSV files and annotated images for further analysis.
-- **Session Management**: Maintains user sessions for multiple analyses without data loss.
+## 📌 Project Overview
 
-## Installation
+DermalScan provides an end-to-end solution for facial skin analysis using a modern web interface and a robust backend inference pipeline.  
+The system supports **single-face and multi-face images**, generates **annotated visual outputs**, logs predictions, and allows **exporting results** for further analysis.
 
-### Prerequisites
+---
 
-- Python 3.8 or higher
-- pip package manager
+## ✨ Key Features
 
-### Steps
+- Image upload with real-time preview
+- Deep Neural Network (DNN) based face detection
+- Non-Maximum Suppression (NMS) for multi-face handling
+- CNN-based skin condition classification
+- Age estimation using confidence-based mapping
+- Adaptive annotations for crowded images
+- Prediction summary (single & multiple faces)
+- Evaluation time tracking (seconds)
+- CSV and annotated image export
+- Responsive and clean UI
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
-   cd AI-DermalScan_Batch9
-   git checkout Kanishka  # Switch to the branch 'Kanishka'
-   ```
+---
 
-2. **Create a virtual environment (recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+## 🧠 Technologies Used
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Frontend
+- HTML5
+- CSS3
+- Vanilla JavaScript
 
-4. **Download required models:**
-   - The application uses pre-trained models included in the repository.
-   - Ensure all `.h5` model files and OpenCV cascade files are present in the root directory.
+### Backend
+- Python 3.10
+- Flask 3.0.0
+- TensorFlow 2.15.0
+- OpenCV (DNN Module)
+- NumPy
+- Matplotlib
 
-## Usage
+---
 
-1. **Start the application:**
-   ```bash
-   python app.py
-   ```
+## 👤 User Guide
 
-2. **Access the web interface:**
-   Open your browser and navigate to `http://localhost:5000`
+### 1️⃣ Launching the Application
+Run the Flask server and open:
+http://127.0.0.1:5000
 
-3. **Upload an image:**
-   - Click the "Upload Image For Analysis" button
-   - Select a facial image (JPEG, PNG, etc.)
-   - The application will process the image and display results
+### 2️⃣ Uploading an Image
+- Click **“Upload Image for Analysis”**
+- Select an image with one or more faces
+- Uploaded image preview appears instantly
 
-4. **View results:**
-   - Annotated image with detected faces and classifications
-   - Detailed predictions table with confidence scores and age estimates
-   - Download options for annotated images and CSV data
+### 3️⃣ Viewing Analysis Results
+After processing:
+- Annotated image is displayed with bounding boxes
+- Each detected face shows:
+  - Skin condition
+  - Estimated age
+  - Confidence score
+- Result box displays:
+  - Detailed output for single-face images
+  - Summary analysis for multi-face images
+- Evaluation time (in seconds) is shown below the result
 
-## Project Structure
+### 4️⃣ Prediction Table
+Each prediction is logged with:
+- Face ID
+- Bounding box coordinates
+- Predicted skin condition
+- Confidence score
+- Estimated age
+- Detector confidence
+- Evaluation time
 
+### 5️⃣ Export Options
+- **Download Annotated Image**
+- **Download Predictions CSV**
+
+---
+
+## 🧑‍💻 Developer Guide
+
+### 📁 Project Structure
 ```
 AI_DermalScan/
+│
 ├── app.py                          # Main Flask application
 ├── requirements.txt                # Python dependencies
-├── LICENSE                         # MIT License
 ├── README.md                       # Project documentation
+├── LICENSE                         # MIT License
 ├── AI_DermalScan_Documentation.pdf # Detailed project documentation
 ├── dermalscan.ipynb                # Jupyter notebook for model development
 ├── dermalscan_notebook2_milestone2.ipynb  # Additional notebook
 ├── dataset_split.py                # Dataset splitting script
 ├── deploy.prototxt                 # OpenCV face detection config
 ├── res10_300x300_ssd_iter_140000.caffemodel  # OpenCV face detection model
-├── *.h5                            # Pre-trained TensorFlow models
+├── haarcascade_frontalface_default.xml  # Alternative face detection
+├── *.h5                            # Pre-trained TensorFlow models (MobileNetV2, EfficientNet, ResNet, VGG)
 ├── *.png                           # UI design images and plots
 ├── Dataset/                        # Training dataset
 ├── Dataset_split/                  # Split dataset for training/validation
@@ -95,48 +119,76 @@ AI_DermalScan/
 │   └── outputs/                    # Annotated output images
 ├── templates/                      # HTML templates
 │   └── index.html                  # Main web interface
+├── tf_env/                         # TensorFlow environment
 └── visualizations/                 # Data visualization outputs
 ```
 
-## Requirements
+### ⚙️ Backend Pipeline Overview
 
-- Flask==3.0.0
-- gunicorn
-- tensorflow-cpu==2.15.0
-- opencv-python-headless
-- numpy
-- matplotlib
+1. Image upload handled via Flask
+2. Face detection using OpenCV DNN (SSD model)
+3. Non-Maximum Suppression removes overlapping boxes
+4. Face preprocessing and normalization
+5. CNN model predicts skin condition
+6. Age estimation derived from confidence score
+7. Matplotlib renders annotated output
+8. Predictions stored in session memory
+9. Structured JSON response sent to frontend
 
-## Models
+### 🧠 Key Concepts Explained
 
-The application uses several pre-trained models for skin analysis:
+| Concept | Description |
+|------|------------|
+| **DNN** | Deep Neural Network used for face detection |
+| **Blob** | Preprocessed input format for DNN models |
+| **NMS** | Removes overlapping face detections |
+| **Tensor** | Multi-dimensional array used by deep learning models |
+| **CNN** | Convolutional Neural Network for classification |
+| **Session Storage** | Stores predictions during a user session |
+| **Evaluation Time** | Total inference time per image |
 
-- **MobileNetV2_Model2_Final.h5**: Primary model for skin condition classification
-- **EfficientNetB0.h5**: Alternative efficient model
-- **ResNet50.h5**, **ResNet50_best.h5**: ResNet-based models
-- **VGG16.h5**, **VGG16_best.h5**: VGG-based models
+### ⏱ Evaluation Time
+Evaluation time is computed as:
+time.time() - start_time
 
-## API Endpoints
+- Measured in **seconds**
+- Represents total backend processing duration
+- Logged per prediction and included in exports
 
-- `GET /`: Main web interface
-- `POST /predict`: Image analysis endpoint
-- `GET /download_image/<filename>`: Download annotated image
-- `GET /download_csv`: Download predictions as CSV
+### 🧪 Performance Summary
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built as part of the Infosys Springboard Internsip Project
-- Utilizes open-source libraries and pre-trained models
-- Inspired by advancements in computer vision and dermatological AI research
-
-## Contact
-
-For questions or support, please open an issue on GitHub or contact the maintainers.
+- Average processing time: **~2–4 seconds**
+- Supports single and multi-face images
+- Clean and adaptive visualization
+- Stable for repeated interactive use
 
 ---
 
-For more detailed information, refer to [AI_DermalScan_Documentation.pdf](AI_DermalScan_Documentation.pdf).
+## 📦 Installation & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/DermalScan.git
+cd DermalScan
+```
+
+### 2️⃣ Create Virtual Environment
+```bash
+python -m venv venv
+venv\Scripts\activate  # On Windows
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run Application
+```bash
+python app.py
+```
+
+---
+
+## 📄 License
+This project is intended for educational and research purposes.

@@ -16,10 +16,10 @@
 <div class="upload-section">
 	<label class="upload-btn">
 		<input type="file" id="imageUpload" accept="image/*" hidden>
-		<i class='fas fa-image' style="font-size:15px; margin-right:4px;"></i>Upload Image For Analysis
+		<i class="fas fa-image" style="font-size:15px; margin-right:4px;"></i>
+		Upload Image For Analysis
 	</label>
 </div>
-
 
 <div class="app-container">
 
@@ -40,32 +40,39 @@
 				<img id="annotatedImage" />
 			</div>
 			<button class="download-btn" id="downloadImgBtn">
-				<i class='fas fa-save' style="font-size:15px; margin-right:4px;"></i>Download Annotated Image
+				<i class="fas fa-save" style="font-size:15px; margin-right:4px;"></i>
+				Download Annotated Image
 			</button>
 		</div>
 
 	</div>
 
-	
+	<!-- Result Text -->
 	<div class="result-box">
 		<p>Upload an image to see prediction.</p>
+	</div>
+
+	<!-- ✅ Evaluation Time (NEW) -->
+	<div class="result-box" id="evaluationBox" style="margin-top:12px; display:none;">
+		<p id="evaluationTimeText"></p>
 	</div>
 
 	<div class="predictions-section">
 		<div class="predictions-header">
 			<h3>Predictions</h3>
 			<button class="download-btn" id="downloadCsvBtn">
-				<i class="fas fa-download" style="font-size:15px; margin-right:4px;"></i>Download Predictions CSV
+				<i class="fas fa-download" style="font-size:15px; margin-right:4px;"></i>
+				Download Predictions CSV
 			</button>
 		</div>
-        
-		<!--Predictions Table-->
+
+		<!-- Predictions Table -->
 		<div class="table-container">
 			<table>
 				<thead>
 					<tr>
 						<th>face_id</th>
-						<th>Filename</th>
+						<th>filename</th>
 						<th>box_x1</th>
 						<th>box_y1</th>
 						<th>box_x2</th>
@@ -74,6 +81,7 @@
 						<th>class_prob</th>
 						<th>age_estimation</th>
 						<th>detector_conf</th>
+						<th>evaluation_time_sec</th> <!-- ✅ NEW -->
 					</tr>
 				</thead>
 				<tbody></tbody>
@@ -82,7 +90,6 @@
 	</div>
 
 </div>
-
 
 <script>
 const uploadInput = document.getElementById("imageUpload");
@@ -93,26 +100,24 @@ const resultText = document.querySelector(".result-box p");
 const tbody = document.querySelector("tbody");
 const downloadImgBtn = document.getElementById("downloadImgBtn");
 const downloadCsvBtn = document.getElementById("downloadCsvBtn");
+const evaluationBox = document.getElementById("evaluationBox");
+const evaluationTimeText = document.getElementById("evaluationTimeText");
 
 uploadInput.addEventListener("change", () => {
 
 	const file = uploadInput.files[0];
 	if (!file) return;
 
+	uploadedImage.src = URL.createObjectURL(file);
 
-	const previewURL = URL.createObjectURL(file);
-	uploadedImage.src = previewURL;
-
-	
 	const fd = new FormData();
 	fd.append("image", file);
 
-	
 	annotatedImage.src = "";
 	loader.style.display = "block";
+	evaluationBox.style.display = "none";
 	resultText.innerHTML = "Analyzing image, please wait...";
 
-	
 	fetch("/predict", {
 		method: "POST",
 		body: fd
@@ -123,45 +128,55 @@ uploadInput.addEventListener("change", () => {
 	})
 	.then(data => {
 
-			loader.style.display = "none";
+		loader.style.display = "none";
+		annotatedImage.src = data.annotated_image + "?t=" + Date.now();
 
-			annotatedImage.src =
-				data.annotated_image + "?t=" + Date.now();
+		/* Result Text */
+		if (!data.multi_face && data.table.length === 1) {
+			const r = data.table[0];
+			resultText.innerHTML = `
+				The predicted skin condition is <b>${r.class}</b>
+				with a confidence score of <b>${r.class_prob}%</b>.
+				The age is estimated to be <b>${r.age_estimation}</b>.
+			`;
+		} else {
+			resultText.innerHTML = data.result_text;
+		}
 
-			if (!data.multi_face && data.table.length === 1) {
-				const r = data.table[0];
-				resultText.innerHTML = `The predicted skin condition is <b>${r.class}</b>
-				with a confidence score of <b>${r.class_prob}%</b>. 
-				The age is estimated to be <b>${r.age_estimation}</b>.`;
-			} else {
-				resultText.innerHTML = `${data.result_text}`;
+		/* ✅ Evaluation Time */
+		if (data.evaluation_time !== undefined) {
+			evaluationTimeText.innerHTML =
+				`Evaluation Time: <b>${data.evaluation_time}</b> seconds`;
+			evaluationBox.style.display = "block";
+		}
 
-			}
-			tbody.innerHTML = "";
-			data.table.forEach(r => {
-				const tr = document.createElement("tr");
-				tr.innerHTML = `
-					<td>${r.face_id}</td>
-					<td>${r.filename}</td>
-					<td>${r.box_x1}</td>
-					<td>${r.box_y1}</td>
-					<td>${r.box_x2}</td>
-					<td>${r.box_y2}</td>
-					<td>${r.class}</td>
-					<td>${r.class_prob}</td>
-					<td>${r.age_estimation}</td>
-					<td>${r.detector_conf}</td>
-				`;
-				tbody.appendChild(tr);
-			});
+		/* Table */
+		tbody.innerHTML = "";
+		data.table.forEach(r => {
+			const tr = document.createElement("tr");
+			tr.innerHTML = `
+				<td>${r.face_id}</td>
+				<td>${r.filename}</td>
+				<td>${r.box_x1}</td>
+				<td>${r.box_y1}</td>
+				<td>${r.box_x2}</td>
+				<td>${r.box_y2}</td>
+				<td>${r.class}</td>
+				<td>${r.class_prob}</td>
+				<td>${r.age_estimation}</td>
+				<td>${r.detector_conf}</td>
+				<td>${r.evaluation_time_sec}</td>
+			`;
+			tbody.appendChild(tr);
+		});
 
-			downloadImgBtn.onclick = () => {
-				window.location.href = data.download_url;
-			};
+		downloadImgBtn.onclick = () => {
+			window.location.href = data.download_url;
+		};
 
-			downloadCsvBtn.onclick = () => {
-				window.location.href = "/download_csv";
-			};
+		downloadCsvBtn.onclick = () => {
+			window.location.href = "/download_csv";
+		};
 	})
 	.catch(err => {
 		console.error(err);
@@ -170,7 +185,6 @@ uploadInput.addEventListener("change", () => {
 	});
 });
 </script>
-
 
 </body>
 </html>
