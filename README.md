@@ -35,7 +35,7 @@ This project was built in three distinct phases:
 
 ### **Milestone 1: Data Engineering**
 * **Objective:** Build a robust dataset for skin conditions.
-* **Process:** Curated and labeled images into 4 classes (`Clear`, `Dark Spots`, `Puffy Eyes`, `Wrinkles`).
+* **Process:** Curated and labeled images into 4 classes (`Clear Skin`, `Dark Spots`, `Puffy Eyes`, `Wrinkles`).
 * **Preprocessing:** Standardized all inputs to `224x224` pixels and normalized pixel intensity.
 * **Augmentation:** Applied random rotations, zooms, and flips to prevent model overfitting.
 
