@@ -1,125 +1,165 @@
-🧬 DermalScan – AI-Powered Facial Skin Analysis System
+# 🧴 DermalScan – AI-Based Facial Skin Analysis System
 
-📌 Project Overview
+DermalScan is a deep learning–based application that analyzes facial images to detect skin aging conditions such as **wrinkles, dark spots, puffy eyes, and clear skin**.  
+The system uses a **fine-tuned MobileNetV2 model** and provides results through an interactive **Streamlit web interface**.
 
-DermalScan is designed to analyze facial images and classify skin conditions such as Wrinkles, Dark Spots, Puffy Eyes, and Clear Skin.
-The system uses transfer learning and fine-tuning on MobileNetV2, combined with a lightweight backend inference pipeline and an interactive Streamlit frontend.
-Users can upload images, view annotated predictions, check confidence levels, and export results for documentation or analysis.
-✨ Key Features
+---
 
-Image upload via Streamlit UI
+## 📌 Project Objective
 
-CNN-based skin condition classification
+- Detect facial skin conditions from uploaded images
+- Classify skin type using a CNN model (MobileNetV2)
+- Predict confidence percentage and estimated age
+- Display annotated output images
+- Allow users to download results (image + CSV)
 
-Fine-tuned MobileNetV2 model
+---
 
-Confidence-based prediction levels
+## 🧠 Technologies Used
 
-Age estimation with stable mapping logic
+- Python 3.10
+- TensorFlow / Keras
+- MobileNetV2 (Transfer Learning + Fine-Tuning)
+- OpenCV
+- NumPy, Pandas
+- Streamlit (Frontend UI)
 
-Annotated output images
+---
 
-Prediction summary table
+## 🗂 Dataset Details
 
-CSV export of results
+- Classes:
+  - Clear Skin
+  - Dark Spots
+  - Puffy Eyes
+  - Wrinkles
+- Dataset split:
+  - Train
+  - Validation
+  - Test
+- Image size: **224 × 224**
+- Labels encoded using **one-hot encoding**
 
-Fast inference time per image
+---
 
-🧠 Technologies Used
-Frontend
+## ⚙️ Project Modules Completed
 
-Streamlit
+### ✅ Module 1: Dataset Setup & Labeling
+- Collected and organized facial skin images
+- Labeled images into four skin categories
+- Ensured balanced dataset distribution
+- Generated class distribution plot
 
-Backend
+### ✅ Module 2: Image Preprocessing & Augmentation
+- Resized images to 224×224
+- Normalized pixel values
+- Applied augmentation:
+  - Rotation
+  - Zoom
+  - Horizontal flip
 
-Python 3.10
+### ✅ Module 3: Model Training (MobileNetV2)
+- Used pretrained MobileNetV2
+- Applied transfer learning
+- Fine-tuned top layers
+- Used Adam optimizer and categorical cross-entropy
+- Saved trained model as `.h5`
 
-TensorFlow / Keras
+### ✅ Module 4: Prediction Pipeline
+- Loaded trained model
+- Preprocessed input images
+- Generated class probabilities
+- Predicted:
+  - Skin condition
+  - Confidence score
+  - Estimated age
+  - Risk status
+- Annotated image using OpenCV
 
-OpenCV
+### ✅ Module 5: Streamlit Frontend
+- Image upload support (single & multiple)
+- Real-time result display
+- Annotated image visualization
+- Clean and responsive UI
 
-NumPy
+### ✅ Module 6: Backend Integration
+- Modular inference code (`inference.py`)
+- Model loaded once for efficiency
+- Smooth frontend–backend communication
 
-Pandas
+### ✅ Module 7: Export & Logging
+- Download annotated image
+- Download prediction report as CSV
+- Logged:
+  - Disease
+  - Confidence
+  - Age
+  - Time taken
 
-🧪 Model Details
+### ✅ Module 8: Documentation
+- README.md created
+- Project structure documented
+- GitHub repository prepared
 
-Base Model: MobileNetV2 (ImageNet pretrained)
+---
 
-Approach: Transfer Learning + Fine Tuning
-
-Loss Function: Categorical Crossentropy
-
-Optimizer: Adam (low learning rate during fine tuning)
-
-Input Size: 224 × 224
-
-Classes:
-
-Clear Skin
-
-Dark Spots
-
-Puffy Eyes
-
-Wrinkles
-
-👤 User Guide
-1️⃣ Run the Application
-streamlit run frontend/app.py
-
-2️⃣ Upload Image
-
-Upload JPG / PNG facial image
-
-Multiple images supported
-
-3️⃣ View Results
-
-For each image:
-
-Annotated image with bounding box
-
-Predicted skin condition
-
-Confidence percentage
-
-Estimated age
-
-Risk status (Normal / Moderate / Risk)
-
-4️⃣ Download Outputs
-
-Annotated image
-
-CSV prediction report
-
-🧑‍💻 Developer Guide
-📁 Project Structure
+## 📁 Project Structure
 
 AI-DermalScan/
 │
-├── Dataset/
-│   ├── train/
-│   ├── val/
-│   └── test/
-│
-├── models/
-│   └── MobileNetV2_Module3_finetuned.h5
-│
 ├── backend/
-│   └── inference.py
+│ ├── inference.py
+│ └── models/
+│ └── MobileNetV2_Module3_finetuned.h5
 │
 ├── frontend/
-│   └── app.py
+│ ├── app.py
+│ ├── uploads/
+│ └── outputs/
+│
+├── Dataset/
+│ ├── train/
+│ ├── val/
+│ └── test/
+│
+├── notebooks/
+│ └── AI_DermalScan_Project.ipynb
 │
 ├── results/
-│   ├── correct/
-│   ├── wrong/
-│   └── uncertain/
-│
-├── Module4_Predictions.csv
 ├── requirements.txt
 └── README.md
 
+---
 
+## ▶️ How to Run the Project
+
+### 1️⃣ Create Virtual Environment
+```bash
+python -m venv env
+env\Scripts\activate
+
+2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+
+3️⃣ Run Streamlit App
+```bash
+streamlit run frontend/app.py
+
+📊 Output Details
+
+Annotated image with:
+
+-Skin condition
+-Confidence %
+-Predicted age
+-CSV report includes:
+-File name
+-Prediction
+-Confidence
+-Age bucket
+-Time taken
+
+📄 License
+
+This project is developed for educational and academic purposes.
