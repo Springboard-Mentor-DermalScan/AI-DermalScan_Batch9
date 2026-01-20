@@ -23,6 +23,18 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 - OpenCV
 - NumPy, Pandas
 - Streamlit (Frontend UI)
+  ## 💻 Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
+![MobileNetV2](https://img.shields.io/badge/MobileNetV2-CNN-success)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![NumPy](https://img.shields.io/badge/NumPy-Array-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20UI-ff4b4b)
+
 
 ---
 
@@ -161,9 +173,12 @@ streamlit run frontend/app.py
   - Age bucket
   - Time taken
 
+---
+
 
 ## 📄 License
 
 ```md
 
 This project is developed for educational and academic purposes.
+
