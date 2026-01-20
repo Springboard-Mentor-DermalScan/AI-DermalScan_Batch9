@@ -1,13 +1,13 @@
 import streamlit as st
-import pandas as pd
 import cv2
-import tempfile
+import time
+import pandas as pd
+import uuid
 import os
 import sys
 
-# ---------------- PATH FIX ----------------
-sys.path.append(os.path.abspath(".."))
-from backend.inference import predict_image
+sys.path.append(os.path.abspath("../backend"))
+from inference import predict_image
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -16,72 +16,83 @@ st.set_page_config(
     layout="wide"
 )
 
+# ---------------- BACKGROUND STYLE ----------------
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+h1, h2, h3, h4, h5, h6, p, label {
+    color: white;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.title("🧬 AI DermalScan")
 st.subheader("Skin Disease & Age Prediction System")
 
-# ---------------- SESSION STATE ----------------
-if "results" not in st.session_state:
-    st.session_state.results = []
-
-# ---------------- FILE UPLOADER ----------------
 uploaded_files = st.file_uploader(
     "📤 Upload Skin Images",
     type=["jpg", "jpeg", "png"],
     accept_multiple_files=True
 )
 
-# ---------------- PROCESS IMAGES ----------------
+os.makedirs("uploads", exist_ok=True)
+os.makedirs("outputs", exist_ok=True)
+
+results = []
+
 if uploaded_files:
     for file in uploaded_files:
-        existing_files = [r["File Name"] for r in st.session_state.results]
-        if file.name in existing_files:
-            continue
+        uid = str(uuid.uuid4())
+        img_path = f"uploads/{uid}.jpg"
+        out_path = f"outputs/annotated_{uid}.jpg"
 
+        with open(img_path, "wb") as f:
+            f.write(file.read())
 
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
-            tmp.write(file.read())
-            img_path = tmp.name
+        start = time.perf_counter()
+        annotated, disease, confidence, age_bucket, status, age = predict_image(img_path)
+        end = time.perf_counter()
 
-        # 🔮 Prediction
-        annotated_img, disease, confidence, age_bucket, status, predicted_age = predict_image(img_path)
+        time_taken = round(end - start, 3)
 
-        # 📊 Store results
-        st.session_state.results.append({
+        cv2.imwrite(out_path, annotated)
+
+        st.image(
+            annotated,
+            caption=f"{file.name} | {disease} | {confidence}% | Age {age} | ⏱ {time_taken}s",
+            channels="BGR"
+        )
+
+        with open(out_path, "rb") as img_file:
+            st.download_button(
+                label="⬇️ Download This Annotated Image",
+                data=img_file,
+                file_name=f"annotated_{file.name}",
+                mime="image/jpeg",
+                key=uid
+            )
+
+        results.append({
             "File Name": file.name,
             "Disease": disease,
             "Prediction Confidence (%)": confidence,
             "Age Bucket": age_bucket,
-            "Predicted Age": predicted_age,
-            "Status": status
+            "Predicted Age": age,
+            "Status": status,
+            "Time Taken (sec)": time_taken
         })
 
-        # 🖼️ Show Image
-        st.image(
-            cv2.cvtColor(annotated_img, cv2.COLOR_BGR2RGB),
-            caption=f"Annotated Image - {file.name}",
-            width=450
-        )
-
-        # ⬇️ Image Download Button
-        _, buffer = cv2.imencode(".jpg", annotated_img)
-
-        st.download_button(
-            label=f"⬇️ Download Annotated Image ({file.name})",
-            data=buffer.tobytes(),
-            file_name=f"annotated_{file.name}",
-            mime="image/jpeg"
-        )
-
-# ---------------- RESULTS TABLE ----------------
-if st.session_state.results:
-    st.subheader("🔍 Predictions")
-    df = pd.DataFrame(st.session_state.results)
+if results:
+    st.subheader("📊 Prediction Summary")
+    df = pd.DataFrame(results)
     st.dataframe(df, use_container_width=True)
 
-    # ⬇️ CSV Download
+    csv = df.to_csv(index=False).encode("utf-8")
     st.download_button(
-        label="⬇️ Download Prediction Report (CSV)",
-        data=df.to_csv(index=False).encode("utf-8"),
-        file_name="AI_DermalScan_Predictions.csv",
-        mime="text/csv"
+        "⬇️ Download Prediction Report (CSV)",
+        csv,
+        "AI_DermalScan_Report.csv",
+        "text/csv"
     )
