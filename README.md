@@ -138,15 +138,15 @@ AI-DermalScan/
 python -m venv env
 env\Scripts\activate
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 
-3️⃣ Run Streamlit App
+### 3️⃣ Run Streamlit App
 ```bash
 streamlit run frontend/app.py
 
-📊 Output Details
+## 📊 Output Details
 
 Annotated image with:
 
@@ -160,6 +160,7 @@ Annotated image with:
 -Age bucket
 -Time taken
 
-📄 License
+## 📄 License
+
 
 This project is developed for educational and academic purposes.
