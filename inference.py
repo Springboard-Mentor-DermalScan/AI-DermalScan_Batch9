@@ -5,18 +5,25 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from tensorflow.nn import softmax
 
-# ---------------- BASE SETUP ----------------
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-MODEL_PATH = os.path.join(
-    BASE_DIR,
-    "models",
-    "MobileNetV2_Module3.h5"
-)
-
+# ---------------- BASE PATH ----------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
+MODEL_PATH = os.path.join( 
+    BASE_DIR, 
+    "models", 
+    "MobileNetV2_Module3_finetuned.h5" 
+    ) 
+# ---------------- LOAD MODEL ----------------
 model = load_model(MODEL_PATH)
 
-CLASS_NAMES = ["Clear skin", "Dark spots", "Puffy eyes", "Wrinkles"]
+# ---------------- CONSTANTS ----------------
+CLASSES = ["Clear skin", "Dark spots", "Puffy eyes", "Wrinkles"]
+
+AGE_BASE = {
+    "Clear skin": 22,
+    "Dark spots": 30,
+    "Puffy eyes": 35,
+    "Wrinkles": 45
+}
 
 AGE_BUCKETS = {
     "0-18": (0, 18),
@@ -26,13 +33,7 @@ AGE_BUCKETS = {
     "50+": (51, 100)
 }
 
-BASE_AGE = {
-    "Clear skin": 22,
-    "Dark spots": 30,
-    "Puffy eyes": 35,
-    "Wrinkles": 45
-}
-
+# ---------------- RISK STATUS ----------------
 def risk_status(disease):
     if disease == "Clear skin":
         return "Normal"
@@ -41,54 +42,44 @@ def risk_status(disease):
     else:
         return "Moderate"
 
-# ---------------- PREDICTION FUNCTION ----------------
+# ---------------- MAIN PREDICTION ----------------
 def predict_image(img_path):
-
-    # Load image
+    # Load & preprocess image
     img = image.load_img(img_path, target_size=(224, 224))
-    img_arr = image.img_to_array(img) / 255.0
-    img_arr = np.expand_dims(img_arr, axis=0)
+    arr = image.img_to_array(img) / 255.0
+    arr = np.expand_dims(arr, axis=0)
 
-    # Disease prediction
-    raw_preds = model.predict(img_arr)[0]
-    probs = softmax(raw_preds).numpy()
+    # Model prediction
+    preds = softmax(model.predict(arr, verbose=0)[0]).numpy()
+    idx = np.argmax(preds)
 
-    idx = np.argmax(probs)
-    disease = CLASS_NAMES[idx]
-    confidence = probs[idx] * 100
+    disease = CLASSES[idx]
+    confidence = round(preds[idx] * 100, 2)
 
-    # -------- STABLE AGE LOGIC --------
-    predicted_age = BASE_AGE[disease] + int(confidence // 20)
-    predicted_age = max(18, min(predicted_age, 60))
+    # Age estimation
+    age = AGE_BASE[disease] + int(confidence // 20)
+    age = max(18, min(age, 60))
 
     # Age bucket
     age_bucket = "Unknown"
     for bucket, (low, high) in AGE_BUCKETS.items():
-        if low <= predicted_age <= high:
+        if low <= age <= high:
             age_bucket = bucket
             break
 
-    # Risk status
+    # Risk level
     status = risk_status(disease)
 
-    # -------- Annotated Image --------
+    # Annotated image
     img_cv = cv2.imread(img_path)
-    h, w, _ = img_cv.shape
-
-    x1, y1 = int(w * 0.25), int(h * 0.25)
-    x2, y2 = int(w * 0.75), int(h * 0.75)
-
-    cv2.rectangle(img_cv, (x1, y1), (x2, y2), (0, 255, 0), 2)
-
-    label = f"{disease} | {confidence:.2f}% | Age: {predicted_age}"
     cv2.putText(
         img_cv,
-        label,
+        f"{disease} | {confidence}% | Age {age}",
         (10, 30),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.8,
-        (255, 0, 0),
+        (0, 255, 0),
         2
     )
 
-    return img_cv, disease, round(confidence, 2), age_bucket, status, predicted_age
+    return img_cv, disease, confidence, age_bucket, status, age
