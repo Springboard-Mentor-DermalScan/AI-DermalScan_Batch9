@@ -131,33 +131,34 @@ AI-DermalScan/
 
 ---
 
+
 ## ▶️ How to Run the Project
 
 ### 1️⃣ Create Virtual Environment
 ```bash
 python -m venv env
 env\Scripts\activate
-
 2️⃣ Install Dependencies
-
 pip install -r requirements.txt
-
 3️⃣ Run Streamlit App
 streamlit run frontend/app.py
 
-📊 Output Details
 
-Annotated image with:
+📊 ```md
+## 📊 Output Details
 
--Skin condition
--Confidence %
--Predicted age
--CSV report includes:
--File name
--Prediction
--Confidence
--Age bucket
--Time taken
+- Annotated image includes:
+  - Skin condition
+  - Confidence %
+  - Predicted age
+
+- CSV report includes:
+  - File name
+  - Prediction
+  - Confidence
+  - Age bucket
+  - Time taken
+
 
 📄 License
 
