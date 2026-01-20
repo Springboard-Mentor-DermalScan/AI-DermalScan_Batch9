@@ -134,12 +134,14 @@ AI-DermalScan/
 
 ## ▶️ How to Run the Project
 
-### 1️⃣ Create Virtual Environment
+ 1️⃣ Create Virtual Environment
 ```bash
 python -m venv env
 env\Scripts\activate
+
 2️⃣ Install Dependencies
 pip install -r requirements.txt
+
 3️⃣ Run Streamlit App
 streamlit run frontend/app.py
 
@@ -160,6 +162,8 @@ streamlit run frontend/app.py
   - Time taken
 
 
-📄 License
+## 📄 License
+
+```md
 
 This project is developed for educational and academic purposes.
