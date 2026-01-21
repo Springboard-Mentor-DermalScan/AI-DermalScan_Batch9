@@ -88,20 +88,26 @@ AI-DermalScan/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+### 1️⃣ Clone the Repository
+bash
 git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+cd AI-DermalScan_Batch9
 
 ### 2️⃣ Create Virtual Environment
+bash
 python -m venv env
 env\Scripts\activate
 
 ### 3️⃣  Install Dependencies
+bash
 pip install -r requirements.txt
 
 ### 4️⃣ Run Streamlit App
+bash
 streamlit run frontend/app.py
 
 ### 5️⃣ Open in Browser
+text
 http://localhost:8501/
 
 
@@ -195,5 +201,6 @@ Meghana Sandya
 ### 📧Email: 22nn1a0480@gmail.com
 
 ### 💼GitHub: https://github.com/Meghanasandya28
+
 
 
