@@ -5,6 +5,12 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 
 ---
 
+## Project Preview
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
 ## 📌 Project Objective
 
 - Detect facial skin conditions from uploaded images
