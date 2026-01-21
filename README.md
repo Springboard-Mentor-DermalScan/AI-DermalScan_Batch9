@@ -149,7 +149,7 @@ Download button for image & CSV
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone -b kanishka https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+git clone -b Brijesh-Rath https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
 ```
 
 ### 2️⃣ Create Virtual Environment
