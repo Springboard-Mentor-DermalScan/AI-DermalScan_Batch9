@@ -62,7 +62,7 @@ Displayed & Downloaded in UI
 ## 5. Technology Stack
 
 ### Programming Language
-- Python 3.x
+- Python 3.10
 
 ### Libraries & Frameworks
 | Category | Tools Used |
