@@ -175,33 +175,31 @@ python app.py
 
 ## 🏗️ Project Workflow (Backend + UI Flow)
 
-I open the web UI
 
-I upload an image
+    Start([Start])
+    UI[Open Web UI]
+    Upload[Upload Image]
+    Receive[Flask Receives Image]
+    Save[Save Image<br/>static/uploads/]
+    Load[Load Trained Model]
+    Read[Read Image using OpenCV]
+    Preprocess[Resize & Normalize Image]
+    Predict[Model Prediction]
+    Bucket[Assign Age Bucket]
+    Annotate[Draw Bounding Box<br/>+ Prediction]
+    Output[Save Annotated Image<br/>static/outputs/]
+    CSV[Generate CSV Log]
+    Display[Display Results in UI]
+    Download[Download Image & CSV]
+    End([End])
 
-Flask receives & saves image → static/uploads/
+    Start --> UI --> Upload --> Receive --> Save
+    Save --> Load --> Read --> Preprocess --> Predict
+    Predict --> Bucket --> Annotate
+    Annotate --> Output --> Display
+    Annotate --> CSV --> Display
+    Display --> Download --> End
 
-Backend loads model
-
-Image is read via OpenCV
-
-Preprocessing → resize → normalize
-
-Model predicts class probabilities
-
-Backend assigns age bucket
-
-Backend draws bounding box + prediction text
-
-Backend saves annotated image → static/outputs/
-
-Backend generates CSV log
-
-UI displays original + predicted image
-
-UI displays results table
-
-I download annotated image & CSV
 
 
 
