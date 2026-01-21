@@ -8,13 +8,13 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 ## 📸 Project Preview
 
 ### 🔹 Web Interface
-![AI DermalScan Home](assets/preview.png)
+![AI DermalScan Home](.assets/preview.png)
 
 ### 🔹 Prediction Output
-![Prediction Result](assets/result.png)
+![Prediction Result](.assets/result.png)
 
 ### 🔹 CSV Report Download
-![Prediction Report](assets/report.png)
+![Prediction Report](.assets/report.png)
 
 ---
 
@@ -94,7 +94,11 @@ AI-DermalScan/
 │
 ├── results/
 ├── requirements.txt
-└── README.md
+├── README.md        
+├── assets/
+│   ├── preview.png
+│   ├── result.png
+│   └── report.png
 
 ---
 
@@ -216,5 +220,6 @@ Meghana Sandya
 ### 📧Email: 22nn1a0480@gmail.com
 
 ### 💼GitHub: https://github.com/Meghanasandya28
+
 
 
