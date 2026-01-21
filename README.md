@@ -144,27 +144,29 @@ Download button for image & CSV
 
 
 
-## 🚀 Installation
 
-1. Clone Repository
-'''
-[git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git]
+### 🚀 Installation
 
-3. Install Dependencies
+### 1️⃣ Clone Repository
+```bash
+git clone -b kanishka https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+```
 
+### 2️⃣ Create Virtual Environment
+```bash
+python -m venv venv
+venv\Scripts\activate  # On Windows
+```
+
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-'''
+```
 
-
-## ▶️ Run the Application
-
+### 4️⃣ Run Application
+```bash
 python app.py
-
-
-Then open in browser:
-
-http://127.0.0.1:5000/
-
+```
 
 
 
