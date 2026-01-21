@@ -58,9 +58,9 @@ DermalScan/
 │
 │── app.py                   # Streamlit web application
 │── dermalscan_AI.ipynb      # Model training notebook
-│── frontend_new.py
-│── backend_new.py            # Image preprocessing utilities
-│── requirements.txt          # Python dependencies
+│── frontend_new.py           # Python dependencies
+│── backend_new.py           # Python dependencies 
+│── requirements.txt          # Image preprocessing utilities
 │── README.md                 # Project documentation
 ```
 
