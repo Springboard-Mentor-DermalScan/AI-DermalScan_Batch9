@@ -29,29 +29,6 @@ The project is developed in multiple milestones covering data preparation, model
 
 ---
 
-## 📅 Milestone Journey
-
-This project was built in three distinct phases:
-
-### **Milestone 1: Data Engineering**
-* **Objective:** Build a robust dataset for skin conditions.
-* **Process:** Curated and labeled images into 4 classes (`Clear Skin`, `Dark Spots`, `Puffy Eyes`, `Wrinkles`).
-* **Preprocessing:** Standardized all inputs to `224x224` pixels and normalized pixel intensity.
-* **Augmentation:** Applied random rotations, zooms, and flips to prevent model overfitting.
-
-### **Milestone 2: Model Training (Skin)**
-* **Focus:** Developing the Skin Condition Classifier.
-* **Architecture:** **EfficientNet** (State-of-the-art CNN).
-* **Performance:** Achieved **high accuracy (>90%)** due to EfficientNet's superior feature extraction capabilities compared to older models.
-* **Artifact:** The trained weights were exported as `dermalscan_efficientnet_model.h5`.
-
-### **Milestone 3: System Integration (Age & UI)**
-* **Focus:** Integrating Age Prediction and Frontend.
-* **Backend:** Integrated the **Caffe AgeNet** model for demographic estimation.
-* **Logic Layer:** Implemented **Context Padding (+20%)** to fix head-cropping errors and **Heuristic Logic** to correct "Baby Face" misclassifications on adults.
-* **Visualization:** Added real-time **Plotly** statistical charts and **Batch CSV Reporting**.
-
----
 ## 🏗️ System Architecture
 
 ```mermaid
@@ -81,8 +58,8 @@ graph TD
     
     visual -->|Display| FinalImg[Annotated Image]
     visual -->|Download| FinalImg[AnnotatedImage]
-    visual -->|Charts| Charts[3D Interactive Charts]
-    visual -->|Download| Charts[3D Interactive Charts]
+    visual -->|Charts| Charts[Interactive Charts]
+    visual -->|Download| Charts[Interactive Charts]
     visual -->|Display| Report[Tabular Batch Report]
     visual -->|Download| Report[Batch CSV Report]
 ```
@@ -111,7 +88,7 @@ This project is built on a robust stack optimized for rapid computer vision prot
 | **Computer Vision** | **OpenCV (cv2)** | Image preprocessing, Haar Cascade detection, and drawing annotations. |
 | **Deep Learning** | **TensorFlow (Keras)** | Building the **dermal_efficientnet_model** and Running the custom **MobileNetV2** Skin Classification model. |
 | **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
-| **Visualization** | **Plotly** | Generating interactive 3D charts and visualizations. |
+| **Visualization** | **Plotly** | Generating interactive charts and visualizations. |
 | **Data Handling** | **Pandas & NumPy** | Generating CSV reports. |
 
 ---
