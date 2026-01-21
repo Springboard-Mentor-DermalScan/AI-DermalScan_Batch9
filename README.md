@@ -152,7 +152,7 @@ pip install -r requirements.txt
 
 ## 7. Running the Application
 
-### ▶️ Start the Streamlit App
+###  Start the Streamlit App
 
 ```bash
 streamlit run app.py
