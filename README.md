@@ -175,8 +175,8 @@ python app.py
 
 ## 🏗️ Project Workflow (Backend + UI Flow)
 
+```mermaid
 flowchart LR
-
     subgraph U[User Layer]
         U1([User])
         U2[Upload Image]
@@ -211,6 +211,7 @@ flowchart LR
     U2 --> F1
     F2 --> B1
     B4 --> M1
+
 
 
 
