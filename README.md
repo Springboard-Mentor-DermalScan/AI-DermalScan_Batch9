@@ -175,7 +175,7 @@ python app.py
 
 ## 🏗️ Project Workflow (Backend + UI Flow)
 
-flowchart TB
+
     Start([Start])
     UI[Open Web UI]
     Upload[Upload Image]
