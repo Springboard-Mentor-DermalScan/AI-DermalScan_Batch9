@@ -168,9 +168,7 @@ time.time() - start_time
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-username/DermalScan.git
-cd DermalScan
-```
+git clone -b kanishka https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
 
 ### 2️⃣ Create Virtual Environment
 ```bash
