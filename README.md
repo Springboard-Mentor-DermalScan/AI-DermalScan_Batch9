@@ -148,8 +148,7 @@ Download button for image & CSV
 
 1. Clone Repository
 '''
-git clone [https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git]
-cd Brijesh-Rath
+[git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git]
 
 3. Install Dependencies
 
