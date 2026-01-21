@@ -143,7 +143,7 @@ pip install -r requirements.txt
 * Label and confidence score annotated
 * Results displayed on the web UI
 
-### 🔹 Step 7: Export & Logging (Optional)
+### 🔹 Step 7: Export & Logging
 
 * Annotated image can be downloaded
 * Prediction history saved as CSV file
