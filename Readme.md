@@ -1,7 +1,7 @@
 # DermalScan – AI-Based Facial Skin Aging Detection System
 
 ## 1. Project Overview
-DermalScan is an end-to-end **AI-powered facial skin analysis system** that detects visible skin aging indicators from facial images. It is designed so that **even a beginner (fresher)** can understand how data flows from image upload to final prediction.
+DermalScan is an end-to-end **AI-powered facial skin analysis system** that detects visible skin aging indicators from facial images. It is designed so that it can  easily understand how data flows from image upload to final prediction.
 
 The system automatically:
 - Detects a human face from an image
