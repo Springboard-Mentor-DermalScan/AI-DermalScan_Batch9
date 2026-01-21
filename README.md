@@ -175,43 +175,30 @@ python app.py
 
 ## 🏗️ Project Workflow (Backend + UI Flow)
 
-```mermaid
-flowchart LR
-    subgraph U[User Layer]
-        U1([User])
-        U2[Upload Image]
-        U1 --> U2
-    end
+flowchart TB
+    Start([Start])
+    UI[Open Web UI]
+    Upload[Upload Image]
+    Receive[Flask Receives Image]
+    Save[Save Image<br/>static/uploads/]
+    Load[Load Trained Model]
+    Read[Read Image using OpenCV]
+    Preprocess[Resize & Normalize Image]
+    Predict[Model Prediction]
+    Bucket[Assign Age Bucket]
+    Annotate[Draw Bounding Box<br/>+ Prediction]
+    Output[Save Annotated Image<br/>static/outputs/]
+    CSV[Generate CSV Log]
+    Display[Display Results in UI]
+    Download[Download Image & CSV]
+    End([End])
 
-    subgraph F[Frontend Layer]
-        F1[Streamlit UI]
-        F2[Send Raw Image Bytes]
-        F1 --> F2
-    end
-
-    subgraph B[Backend Processing Layer]
-        B1[Read Image<br/>OpenCV]
-        B2[Resize & Normalize]
-        B3[Face Detection<br/>Haar Cascade]
-        B4[Extract Face ROI]
-        B1 --> B2 --> B3 --> B4
-    end
-
-    subgraph M[Model & Output Layer]
-        M1[Model Prediction]
-        M2[Assign Age Bucket]
-        M3[Draw Bounding Box<br/>+ Label]
-        M4[Save Annotated Image]
-        M5[Generate CSV Log]
-        M1 --> M2 --> M3
-        M3 --> M4
-        M3 --> M5
-    end
-
-    U2 --> F1
-    F2 --> B1
-    B4 --> M1
-
+    Start --> UI --> Upload --> Receive --> Save
+    Save --> Load --> Read --> Preprocess --> Predict
+    Predict --> Bucket --> Annotate
+    Annotate --> Output --> Display
+    Annotate --> CSV --> Display
+    Display --> Download --> End
 
 
 
