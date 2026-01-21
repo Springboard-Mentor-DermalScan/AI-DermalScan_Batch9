@@ -5,11 +5,18 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 
 ---
 
-## Project Preview
+## 📸 Project Preview
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+### 🔹 Web Interface
+![AI DermalScan Home](assets/preview.png)
+
+### 🔹 Prediction Output
+![Prediction Result](assets/result.png)
+
+### 🔹 CSV Report Download
+![Prediction Report](assets/report.png)
+
+---
 
 ## 📌 Project Objective
 
