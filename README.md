@@ -217,9 +217,12 @@ This project is developed for educational and academic purposes.
 
 Meghana Sandya
 
-### 📧Email: 22nn1a0480@gmail.com
+### 📧Email:
+22nn1a0480@gmail.com
 
-### 💼GitHub: https://github.com/Meghanasandya28
+### 💼GitHub: 
+https://github.com/Meghanasandya28
+
 
 
 
