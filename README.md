@@ -56,6 +56,8 @@ The system provides visual annotations, confidence scores, and estimated age thr
 
 ⚙️ Installation & Setup
 
+Clone Repository ''' git clone https://github.com/your-username/parthAgr0503.git
+
 1️⃣ Create and Activate Environment
 
 conda create -n dermal_ai python=3.10 -y
