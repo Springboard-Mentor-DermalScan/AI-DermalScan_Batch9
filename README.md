@@ -155,7 +155,7 @@ git clone -b Brijesh-Rath https://github.com/Springboard-Mentor-DermalScan/AI-De
 ### 2️⃣ Create Virtual Environment
 ```bash
 python -m venv venv
-venv\Scripts\activate  # On Windows
+venv\Scripts\activate
 ```
 
 ### 3️⃣ Install Dependencies
