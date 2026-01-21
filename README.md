@@ -23,18 +23,6 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 - OpenCV
 - NumPy, Pandas
 - Streamlit (Frontend UI)
-  ## 💻 Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
-![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
-![MobileNetV2](https://img.shields.io/badge/MobileNetV2-CNN-success)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
-![NumPy](https://img.shields.io/badge/NumPy-Array-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web%20UI-ff4b4b)
-
 
 ---
 
@@ -54,66 +42,6 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 
 ---
 
-## ⚙️ Project Modules Completed
-
-### ✅ Module 1: Dataset Setup & Labeling
-- Collected and organized facial skin images
-- Labeled images into four skin categories
-- Ensured balanced dataset distribution
-- Generated class distribution plot
-
-### ✅ Module 2: Image Preprocessing & Augmentation
-- Resized images to 224×224
-- Normalized pixel values
-- Applied augmentation:
-  - Rotation
-  - Zoom
-  - Horizontal flip
-
-### ✅ Module 3: Model Training (MobileNetV2)
-- Used pretrained MobileNetV2
-- Applied transfer learning
-- Fine-tuned top layers
-- Used Adam optimizer and categorical cross-entropy
-- Saved trained model as `.h5`
-
-### ✅ Module 4: Prediction Pipeline
-- Loaded trained model
-- Preprocessed input images
-- Generated class probabilities
-- Predicted:
-  - Skin condition
-  - Confidence score
-  - Estimated age
-  - Risk status
-- Annotated image using OpenCV
-
-### ✅ Module 5: Streamlit Frontend
-- Image upload support (single & multiple)
-- Real-time result display
-- Annotated image visualization
-- Clean and responsive UI
-
-### ✅ Module 6: Backend Integration
-- Modular inference code (`inference.py`)
-- Model loaded once for efficiency
-- Smooth frontend–backend communication
-
-### ✅ Module 7: Export & Logging
-- Download annotated image
-- Download prediction report as CSV
-- Logged:
-  - Disease
-  - Confidence
-  - Age
-  - Time taken
-
-### ✅ Module 8: Documentation
-- README.md created
-- Project structure documented
-- GitHub repository prepared
-
----
 
 ## 📁 Project Structure
 
@@ -144,21 +72,84 @@ AI-DermalScan/
 ---
 
 
-## ▶️ How to Run the Project
+## ⚙️ Installation & Setup
 
- 1️⃣ Create Virtual Environment
-```bash
+### 1️⃣ Clone Repository
+git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+
+### 2️⃣ Create Virtual Environment
 python -m venv env
 env\Scripts\activate
 
-2️⃣ Install Dependencies
+### 3️⃣  Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run Streamlit App
+### 4️⃣ Run Streamlit App
 streamlit run frontend/app.py
 
+### 5️⃣ Open in Browser
+http://localhost:8501/
 
-📊 ```md
+
+---
+
+
+## 🔄 How DermalScan Works
+
+- User uploads a facial skin image through Streamlit UI
+- Image is preprocessed (resize, normalization)
+- Trained MobileNetV2 (fine-tuned) model predicts skin condition
+- Model outputs:
+  - Skin type
+  - Confidence percentage
+  - Estimated age
+  - Risk status
+- OpenCV annotates the image with prediction details
+- Results are displayed on UI
+- User can download:
+  - Annotated image
+  - CSV prediction report
+
+---
+
+## 🏗 System Architecture
+
+- Frontend
+  - Streamlit web interface
+  - Handles image upload & result display
+
+- Backend
+  - Image preprocessing module
+  - MobileNetV2 inference engine
+  - Age & risk estimation logic
+
+- Model Layer
+  - Fine-tuned MobileNetV2 (.h5)
+  - Trained on facial skin dataset
+
+- Output Layer
+  - Annotated images (OpenCV)
+  - CSV logs with predictions
+
+## 🔁 Architecture Flow 
+
+User Image
+   ↓
+Streamlit UI
+   ↓
+Image Preprocessing
+   ↓
+MobileNetV2 Model
+   ↓
+Prediction + Confidence
+   ↓
+Age & Risk Estimation
+   ↓
+Annotated Image + CSV Export
+
+---
+
+
 ## 📊 Output Details
 
 - Annotated image includes:
@@ -178,7 +169,16 @@ streamlit run frontend/app.py
 
 ## 📄 License
 
-```md
-
 This project is developed for educational and academic purposes.
+
+---
+
+
+## 👨‍💻 Author
+
+Meghana Sandya
+
+### 📧Email: 22nn1a0480@gmail.com
+
+### 💼GitHub: https://github.com/Meghanasandya28
 
