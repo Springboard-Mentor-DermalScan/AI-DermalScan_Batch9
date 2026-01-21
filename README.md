@@ -1,136 +1,228 @@
 # Facial Age & Skin Concern Detection
 
-**AI-Facial-Aging-Detection-App** is a lightweight computer vision project that detects **facial skin concerns associated with aging** from images.  
-It combines **face detection**, **transfer learning–based image classification**, and an optional **Streamlit web interface** for interactive inference and result export.
+**AI-Facial-Aging-Detection-App** is a lightweight computer vision and deep learning project that detects **facial skin concerns associated with aging** from images.
+It integrates **face detection**, **transfer learning–based image classification**, and an optional **Streamlit web interface** for interactive inference, visualization, and result export.
 
 ---
 
 ## Project Overview
 
-- **Objective:**  
+* **Objective:**
   Automatically classify facial images into common skin concern categories related to aging.
 
-- **Skin Concern Classes:**
-  - `clear skin`
-  - `dark spots`
-  - `puffy eyes`
-  - `wrinkles`
+* **Skin Concern Classes:**
 
-- **Core Techniques:**
-  - Face detection using **OpenCV Haar Cascades**
-  - Image classification using **TensorFlow/Keras**
-  - Transfer learning with **ResNet**, **MobileNetV2**, and **EfficientNetB2**
-  - Dataset splitting into `train`, `validation`, and `test` sets
-  - Optional Streamlit-based UI for inference, logging, and export
+  * `clear skin`
+  * `dark spots`
+  * `puffy eyes`
+  * `wrinkles`
+
+* **Core Techniques:**
+
+  * Face detection using **OpenCV Haar Cascades**
+  * Image classification using **TensorFlow / Keras**
+  * Transfer learning with **ResNet**
+  * Dataset splitting into `train`, `validation`, and `test`
+  * Optional **Streamlit-based UI** for inference, logging, and export
 
 ---
 
 ## Repository Structure
 
 ```text
-├── app.py
-├── dataset/
+├── app.py                         
+├── dataset/                       
 │   ├── clear skin/
 │   ├── dark spots/
 │   ├── puffy eyes/
 │   └── wrinkles/
-├── splittedset/
+├── splittedset/                   
 │   ├── train/
 │   ├── validation/
 │   └── test/
-├── models/
+├── models/                        
 │   ├── resnet_best_model.h5
 │   ├── mobilenetv2_best_model.h5
-│   └── efficientnetb2_best_model.h5
+│   ├── efficientnetb2_best_model.h5
+│   └── efficientnetb0_best_model.h5
 ├── notebooks/
-│   └── preprocessandtrain.ipynb
+│   └── preprocessandtrain.ipynb   
 ├── scripts/
-│   ├── facedetection.py
+│   ├── facedetection.py           
 │   └── haarcascade_frontalface_default.xml
-├── documentation/
-├── requirements.txt
+├── documentation/                 
+├── requirements.txt               
 ├── LICENSE
 └── README.md
 ```
 
 ---
-## Requirements
 
-It is recommended to use a virtual environment.
+## System Requirements
 
-pip install -r requirements.txt
+* **Python:** 3.8 or higher (recommended: 3.8–3.11)
+* **Git** (for cloning the repository)
+* **pip** (Python package manager)
 
-### Main Dependencies
-- Python 3.8+
-- TensorFlow / Keras
-- OpenCV (opencv-python)
-- NumPy, Pandas
-- Matplotlib
-- Scikit-learn
+Verify installation:
 
-(Refer to requirements.txt for exact versions.)
+```bash
+python --version
+git --version
+pip --version
+```
 
 ---
 
-## Running Inference / Demo
+## Step-by-Step Setup Guide
 
-Ensure a trained model is present in the models/ directory  
-(e.g. resnet_best_model.h5).
+### Step 1: Clone the Repository
 
-If using Streamlit:
+```bash
+git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9/tree/Adithya-Krishna
+cd <PROJECT_FOLDER_NAME>
+```
 
+---
+
+### Step 2: Create a Virtual Environment
+
+Using a virtual environment avoids dependency conflicts.
+
+#### ▶ Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### ▶ macOS / Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Once activated, `(venv)` should appear in your terminal.
+
+---
+
+### Step 3: Install Dependencies
+
+Install all required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Main Dependencies
+
+* TensorFlow / Keras
+* OpenCV (`opencv-python`)
+* NumPy, Pandas
+* Matplotlib
+* Scikit-learn
+* Streamlit
+
+> TensorFlow installation may take a few minutes.
+
+---
+
+## Model Setup
+
+Ensure at least one trained model is present in the **models/** directory.
+
+Example:
+
+```text
+models/
+ └── resnet_best_model.h5
+```
+
+If no model is available, refer to the **Training Pipeline** section below to train one.
+
+---
+
+## ▶ Running Inference / Demo
+
+### Option 1: Streamlit Web Interface (Recommended)
+
+Run the following command:
+
+```bash
 streamlit run app.py
+```
+
+* A local URL (usually `http://localhost:8501`) will open automatically
+* Upload a facial image
+* View detected face and predicted skin concern
+
+---
 
 ### Demo Features
-- Upload facial images
-- Automatic face detection
-- Skin concern classification
-- Estimated age display
-- Confidence score per prediction
-- Download annotated images
-- Export prediction logs as CSV
+
+* Upload facial images
+* Automatic face detection
+* Skin concern classification
+* Estimated age display (if enabled)
+* Confidence score per prediction
+* Download annotated images
+* Export prediction logs as CSV
 
 ---
 
 ## Training Pipeline
 
-The notebook notebooks/preprocessandtrain.ipynb contains the full training workflow:
+The notebook **`notebooks/preprocessandtrain.ipynb`** contains the full training workflow:
 
-- Image loading and preprocessing (resize, normalization)
-- Data augmentation for better generalization
-- Transfer learning using pre-trained CNN backbones
-- Training with early stopping and model checkpointing
-- Evaluation on the test set
-- Saving the best-performing model to models/
+* Image loading and preprocessing (resize, normalization)
+* Dataset splitting (train / validation / test)
+* Data augmentation for improved generalization
+* Transfer learning using pre-trained CNN backbones
+* Training with early stopping and model checkpointing
+* Evaluation on the test set
+* Saving best-performing models to `models/`
+
+To train a model:
+
+1. Open the notebook
+2. Run all cells sequentially or run the section of desired model
+3. Best model will be saved automatically
 
 ---
 
 ## Evaluation & Results
 
-- Training and validation performance is visualized in the notebook
-- Multiple CNN backbones were evaluated:
-  - ResNet
-  - MobileNetV2
-  - EfficientNetB2
-- Best-performing models are stored in models/ for inference
+* Training and validation performance visualized using accuracy and loss curves
+* Evaluated architectures:
 
-Results can be reproduced by running the training notebook.
+  * ResNet
+  * MobileNetV2
+  * EfficientNetB2
+  * EfficientNetB0
+* Best-performing models are stored in the `models/` directory
+
+Results are fully reproducible by running the training notebook.
 
 ---
 
 ## Notes & Possible Improvements
 
-- Dataset follows a folder-per-class structure compatible with Keras utilities
-- Potential enhancements:
-  - Landmark-based face alignment
-  - Improved age estimation model
-  - Class imbalance handling
-  - Larger and more diverse datasets
-  - Model optimization for faster inference
+* Dataset follows a **folder-per-class** structure compatible with Keras utilities
+* Potential enhancements:
+
+  * Landmark-based face alignment
+  * Separate and more accurate age estimation model
+  * Class imbalance handling
+  * Larger and more diverse datasets
+  * Model quantization and optimization for faster inference
 
 ---
 
-## License
 
-This project is distributed under the terms specified in the LICENSE file.
+## 📄 License
+
+This project is distributed under the terms specified in the **LICENSE** file.
+
+---
 
