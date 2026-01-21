@@ -26,18 +26,19 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 
 ---
 
-## 🛠 Tech Stack
+## 💻 Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=opencv&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
-![MobileNetV2](https://img.shields.io/badge/MobileNetV2-Deep%20Learning-blue?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
+![MobileNetV2](https://img.shields.io/badge/MobileNetV2-CNN-success)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![NumPy](https://img.shields.io/badge/NumPy-Array-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20UI-ff4b4b)
 
+---
 
 ## 🗂 Dataset Details
 
@@ -194,4 +195,5 @@ Meghana Sandya
 ### 📧Email: 22nn1a0480@gmail.com
 
 ### 💼GitHub: https://github.com/Meghanasandya28
+
 
