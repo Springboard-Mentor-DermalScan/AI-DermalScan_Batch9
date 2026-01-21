@@ -53,6 +53,8 @@ The system supports **single-face and multi-face images**, generates **annotated
 
 ## 👤 User Guide
 
+**Note:** Before proceeding with the user guide, ensure you have completed the **Installation & Setup** steps outlined below.
+
 ### 1️⃣ Launching the Application
 Run the Flask server and open:
 http://127.0.0.1:5000
@@ -101,17 +103,12 @@ AI_DermalScan/
 ├── README.md                       # Project documentation
 ├── LICENSE                         # MIT License
 ├── AI_DermalScan_Documentation.pdf # Detailed project documentation
-├── dermalscan.ipynb                # Jupyter notebook for model development
-├── dermalscan_notebook2_milestone2.ipynb  # Additional notebook
 ├── dataset_split.py                # Dataset splitting script
 ├── deploy.prototxt                 # OpenCV face detection config
 ├── res10_300x300_ssd_iter_140000.caffemodel  # OpenCV face detection model
 ├── haarcascade_frontalface_default.xml  # Alternative face detection
-├── *.h5                            # Pre-trained TensorFlow models (MobileNetV2, EfficientNet, ResNet, VGG)
-├── *.png                           # UI design images and plots
 ├── Dataset/                        # Training dataset
 ├── Dataset_split/                  # Split dataset for training/validation
-├── Models/                         # Saved model checkpoints
 ├── Outputs/                        # Generated output files
 ├── static/                         # Static web assets (CSS, JS, images)
 │   ├── css/
@@ -119,7 +116,6 @@ AI_DermalScan/
 │   └── outputs/                    # Annotated output images
 ├── templates/                      # HTML templates
 │   └── index.html                  # Main web interface
-├── tf_env/                         # TensorFlow environment
 └── visualizations/                 # Data visualization outputs
 ```
 
@@ -169,6 +165,7 @@ time.time() - start_time
 ### 1️⃣ Clone Repository
 ```bash
 git clone -b kanishka https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+```
 
 ### 2️⃣ Create Virtual Environment
 ```bash
