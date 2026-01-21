@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI DermaScan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+body{background:linear-gradient(135deg,#eef2ff,#fdf2f8);color:#111827}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 60px}
+header h2{color:#2563eb;font-weight:700}
+.hero{text-align:center;margin-top:60px}
+.hero h1{font-size:42px;font-weight:800}
+.hero span{color:#2563eb}
+.hero p{max-width:720px;margin:16px auto 0;font-size:16px;color:#6b7280}
+
+.upload-card{
+    width:380px;background:white;margin:50px auto;
+    padding:32px;border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    text-align:center
+}
+.upload-card button{
+    margin-top:28px;width:100%;
+    padding:12px;border:none;border-radius:30px;
+    background:linear-gradient(135deg,#6d28d9,#2563eb);
+    color:white;font-size:15px
+}
+
+.spinner{
+    display:none;margin:24px auto 0;width:40px;height:40px;
+    border:4px solid #e5e7eb;border-top:4px solid #2563eb;
+    border-radius:50%;animation:spin 1s linear infinite
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.results{max-width:950px;margin:70px auto;padding:0 16px}
+.results img{
+    max-width:600px;width:100%;
+    display:block;margin:0 auto 20px;border-radius:14px
+}
+
+.downloads{
+    display:flex;justify-content:center;gap:14px;margin-bottom:30px
+}
+.downloads a{
+    padding:8px 16px;background:#16a34a;
+    color:white;border-radius:18px;
+    font-size:13px;text-decoration:none
+}
+
+.summary{
+    background:white;padding:18px 22px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    margin-bottom:30px
+}
+
+.summary h4{margin-bottom:8px}
+
+.analysis-heading{
+    margin:25px 0 12px;
+    font-size:20px;
+    font-weight:700;
+    color:#2563eb
+}
+
+table{
+    width:100%;border-collapse:collapse;
+    background:white;border-radius:12px;
+    margin-bottom:18px
+}
+th,td{
+    padding:8px;text-align:center;
+    border-bottom:1px solid #e5e7eb;
+    font-size:13px
+}
+th{background:#f3f4f6}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>AI DermaScan</h2>
+</header>
+
+<section class="hero">
+    <h1>Detect Facial <span>Skin Aging</span> Using AI</h1>
+    <p>Upload a facial image and get instant AI-powered skin condition prediction.</p>
+</section>
+
+<section class="upload-card">
+    <form method="POST" enctype="multipart/form-data" onsubmit="showSpinner()">
+        <input type="file" name="image" required>
+        <button type="submit">Analyze Image</button>
+    </form>
+    <div class="spinner" id="spinner"></div>
+</section>
+
+{% if image %}
+<section class="results">
+
+    <img src="{{ image }}">
+
+    <!-- Download IMAGE stays here -->
+    <div class="downloads">
+        <a href="/download_image">Download Annotated Image</a>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+        <h4>🔍 Image Analysis Summary</h4>
+        <p><b>Total Faces Detected:</b> {{ summary.total_faces }}</p>
+
+        <ul>
+            {% for f in summary.faces %}
+            <li><b>{{ f.id }}:</b> {{ f.class }} ({{ f.confidence }}), Age {{ f.age }}</li>
+            {% endfor %}
+        </ul>
+
+        <p><b>Processing Time:</b> {{ summary.time }}</p>
+    </div>
+
+    <!-- TABLE HEADING -->
+    <div class="analysis-heading">📊 Detailed Analysis</div>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Face</th>
+            <th>Class</th>
+            <th>Confidence</th>
+            <th>Age</th>
+            <th>x1</th>
+            <th>y1</th>
+            <th>x2</th>
+            <th>y2</th>
+        </tr>
+        {% for r in results %}
+        <tr>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>{{ r[3] }}</td>
+            <td>{{ r[4] }}</td>
+            <td>{{ r[5] }}</td>
+            <td>{{ r[6] }}</td>
+            <td>{{ r[7] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Download CSV BELOW TABLE -->
+    <div class="downloads">
+        <a href="/download_csv">Download Analysis Table (CSV)</a>
+    </div>
+
+</section>
+{% endif %}
+
+<script>
+function showSpinner(){
+    document.getElementById("spinner").style.display="block";
+}
+</script>
+
+</body>
+</html>
