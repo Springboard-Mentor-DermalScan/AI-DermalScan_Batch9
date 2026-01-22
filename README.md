@@ -17,12 +17,6 @@
 DermalScan provides an end-to-end solution for facial skin analysis using a modern web interface and a robust backend inference pipeline.  
 The system supports **single-face and multi-face images**, generates **annotated visual outputs**, logs predictions, and allows **exporting results** for further analysis.
 
-### System Workflow
-
-For a visual representation of the system's workflow, refer to [system_workflow.md](system_workflow.md).
-
----
-
 ## ✨ Key Features
 
 - Image upload with real-time preview
