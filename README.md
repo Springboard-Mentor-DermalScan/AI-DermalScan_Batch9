@@ -5,6 +5,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep_Learning-orange)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-blue)](https://dermalscan-ai-skin-analysis.onrender.com)
 
 <p align="center">
   <b>DermalScan</b> is an AI-powered web application that analyzes facial images to detect skin conditions, estimate age, and visualize results using deep learning and computer vision techniques.
