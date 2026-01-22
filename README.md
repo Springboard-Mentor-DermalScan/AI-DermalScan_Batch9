@@ -322,6 +322,22 @@ The system is flexible enough to be extended into a full dermatology assistant, 
 
 
 
+## 📸 Application UI Examples
+
+Here are some screenshots of the DermalScan application interface:
+
+![Home Page of the Application](UploadImage.png)
+
+![UI After Output Predicted](PredictionsTable.png)
+
+![Application UI Example 1](Image1.png)
+
+![Application UI Example 2](Image2.png)
+
+
+
+
+
 ## 🙌 **Acknowledgments**
 This project is created for academic learning and practical understanding of deep learning in healthcare.
 
