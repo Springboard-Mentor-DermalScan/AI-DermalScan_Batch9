@@ -327,10 +327,17 @@ The system is flexible enough to be extended into a full dermatology assistant, 
 
 Here are some screenshots of the DermalScan application interfaces:
 
+### INITIAL USER INTERFACE
 ![Initial UI](INITIAL_UI.PNG)
 
-![Application UI Example 1](UI_OUTPUT_2.png)
 
+
+### OUTPUT SCREEN - 1
+![Application UI Example 1](UI_OUTPUT_1.png)
+
+
+
+### OUTPUT SCREEN - 1
 ![Application UI Example 2](UI_OUTPUT_2.png)
 
 
