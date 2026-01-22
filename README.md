@@ -326,9 +326,8 @@ The system is flexible enough to be extended into a full dermatology assistant, 
 
 Here are some screenshots of the DermalScan application interface:
 
-![Home Page of the Application](UploadImage.png)
-
-![UI After Output Predicted](PredictionsTable.png)
+![Home Page of the Application](<img width="1709" height="981" alt="UI_OUTPUT_2" src="https://github.com/user-attachments/assets/5da77d2e-bc1e-471f-a330-d55f17f933e6" />
+)
 
 ![Application UI Example 1](Image1.png)
 
