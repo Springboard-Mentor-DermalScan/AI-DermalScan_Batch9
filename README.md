@@ -86,10 +86,6 @@ This project is built on a robust stack optimized for rapid computer vision prot
 | **Computer Vision** | **OpenCV (cv2)** | Image preprocessing, Haar Cascade detection, and drawing annotations. |
 | **Deep Learning** | **TensorFlow (Keras)** | Building the **dermal_efficientnet_model** and Running the custom **MobileNetV2** Skin Classification model. |
 | **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
-| **Rendering Function** | **st.image()** | This specific function automatically converts the NumPy array (pixels) into a web-optimized image (JPEG/PNG) on the fly. |
-| **Responsive Layout** | **Streamlit Layouts** | Used use_container_width=True to ensure the image automatically resizes to fit phone screens or desktops without pixelation. |
-| **Color Handling** | **NumPy (RGB)** | Used to verify channel order. OpenCV works in BGR (Blue-Green-Red), but Streamlit expects RGB. We used cv2.cvtColor to swap these channels so the skin tones look natural, not blue. |
-| **Visualization** | **Plotly** | Generating interactive charts and visualizations. |
 | **Data Handling** | **Pandas & NumPy** | Generating CSV reports. |
 ---
 * **🟥 Inner Box (Strict ROI):** Used for **EfficientNet**. Tightly crops the face to exclude background noise, forcing the model to analyze pure skin texture.
