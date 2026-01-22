@@ -149,8 +149,9 @@ It is not a medical diagnostic tool and should not be used for clinical decision
 
 ✔ Responsive design
 
-Conclusion
+✨Conclusion
 
-DermalScan successfully demonstrates the application of deep learning and computer vision in healthcare and cosmetic analysis. /The project provides a reliable, real-time, and user-friendly system for facial skin aging detection using modern AI techniques.
+DermalScan successfully demonstrates the application of deep learning and computer vision in healthcare and cosmetic analysis.
+The project provides a reliable, real-time, and user-friendly system for facial skin aging detection using modern AI techniques.
 
 
