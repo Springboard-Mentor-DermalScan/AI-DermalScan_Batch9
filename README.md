@@ -56,7 +56,7 @@ The system provides visual annotations, confidence scores, and estimated age thr
 
 ⚙️ Installation & Setup
 
-Clone Repository ''' git clone https://github.com/your-username/parthAgr0503.git
+Clone Repository ''' git clone https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
 
 1️⃣ Create and Activate Environment
 
