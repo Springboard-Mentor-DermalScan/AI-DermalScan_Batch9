@@ -9,8 +9,12 @@
 
 ## 🌐 Live Demo
 
-**Live Demo:** https://dermalscan-ai-skin-analysis.onrender.com  
-⏳ *Note:* The application may take **10–30 seconds** to load on first access due to cold start behavior on Render’s free tier.
+<p align="center">
+  <a href="https://dermalscan-ai-skin-analysis.onrender.com"><b>🔗 Access Live Demo</b></a>
+</p>
+
+> ⏳ **Note:** The application may take 10–30 seconds to load on first access due to cold start behavior on Render's free tier.
+
 
 <p align="center">
   <b>DermalScan</b> is an AI-powered web application that analyzes facial images to detect skin conditions, estimate age, and visualize results using deep learning and computer vision techniques.
