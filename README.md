@@ -9,10 +9,13 @@ The system uses a **fine-tuned MobileNetV2 model** and provides results through 
 
 ### 🔹 Web Interface
 <img width="1886" height="523" alt="preview" src="https://github.com/user-attachments/assets/6a68a754-76f2-4efa-b29c-1329cfb85871" />
+
 ### 🔹 Prediction Output
-![Uploading result.png…]()
+<img width="1232" height="770" alt="result" src="https://github.com/user-attachments/assets/1a7b5fc7-400d-46c6-a379-49e654338024" />
+
 ### 🔹 CSV Report Download
-![Uploading report.png…]()
+<img width="1761" height="466" alt="report" src="https://github.com/user-attachments/assets/e5297d5d-112c-49d4-9185-96d9f09c6ca9" />
+
 ---
 
 ## 📌 Project Objective
@@ -219,6 +222,7 @@ Meghana Sandya
 
 ### 💼GitHub: 
 https://github.com/Meghanasandya28
+
 
 
 
