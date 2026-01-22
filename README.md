@@ -58,8 +58,6 @@ graph TD
     
     visual -->|Display| FinalImg[Annotated Image]
     visual -->|Download| FinalImg[AnnotatedImage]
-    visual -->|Charts| Charts[Interactive Charts]
-    visual -->|Download| Charts[Interactive Charts]
     visual -->|Display| Report[Tabular Batch Report]
     visual -->|Download| Report[Batch CSV Report]
 ```
@@ -88,9 +86,14 @@ This project is built on a robust stack optimized for rapid computer vision prot
 | **Computer Vision** | **OpenCV (cv2)** | Image preprocessing, Haar Cascade detection, and drawing annotations. |
 | **Deep Learning** | **TensorFlow (Keras)** | Building the **dermal_efficientnet_model** and Running the custom **MobileNetV2** Skin Classification model. |
 | **Inference Engine** | **Caffe (DNN)** | Running the pre-trained **AgeNet** model for age estimation. |
+| **Rendering Function** | **st.image()** | This specific function automatically converts the NumPy array (pixels) into a web-optimized image (JPEG/PNG) on the fly. |
+| **Responsive Layout** | **Streamlit Layouts** | Used use_container_width=True to ensure the image automatically resizes to fit phone screens or desktops without pixelation. |
+| **Color Handling** | **NumPy (RGB)** | Used to verify channel order. OpenCV works in BGR (Blue-Green-Red), but Streamlit expects RGB. We used cv2.cvtColor to swap these channels so the skin tones look natural, not blue. |
 | **Visualization** | **Plotly** | Generating interactive charts and visualizations. |
 | **Data Handling** | **Pandas & NumPy** | Generating CSV reports. |
-
+---
+* **🟥 Inner Box (Strict ROI):** Used for **EfficientNet**. Tightly crops the face to exclude background noise, forcing the model to analyze pure skin texture.
+* **🟩 Outer Box (Padded ROI):** Used for **AgeNet**. Expands context by 20% to capture the forehead hairline and chin shape, which are critical for accurate biological age estimation. 
 ---
 ## 📃 Future Scope & Strategic Roadmap
 ### **1. Advanced Computer Vision & Face Geometry**
@@ -114,6 +117,18 @@ Subsequently, MobileNetV2 was introduced to optimize the system for Edge AI, ens
 
 ## 👉 Usage Note: The application is optimized to run with MobileNetV2 by default for speed. To test the high-precision EfficientNet model, simply update the model path in app.py to point to dermalscan_efficientnet_model.h5."
 ---
+## 📤Interface Screenshots
+### 📂 Batch Processing Interface
+1)The system supports simultaneous analysis of multiple images. Below is the interface handling a batch upload:
+
+![Batch Processing Interface](Milestone%203/Multiple%20Images.png)
+
+2)The system detects maximum number of faces for the uploaded image. Below is the annotated image and its prediction table:
+
+![Batch Processing Interface](Milestone%203/Multiple%20faces%20detected.jpg)
+![Batch Processing Interface](Milestone%203/Batch%20report%20for%20multiple%20faces%20detected.png)
+---
+
 ## ⚙️ Installation & Usage Guide
 ### **Step 1: Clone the Repository**
 ```bash
