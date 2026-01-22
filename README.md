@@ -136,3 +136,21 @@ It is not a medical diagnostic tool and should not be used for clinical decision
 5.Mobile-friendly UI
 
 6.User history & reports
+
+🎨 UI Preview
+
+✔ Two-image layout (Original & Annotated)
+
+✔ Results shown in a clean table (Class, Confidence, Age, Box Details)
+
+✔ Prediction percentage of Other secondary classes
+
+✔ Cyan glowing borders
+
+✔ Responsive design
+
+Conclusion
+
+DermalScan successfully demonstrates the application of deep learning and computer vision in healthcare and cosmetic analysis. /The project provides a reliable, real-time, and user-friendly system for facial skin aging detection using modern AI techniques.
+
+
