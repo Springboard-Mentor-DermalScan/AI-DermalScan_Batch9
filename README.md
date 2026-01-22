@@ -17,6 +17,10 @@
 DermalScan provides an end-to-end solution for facial skin analysis using a modern web interface and a robust backend inference pipeline.  
 The system supports **single-face and multi-face images**, generates **annotated visual outputs**, logs predictions, and allows **exporting results** for further analysis.
 
+### System Workflow
+
+For a visual representation of the system's workflow, refer to [system_workflow.md](system_workflow.md).
+
 ---
 
 ## ✨ Key Features
@@ -89,6 +93,20 @@ Each prediction is logged with:
 ### 5️⃣ Export Options
 - **Download Annotated Image**
 - **Download Predictions CSV**
+
+---
+
+## 📸 Application UI Examples
+
+Here are some screenshots of the DermalScan application interface:
+
+![Home Page of the Application](UploadImage.png)
+
+![UI After Output Predicted](PredictionsTable.png)
+
+![Application UI Example 1](Image1.png)
+
+![Application UI Example 2](Image2.png)
 
 ---
 
@@ -186,4 +204,11 @@ python app.py
 ---
 
 ## 📄 License
-This project is intended for educational and research purposes.
+
+**Author:** Kanishka Sugumar  
+**Email:** kanishkasugumar.official@gmail.com  
+**LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/kanishkasugumar/)
+
+This project is intended for educational and research purposes. It was created as part of the Infosys Springboard Virtual Internship program.
+
+For more detailed information, please refer to the [AI_DermalScan_Documentation.pdf](AI_DermalScan_Documentation.pdf).
