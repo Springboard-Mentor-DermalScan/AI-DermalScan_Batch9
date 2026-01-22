@@ -105,7 +105,7 @@ Instead, a Jupyter Notebook demonstrating the full training process is included.
   --> GitHub
 
 📁 Project Structure
-
+```
 DermalScan/
 │
 ├── app.py                    # Flask backend
@@ -121,7 +121,7 @@ DermalScan/
 │
 ├── requirements.txt
 └── README.md
-
+```
 🖥️ How to Run This Project Locally
 
 Follow these steps carefully 👇
@@ -137,27 +137,28 @@ Follow these steps carefully 👇
   --> Extract the ZIP file
 
   Option B: Clone Repository
-
-  --> git clone <repository-url>  #copy and paste the repo link in the <repository-url> place
-  --> cd DermalScan
-
+```
+  git clone -b Suganth --single-branch https://github.com/Springboard-Mentor-DermalScan/AI-DermalScan_Batch9.git
+  cd DermalScan
+```
 2️⃣ Create Virtual Environment (Recommended)
+  ```
   python -m venv venv
-
+ ```
   Activate it:
 
   Windows
-
-  --> venv\Scripts\activate
-
+```
+  venv\Scripts\activate
+```
   Mac/Linux
-
-  --> source venv/bin/activate
-
+```
+  source venv/bin/activate
+```
 3️⃣ Install Dependencies
-
+```
   pip install -r requirements.txt
-
+```
 4️⃣ Ensure Required Files
 
   Make sure the following files are present:
@@ -171,14 +172,15 @@ Follow these steps carefully 👇
 ⚠️ The trained model (model.h5) should be added manually if not included.
 
 5️⃣ Run the Application
-
+```
   python app.py
-
+```
 6️⃣ Open in Browser
 
   Visit:
+  ```
   http://127.0.0.1:5000
-
+```
   Upload an image and view the results 🎉
 
 📸 Output Description
