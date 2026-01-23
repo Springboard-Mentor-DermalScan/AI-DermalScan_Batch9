@@ -24,11 +24,15 @@ AI DermaScan is a deep learning–based application that detects facial skin con
 
 ## Sample UI Screenshots
 
-## Sample UI Screenshots
-
+### Home Screen
 ![Home Screen](screenshots/home.png)
+
+### Annotated Output
 ![Annotated Output](screenshots/annotated.png)
+
+### CSV Export
 ![CSV Export](screenshots/export.png)
+
 
 ## Model Details
 
@@ -96,5 +100,6 @@ Export CSV:
 df.to_csv("exports/logs/prediction_history.csv", index=False)
 
 Author
+
 
 Rounak Kumar Mishra
